@@ -1,0 +1,1802 @@
+[
+    {
+        "class": ":Aluno",
+        "nome": "\"Mona Conrad\"",
+        "id": ":monaconrad",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Allison Rogers\"",
+        "id": ":allisonrogers",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Mason Nieves\"",
+        "id": ":masonnieves",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Deirdre Soto\"",
+        "id": ":deirdresoto",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Anna Ratliff\"",
+        "id": ":annaratliff",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Sadie Wallace\"",
+        "id": ":sadiewallace",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Avis Graves\"",
+        "id": ":avisgraves",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Adriana Rich\"",
+        "id": ":adrianarich",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Iris York\"",
+        "id": ":irisyork",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Conrad Tillman\"",
+        "id": ":conradtillman",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Downs Parsons\"",
+        "id": ":downsparsons",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Washington Mccormick\"",
+        "id": ":washingtonmccormick",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Jenkins Case\"",
+        "id": ":jenkinscase",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Talley Wooten\"",
+        "id": ":talleywooten",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Mitchell Klein\"",
+        "id": ":mitchellklein",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Conway Moss\"",
+        "id": ":conwaymoss",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Lizzie Kirk\"",
+        "id": ":lizziekirk",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Roxie Powers\"",
+        "id": ":roxiepowers",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Huff Finley\"",
+        "id": ":hufffinley",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Hazel Medina\"",
+        "id": ":hazelmedina",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Love Monroe\"",
+        "id": ":lovemonroe",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Patterson Sanchez\"",
+        "id": ":pattersonsanchez",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Rasmussen Perry\"",
+        "id": ":rasmussenperry",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Santiago Harrington\"",
+        "id": ":santiagoharrington",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Tessa Roy\"",
+        "id": ":tessaroy",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Reed Rhodes\"",
+        "id": ":reedrhodes",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Owens Bates\"",
+        "id": ":owensbates",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Alfreda Wilder\"",
+        "id": ":alfredawilder",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Jodie Clark\"",
+        "id": ":jodieclark",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Laura Jacobson\"",
+        "id": ":laurajacobson",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Jolene Owen\"",
+        "id": ":joleneowen",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Pickett Conley\"",
+        "id": ":pickettconley",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Kellie Atkinson\"",
+        "id": ":kellieatkinson",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Brenda Delaney\"",
+        "id": ":brendadelaney",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Warren Kane\"",
+        "id": ":warrenkane",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Short Little\"",
+        "id": ":shortlittle",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Fitzpatrick Collier\"",
+        "id": ":fitzpatrickcollier",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Lucille Bradshaw\"",
+        "id": ":lucillebradshaw",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Holmes Pierce\"",
+        "id": ":holmespierce",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Jaclyn Gallagher\"",
+        "id": ":jaclyngallagher",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Mejia Oneil\"",
+        "id": ":mejiaoneil",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Lloyd Robertson\"",
+        "id": ":lloydrobertson",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Sharp Patterson\"",
+        "id": ":sharppatterson",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Roseann Roman\"",
+        "id": ":roseannroman",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Rosario Rojas\"",
+        "id": ":rosariorojas",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Isabelle Watts\"",
+        "id": ":isabellewatts",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Haley Nunez\"",
+        "id": ":haleynunez",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Sharlene Miles\"",
+        "id": ":sharlenemiles",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Jodi Lane\"",
+        "id": ":jodilane",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Carissa Hyde\"",
+        "id": ":carissahyde",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Allison Gould\"",
+        "id": ":allisongould",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Robertson Gallegos\"",
+        "id": ":robertsongallegos",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Anita Small\"",
+        "id": ":anitasmall",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Dorsey Dickerson\"",
+        "id": ":dorseydickerson",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Valarie Valdez\"",
+        "id": ":valarievaldez",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Josefina Benjamin\"",
+        "id": ":josefinabenjamin",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Ava Vasquez\"",
+        "id": ":avavasquez",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Rosa Browning\"",
+        "id": ":rosabrowning",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Hester Stanton\"",
+        "id": ":hesterstanton",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Simmons Drake\"",
+        "id": ":simmonsdrake",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Hayes Wagner\"",
+        "id": ":hayeswagner",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Bettye Hart\"",
+        "id": ":bettyehart",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Jocelyn Herman\"",
+        "id": ":jocelynherman",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Mathis Goodman\"",
+        "id": ":mathisgoodman",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Cain Dean\"",
+        "id": ":caindean",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Herrera Bush\"",
+        "id": ":herrerabush",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Kim Hurley\"",
+        "id": ":kimhurley",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Elise Hahn\"",
+        "id": ":elisehahn",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Barbara Morrow\"",
+        "id": ":barbaramorrow",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Suarez Owens\"",
+        "id": ":suarezowens",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Brooks Martin\"",
+        "id": ":brooksmartin",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Christian Duran\"",
+        "id": ":christianduran",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Griffith Farmer\"",
+        "id": ":griffithfarmer",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Maddox Whitaker\"",
+        "id": ":maddoxwhitaker",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Blanca Clements\"",
+        "id": ":blancaclements",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Jessica Jarvis\"",
+        "id": ":jessicajarvis",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Margo Ewing\"",
+        "id": ":margoewing",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Barnes Alford\"",
+        "id": ":barnesalford",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Butler Guthrie\"",
+        "id": ":butlerguthrie",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Adeline Kim\"",
+        "id": ":adelinekim",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Odessa Thompson\"",
+        "id": ":odessathompson",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Julia Todd\"",
+        "id": ":juliatodd",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Hilda Hendrix\"",
+        "id": ":hildahendrix",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Jacobson Townsend\"",
+        "id": ":jacobsontownsend",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Joyner Reyes\"",
+        "id": ":joynerreyes",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Howe Duncan\"",
+        "id": ":howeduncan",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Trevino Guy\"",
+        "id": ":trevinoguy",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Benton Burris\"",
+        "id": ":bentonburris",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Irwin Frazier\"",
+        "id": ":irwinfrazier",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Courtney Brady\"",
+        "id": ":courtneybrady",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Valerie Murray\"",
+        "id": ":valeriemurray",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Eloise Patton\"",
+        "id": ":eloisepatton",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Savannah Hunt\"",
+        "id": ":savannahhunt",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Erna Chen\"",
+        "id": ":ernachen",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Mckenzie Mcgowan\"",
+        "id": ":mckenziemcgowan",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Harper Solis\"",
+        "id": ":harpersolis",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Wiggins Melton\"",
+        "id": ":wigginsmelton",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Mccarty Strickland\"",
+        "id": ":mccartystrickland",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Bruce Pate\"",
+        "id": ":brucepate",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Cruz Blackburn\"",
+        "id": ":cruzblackburn",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Beatriz Nelson\"",
+        "id": ":beatriznelson",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Hahn Dunn\"",
+        "id": ":hahndunn",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Edith Odonnell\"",
+        "id": ":edithodonnell",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Jeanette Rowland\"",
+        "id": ":jeanetterowland",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Ethel Horton\"",
+        "id": ":ethelhorton",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Colleen Riddle\"",
+        "id": ":colleenriddle",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Jones Bradley\"",
+        "id": ":jonesbradley",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Lindsey Huffman\"",
+        "id": ":lindseyhuffman",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Weber Booker\"",
+        "id": ":weberbooker",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Ochoa Obrien\"",
+        "id": ":ochoaobrien",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Singleton Logan\"",
+        "id": ":singletonlogan",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Tonya Everett\"",
+        "id": ":tonyaeverett",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Morales Richard\"",
+        "id": ":moralesrichard",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Castillo Griffin\"",
+        "id": ":castillogriffin",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Snider Jackson\"",
+        "id": ":sniderjackson",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Winnie Gillespie\"",
+        "id": ":winniegillespie",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Janette Chan\"",
+        "id": ":janettechan",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Lynette Kline\"",
+        "id": ":lynettekline",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Gross Alston\"",
+        "id": ":grossalston",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Kate Newton\"",
+        "id": ":katenewton",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Sofia Knox\"",
+        "id": ":sofiaknox",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Watson Rosa\"",
+        "id": ":watsonrosa",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Chang Turner\"",
+        "id": ":changturner",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Edwards Perkins\"",
+        "id": ":edwardsperkins",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Patsy Mcknight\"",
+        "id": ":patsymcknight",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Sheri Baxter\"",
+        "id": ":sheribaxter",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Marsha Gutierrez\"",
+        "id": ":marshagutierrez",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Amie Pugh\"",
+        "id": ":amiepugh",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Logan Cohen\"",
+        "id": ":logancohen",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Nikki Carson\"",
+        "id": ":nikkicarson",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Opal Frank\"",
+        "id": ":opalfrank",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Huffman Ruiz\"",
+        "id": ":huffmanruiz",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Faye Whitfield\"",
+        "id": ":fayewhitfield",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Sonia Sherman\"",
+        "id": ":soniasherman",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Antoinette Nixon\"",
+        "id": ":antoinettenixon",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Georgette Crane\"",
+        "id": ":georgettecrane",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Jewel Stone\"",
+        "id": ":jewelstone",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"April Grant\"",
+        "id": ":aprilgrant",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Curry Vargas\"",
+        "id": ":curryvargas",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Earline Fulton\"",
+        "id": ":earlinefulton",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Hutchinson Wolf\"",
+        "id": ":hutchinsonwolf",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Ball Walter\"",
+        "id": ":ballwalter",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Byrd Nash\"",
+        "id": ":byrdnash",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Bessie Rodriquez\"",
+        "id": ":bessierodriquez",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Fuentes Pittman\"",
+        "id": ":fuentespittman",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Carey Lowe\"",
+        "id": ":careylowe",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Lolita Dillon\"",
+        "id": ":lolitadillon",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Kim Bowers\"",
+        "id": ":kimbowers",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Roslyn Joyner\"",
+        "id": ":roslynjoyner",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Amy May\"",
+        "id": ":amymay",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Holloway Cooley\"",
+        "id": ":hollowaycooley",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Tia Becker\"",
+        "id": ":tiabecker",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Aurelia Smith\"",
+        "id": ":aureliasmith",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Walton Horn\"",
+        "id": ":waltonhorn",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Lessie Price\"",
+        "id": ":lessieprice",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Paula Hanson\"",
+        "id": ":paulahanson",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Carpenter Humphrey\"",
+        "id": ":carpenterhumphrey",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Genevieve Shepard\"",
+        "id": ":genevieveshepard",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"York Buck\"",
+        "id": ":yorkbuck",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Sparks Rutledge\"",
+        "id": ":sparksrutledge",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Noelle Bauer\"",
+        "id": ":noellebauer",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Buchanan Jimenez\"",
+        "id": ":buchananjimenez",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Mildred Brown\"",
+        "id": ":mildredbrown",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Leigh Peters\"",
+        "id": ":leighpeters",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Stephanie Mcguire\"",
+        "id": ":stephaniemcguire",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Lori Francis\"",
+        "id": ":lorifrancis",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Tamara Green\"",
+        "id": ":tamaragreen",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Audrey Mayer\"",
+        "id": ":audreymayer",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Klein Snyder\"",
+        "id": ":kleinsnyder",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Shelia Mcleod\"",
+        "id": ":sheliamcleod",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Bray Alvarado\"",
+        "id": ":brayalvarado",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Dona Mays\"",
+        "id": ":donamays",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Edna Sykes\"",
+        "id": ":ednasykes",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Claudine Wong\"",
+        "id": ":claudinewong",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Brock Gonzalez\"",
+        "id": ":brockgonzalez",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Gonzalez Haley\"",
+        "id": ":gonzalezhaley",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Elena Jensen\"",
+        "id": ":elenajensen",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Chan Mann\"",
+        "id": ":chanmann",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Claudia Lee\"",
+        "id": ":claudialee",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Chris Randall\"",
+        "id": ":chrisrandall",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Shannon Walters\"",
+        "id": ":shannonwalters",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Charmaine Duffy\"",
+        "id": ":charmaineduffy",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Cook Sharpe\"",
+        "id": ":cooksharpe",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Duffy Osborn\"",
+        "id": ":duffyosborn",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Bentley Barr\"",
+        "id": ":bentleybarr",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Marcy Gilliam\"",
+        "id": ":marcygilliam",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Mcbride Mckay\"",
+        "id": ":mcbridemckay",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"David Scott\"",
+        "id": ":davidscott",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Dora Dixon\"",
+        "id": ":doradixon",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Krista Kinney\"",
+        "id": ":kristakinney",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Best Torres\"",
+        "id": ":besttorres",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Porter Mcconnell\"",
+        "id": ":portermcconnell",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Janine Poole\"",
+        "id": ":janinepoole",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Williamson Mccarty\"",
+        "id": ":williamsonmccarty",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Hurley Witt\"",
+        "id": ":hurleywitt",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Graciela Jordan\"",
+        "id": ":gracielajordan",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Atkins Andrews\"",
+        "id": ":atkinsandrews",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Magdalena Mcfarland\"",
+        "id": ":magdalenamcfarland",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Bell Hall\"",
+        "id": ":bellhall",
+        "frequenta": [
+            ":PRC2021",
+            ":SPLN2021"
+        ]
+    },
+    {
+        "class": ":Aluno",
+        "nome": "\"Kerry Sanders\"",
+        "id": ":kerrysanders",
+        "frequenta": [
+            ":GGCD2021",
+            ":AAII2021"
+        ]
+    }
+]

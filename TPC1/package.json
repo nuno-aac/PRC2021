@@ -1,0 +1,13 @@
+{
+  "name": "convert",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Json conversion to turtle",
+  "main": "convert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-json-modules convert.js"
+  },
+  "author": "nuno-aac",
+  "license": "ISC"
+}

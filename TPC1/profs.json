@@ -1,0 +1,26 @@
+[
+    {
+        "id":":jcr",
+        "nome": "\"José Carlos Ramalho\"",
+        "ensina": ":PRC2021",
+        "class": ":Professor"
+    },
+    {
+        "id": ":jj",
+        "nome": "\"José João\"",
+        "ensina": ":SPLN2021",
+        "class": ":Professor"
+    },
+    {
+        "id": ":jop",
+        "nome": "\"José Orlando Pereira\"",
+        "ensina": ":GGCD2021",
+        "class": ":Professor"
+    },
+    {
+        "id": ":mrocha",
+        "nome": "\"Miguel Francisco Almeida Pereira Rocha\"",
+        "ensina": ":AAII2021",
+        "class": ":Professor"
+    }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    'repeat(100)': {
+      class: ':Aluno',
+      nome:'{{firstName()}} {{surname()}}',
+      aluno() {
+        return `:${this.nome.split(' ')[0]}${this.nome.split(' ')[1]}`.toLowerCase();
+      },
+      frequenta(tags) {
+        const ucs = [[':PRC2021',':SPLN2021'],['GGCD2021','AAII2021']];
+        return ucs[tags.integer(0, ucs.length - 1)];
+      }
+    }
+  },
+  {
+    'repeat(100)': {
+      class: ':Aluno',
+      nome:'{{firstName()}} {{surname()}}',
+      aluno() {
+        return `:${this.nome.split(' ')[0]}${this.nome.split(' ')[1]}`.toLowerCase();
+      },
+      frequenta(tags) {
+        const ucs = [[':PRC2021',':SPLN2021'],['GGCD2021','AAII2021']];
+        return ucs[tags.integer(0, ucs.length - 1)];
+      }
+    }
+  }
+]
