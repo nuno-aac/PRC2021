@@ -5,17 +5,17 @@ import '../css/style.css'
 
 
 function Individual({individual,repo}) {
-    let [individuals,setIndividuals] = useState([])
+    let [props,setProps] = useState([])
     let [show,setShow] = useState(false)
     
 
-    let showIndividuals = () => {
+    let showProps = () => {
         if(!show){
-            var query = `SELECT * WHERE { ?s rdf:type <${rdfclass.s.value}> }`
+            var query = `SELECT * WHERE { <${individual.s.value}> ?p ?o }`
             var encoded = encodeURIComponent(query)
             axios.get("http://localhost:7200/repositories/" + repo.id.value + "?query=" + encoded)
                 .then(dados => {
-                    setIndividuals(dados.data.results.bindings)
+                    setProps(dados.data.results.bindings)
                     setShow(true)
                 })
                 .catch(erro => console.log(erro))
@@ -25,9 +25,18 @@ function Individual({individual,repo}) {
     }
 
     return (
-        <div className="gdb-classe-wrapper">
-            {rdfclass.s.value.split('#')[1] ? <div className="gdb-classe gdb-center-height" onClick={showIndividuals} > {show ? '⮟' : '⮞'} {rdfclass.s.value.split('#')[1]}</div> : <></>}
-            {show ? individuals.map((v, i) => <div className="gdb-individual" key={i}> ▸ {v.s.value.split('#')[1]}</div>) : <></>}
+        <div>
+            {individual.s.value.split('#')[1] ? 
+                <div className="gdb-individual" onClick={showProps} > {show ? '⮟' : '⮞'} {individual.s.value.split('#')[1]}</div> 
+                : 
+                <></>
+            }
+            {show ? 
+                props.map((v, i) => 
+                    <div className="gdb-prop" key={i}> • <b>{v.p.value.split('#')[1]}:</b> {v.o.value.split('#')[1] ? v.o.value.split('#')[1] : v.o.value}</div>
+                ) 
+                : 
+                <></>}
         </div>
     );
 }

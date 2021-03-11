@@ -2,6 +2,7 @@ import { useState } from 'react';
 import axios from 'axios'
 
 import '../css/style.css'
+import Individual from './individual';
 
 
 function Class({rdfclass,repo}) {
@@ -25,10 +26,13 @@ function Class({rdfclass,repo}) {
     }
 
     return (
-        <div className="gdb-classe-wrapper">
-            {rdfclass.s.value.split('#')[1] ? <div className="gdb-classe gdb-center-height" onClick={showIndividuals} > {show ? '⮟' : '⮞'} {rdfclass.s.value.split('#')[1]}</div> : <></>}
-            {show ? individuals.map((v, i) => <div className="gdb-individual" key={i}> ⮞ {v.s.value.split('#')[1]}</div>) : <></>}
-        </div>
+        rdfclass.s.value.split('#')[1] ?
+            <div className="gdb-classe-wrapper">
+                <div className="gdb-classe gdb-center-height" onClick={showIndividuals} > {show ? '⮟' : '⮞'} {rdfclass.s.value.split('#')[1]}</div>
+                {show ? individuals.map((v, i) => <Individual individual={v} repo={repo} />) : <></>}
+            </div> 
+        : 
+            <></>
     );
 }
 
