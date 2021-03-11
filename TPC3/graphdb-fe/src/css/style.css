@@ -15,6 +15,7 @@ select {
     font-family: 'Maven Pro', sans-serif;
     font-size: 16px;
     text-align: center;
+    box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.40);
 }
 
 .gdb-background {
@@ -80,5 +81,37 @@ select {
 .gdb-repos{
     position:absolute;
     left:80%;
+}
+
+.gdb-logo{
+    height: 250px;
+    margin-bottom: 50px;
+    margin-top: 30px
+}
+
+
+.gdb-classe-header{
+    width:95%;
+    text-align: left;
+    font-size: 28px;
+    margin-bottom:20px
+}
+
+.gdb-classe-wrapper{
+    background-color: whitesmoke;
+    width: 75vw;
+    padding: 20px;
+        margin: 15px 0;
+}
+
+.gdb-classe{
+    width: 75vw;
+    text-align: left;
+    font-size: 24px;
+}
+
+.gdb-individual{
+    margin-left: 2em;
+    margin-top: 5px
 }
 
