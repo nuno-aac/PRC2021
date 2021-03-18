@@ -93,9 +93,7 @@ function App() {
                     
                     <>
                         <div className="gdb-classe-header">{currentField}</div>
-                        <div className="gdb-classe-wrapper">
-                            { classes.map((v, i) => { return <Individual individual={v} key={i}/> }) } 
-                        </div>
+                        { classes.map((v, i) => { return <Individual individual={v} key={i}/> }) } 
                     </>
                 }
             </div>

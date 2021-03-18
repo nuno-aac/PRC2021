@@ -28,9 +28,9 @@ function Individual({individual}) {
     }
 
     return (
-        <div>
+        <div className="gdb-classe-wrapper">
             {individual.s.value.split('#')[1] ? 
-                <div className="gdb-individual" onClick={showProps} > {show ? '⮟' : '⮞'} {individual.s.value.split('#')[1]}</div> 
+                <div className="gdb-classe gdb-center-height" onClick={showProps} > {show ? '⮟' : '⮞'} {individual.s.value.split('#')[1]}</div>
                 : 
                 <></>
             }
