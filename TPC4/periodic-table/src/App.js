@@ -3,7 +3,7 @@ import axios from 'axios'
 
 import './App.css';
 import './css/style.css'
-import Class from './components/class';
+import Individual from './components/individual';
 
 /*
 {
@@ -92,8 +92,10 @@ function App() {
                     : 
                     
                     <>
-                        <div className="gdb-classe-header">Classes</div>
-                        { classes.map((v, i) => { return <Class rdfclass={v} repo={currentField} key={i}/> }) } 
+                        <div className="gdb-classe-header">{currentField}</div>
+                        <div className="gdb-classe-wrapper">
+                            { classes.map((v, i) => { return <Individual individual={v} key={i}/> }) } 
+                        </div>
                     </>
                 }
             </div>

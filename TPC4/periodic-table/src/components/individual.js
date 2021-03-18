@@ -4,16 +4,19 @@ import axios from 'axios'
 import '../css/style.css'
 
 
-function Individual({individual,repo}) {
+function Individual({individual}) {
     let [props,setProps] = useState([])
     let [show,setShow] = useState(false)
     
 
     let showProps = () => {
         if(!show){
-            var query = `SELECT * WHERE { <${individual.s.value}> ?p ?o }`
-            var encoded = encodeURIComponent(query)
-            axios.get("http://localhost:7200/repositories/" + repo.id.value + "?query=" + encoded)
+            var prefixes = `PREFIX pt: <http://www.daml.org/2003/01/periodictable/PeriodicTable#>
+`
+            var query = `SELECT * WHERE { pt:${individual.s.value.split('#')[1]} ?p ?o }`
+            var encoded = encodeURIComponent(prefixes+query)
+
+            axios.get("http://localhost:7200/repositories/Periodic?query=" + encoded)
                 .then(dados => {
                     setProps(dados.data.results.bindings)
                     setShow(true)
