@@ -1,4 +1,4 @@
-<bibliography xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bibtex.xsd">
+<bibliography>
     <inproceedings id="cisti2017">
         <title>RODA-in: A generic tool for the mass creation of Submission Information Packages</title>
         <author-ref authorid="jcr" />
