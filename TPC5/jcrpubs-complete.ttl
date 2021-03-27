@@ -1,0 +1,2874 @@
+@prefix : <https://www.nuno-aac.github.io/ontologias/jcrpubs#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://www.nuno-aac.github.io/ontologias/jcrpubs> .
+
+<https://www.nuno-aac.github.io/ontologias/jcrpubs> rdf:type owl:Ontology ;
+                                                     owl:versionIRI : .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#address
+:address rdf:type owl:AnnotationProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#deliverables
+:deliverables rdf:type owl:AnnotationProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#name
+:name rdf:type owl:AnnotationProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#number
+:number rdf:type owl:AnnotationProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#uri
+:uri rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#author
+:author rdf:type owl:ObjectProperty ;
+        owl:inverseOf :autora .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#autora
+:autora rdf:type owl:ObjectProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#edita
+:edita rdf:type owl:ObjectProperty ;
+       owl:inverseOf :editor .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#editor
+:editor rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#booktitle
+:booktitle rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#chapter
+:chapter rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#doi
+:doi rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#howpublished
+:howpublished rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#isbn
+:isbn rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#issn
+:issn rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#journal
+:journal rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#month
+:month rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#pages
+:pages rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#publisher
+:publisher rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#school
+:school rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#title
+:title rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#volume
+:volume rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#year
+:year rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Article
+:Article rdf:type owl:Class ;
+         rdfs:subClassOf :Publication .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Author
+:Author rdf:type owl:Class ;
+        rdfs:subClassOf :Pessoa .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Book
+:Book rdf:type owl:Class ;
+      rdfs:subClassOf :Publication .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Editor
+:Editor rdf:type owl:Class ;
+        rdfs:subClassOf :Pessoa .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Inbook
+:Inbook rdf:type owl:Class ;
+        rdfs:subClassOf :Publication .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Inproceedings
+:Inproceedings rdf:type owl:Class ;
+               rdfs:subClassOf :Publication .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Masterthesis
+:Masterthesis rdf:type owl:Class ;
+              rdfs:subClassOf :Publication .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Misc
+:Misc rdf:type owl:Class ;
+      rdfs:subClassOf :Publication .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Pessoa
+:Pessoa rdf:type owl:Class .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Phdthesis
+:Phdthesis rdf:type owl:Class ;
+           rdfs:subClassOf :Publication .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Proceedings
+:Proceedings rdf:type owl:Class ;
+             rdfs:subClassOf :Publication .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Publication
+:Publication rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#BKRFBR08
+:BKRFBR08 rdf:type owl:NamedIndividual ,
+                   :Inproceedings ,
+                   :Publication ;
+          :author :aab ,
+                  :ar ,
+                  :cb ,
+                  :jcr ,
+                  :mf ,
+                  :mk ;
+          :booktitle "ECDL2008 - European Conference on Research and Advanced Technology for Digital Libraries" ;
+          :doi "http://hdl.handle.net/1822/8239" ;
+          :month "09" ;
+          :title "Distributed Preservation Services: Integrating Planning and Actions" ;
+          :year "2008" ;
+          :address "Aarhus, Danmark" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FBR05-CAPSI
+:FBR05-CAPSI rdf:type owl:NamedIndividual ,
+                      :Inproceedings ,
+                      :Publication ;
+             :author :aab ,
+                     :jcr ,
+                     :mf ;
+             :booktitle "6ª Conferência da Associação Portuguesa de Sistemas de Informação" ;
+             :doi "http://hdl.handle.net/1822/3616" ;
+             :month "10.26" ;
+             :title "Avaliação Automática de Migração em Redes Distribuídas de Conversores" ;
+             :year "2005" ;
+             :address "Bragança - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FBR06-Ariadne
+:FBR06-Ariadne rdf:type owl:NamedIndividual ,
+                        :Article ,
+                        :Publication ;
+               :author :aab ,
+                       :jcr ,
+                       :mf ;
+               :doi "http://hdl.handle.net/1822/5571" ;
+               :issn "1361-3200" ;
+               :journal "Ariadne" ;
+               :month "July" ;
+               :title "A foundation for automatic digital preservation" ;
+               :year "2006" ;
+               :number "48" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FBR06-XATA
+:FBR06-XATA rdf:type owl:NamedIndividual ,
+                     :Inproceedings ,
+                     :Publication ;
+            :author :aab ,
+                    :jcr ,
+                    :mf ;
+            :booktitle "XATA - XML: Aplicações e Tecnologias Associadas" ;
+            :doi "http://hdl.handle.net/1822/4457" ;
+            :isbn "972-99166-2-4" ;
+            :month "02.09" ;
+            :title "CRIB : a service oriented architecture for digital preservation outsourcing" ;
+            :year "2006" ;
+            :address "Portalegre - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FBR07
+:FBR07 rdf:type owl:NamedIndividual ,
+                :Misc ,
+                :Publication ;
+       :author :aab ,
+               :jcr ,
+               :mf ;
+       :doi "http://hdl.handle.net/1822/6195" ;
+       :howpublished "Apresentação efectuada na International Conference Open Repositories, 2, San Antonio, Texas, United States of America, 2007." ;
+       :title "CRiB : preservation services for Digital Repositories" ;
+       :year "2007" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FBR07-IJDL
+:FBR07-IJDL rdf:type owl:NamedIndividual ,
+                     :Article ,
+                     :Publication ;
+            :author :aab ,
+                    :jcr ,
+                    :mf ;
+            :doi "http://hdl.handle.net/1822/6648" ;
+            :issn "1432-5012 (Print) 1432-1300 (Online)" ;
+            :journal "International Journal on Digital Libraries" ;
+            :month "05" ;
+            :publisher "Springer Berlin / Heidelberg" ;
+            :title "An intelligent decision support system for digital preservation" ;
+            :year "2007" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FCRBCF07
+:FCRBCF07 rdf:type owl:NamedIndividual ,
+                   :Inproceedings ,
+                   :Publication ;
+          :author :fb ,
+                  :jcr ,
+                  :lcor ,
+                  :lf ,
+                  :mf ,
+                  :rc ;
+          :booktitle "9º CONGRESSO NACIONAL DE BIBLIOTECÁRIOS, ARQUIVISTAS E DOCUMENTALISTAS" ;
+          :doi "http://hdl.handle.net/1822/6330" ;
+          :month "03.29" ;
+          :title "RODA : Repositório de Objectos Digitais Autênticos" ;
+          :year "2007" ;
+          :address "Ponta Delgada, Açores, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FFR10
+:FFR10 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :lmf ,
+               :mf ;
+       :booktitle "10º CONGRESSO NACIONAL DE BIBLIOTECÁRIOS, ARQUIVISTAS E DOCUMENTALISTAS" ;
+       :doi "http://hdl.handle.net/1822/10532" ;
+       :month "04.08" ;
+       :title "DigitArq e o novo módulo de interoperabilidade OAI-PMH" ;
+       :year "2010" ;
+       :address "Guimarães, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FR04
+:FR04 rdf:type owl:NamedIndividual ,
+               :Inproceedings ,
+               :Publication ;
+      :author :jcr ,
+              :mf ;
+      :booktitle "XML: Aplicações e Tecnologias Associadas (XATA 2004)" ;
+      :doi "http://hdl.handle.net/1822/614" ;
+      :isbn "972-99166-0-8" ;
+      :month "02.12" ;
+      :title "Aquisição e Armazenamento de Metainformação no Contexto de um Arquivo" ;
+      :year "2004" ;
+      :address "Faculdade de Engenharia da Universidade do Porto - Porto" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FR04-capsi
+:FR04-capsi rdf:type owl:NamedIndividual ,
+                     :Inproceedings ,
+                     :Publication ;
+            :author :jcr ,
+                    :mf ;
+            :booktitle "5ª Conferência da APSI - Associação Portuguesa dos Sistemas de Informação" ;
+            :doi "http://hdl.handle.net/1822/718" ;
+            :month "11.03" ;
+            :title "DigitArq: Creating a Historical Digital Archive" ;
+            :year "2004" ;
+            :address "Instituto Superior Técnico, Lisboa, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FR04b
+:FR04b rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :mf ;
+       :booktitle "Electronic Publishing 2004 - Building Digital Bridges: linking cultures, commerce and science" ;
+       :doi "http://hdl.handle.net/1822/615" ;
+       :isbn "85-88130-02-05" ;
+       :month "06.23-26" ;
+       :title "DIGITARQ - CREATING AND MANAGING A DIGITAL ARCHIVE" ;
+       :year "2004" ;
+       :address "Department of Information and Documentation Science at the University of Brasilia, in Brazil" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FR09
+:FR09 rdf:type owl:NamedIndividual ,
+               :Inproceedings ,
+               :Publication ;
+      :author :jcr ,
+              :rf ;
+      :booktitle "INFORUM : SIMPÓSIO DE INFORMÁTICA, Lisboa, 2009" ;
+      :doi "http://hdl.handle.net/1822/9740" ;
+      :isbn "978-972-9348-18-1" ;
+      :month "11.09" ;
+      :title "Relational databases digital preservation" ;
+      :year "2009" ;
+      :address "Lisboa - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FR10
+:FR10 rdf:type owl:NamedIndividual ,
+               :Inproceedings ,
+               :Publication ;
+      :author :jcr ,
+              :rf ;
+      :booktitle "Research and Advanced Technology for Digital Libraries, 14th European Conference, ECDL2010" ;
+      :doi "http://hdl.handle.net/1822/13702" ;
+      :isbn "978-3-642-15463-8" ;
+      :month "09.06" ;
+      :title "Significant Properties in the Preservation of Relational Databases" ;
+      :year "2010" ;
+      :address "Glasgow, UK" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FR11
+:FR11 rdf:type owl:NamedIndividual ,
+               :Inproceedings ,
+               :Publication ;
+      :author :jcr ,
+              :rf ;
+      :booktitle "9th Conference on XML: Aplicações e Tecnologias Associadas, XATA 2011" ;
+      :doi "http://hdl.handle.net/1822/13703" ;
+      :month "06.01" ;
+      :title "Using Ontologies in Database Preservation" ;
+      :year "2011" ;
+      :address "ESEIG -IPP, Vila do Conde - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FR11b
+:FR11b rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :rf ;
+       :booktitle "MSKE2011- International Conference on Managing Services in the Knowledge Economy" ;
+       :doi "http://hdl.handle.net/1822/13704" ;
+       :month "07.13" ;
+       :title "Preservation of Relational Databases" ;
+       :year "2011" ;
+       :address "Universidade Lusíada, Vila Nova de Famalicão, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FR11c
+:FR11c rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :rf ;
+       :booktitle "EPIA2011 - 15th Portuguese Conference on Artificial Intelligence" ;
+       :doi "http://hdl.handle.net/1822/16113" ;
+       :month "10.10" ;
+       :title "Using Ontologies to Abstract Relational Databases Conceptual Model" ;
+       :year "2011" ;
+       :address "Lisboa, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FR11d
+:FR11d rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :rf ;
+       :booktitle "VLDL2011 - Fourth Workshop on Very Large Digital Libraries (In conjunction with the International Conference on Theory and Practice of Digital Libraries (TPDL2011))" ;
+       :doi "http://hdl.handle.net/1822/16019" ;
+       :month "09.29" ;
+       :title "Relational Databases Conceptual Preservation" ;
+       :year "2011" ;
+       :address "Berlin, Germany" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FR11e
+:FR11e rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :rf ;
+       :booktitle "iPRES 2011 - 8th International Conference on Preservation of Digital Objects" ;
+       :doi "http://hdl.handle.net/1822/15859" ;
+       :month "11.04" ;
+       :title "New dimension in relational database preservation: raising the abstraction level" ;
+       :year "2011" ;
+       :address "Singapore" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#FRF-XATA
+:FRF-XATA rdf:type owl:NamedIndividual ,
+                   :Inproceedings ,
+                   :Publication ;
+          :author :jcr ,
+                  :lmf ,
+                  :mf ;
+          :booktitle "XATA 2008 - XML: Aplicações e Tecnologias Associadas (6ª Conferência Nacional)" ;
+          :doi "http://hdl.handle.net/1822/7821" ;
+          :month "02.14" ;
+          :title "Creating a National Federation of Archives using OAI-PMH" ;
+          :year "2008" ;
+          :address "Évora - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#GARH09
+:GARH09 rdf:type owl:NamedIndividual ,
+                 :Article ,
+                 :Publication ;
+        :author :grl ,
+                :jcr ,
+                :prh ,
+                :rpa ;
+        :doi "http://hdl.handle.net/1822/9741" ;
+        :issn "1755-0556. 1:3-4 (2009) 173 - 181" ;
+        :journal "International Journal of Reasoning-based Intelligent Systems" ;
+        :publisher "Inderscience" ;
+        :title "Topic maps constraint languages : understanding and comparing" ;
+        :year "2009" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#IGI2013
+:IGI2013 rdf:type owl:NamedIndividual ,
+                  :Inbook ,
+                  :Publication ;
+         :author :jcr ,
+                 :rf ;
+         :editor :albie ,
+                 :jcr ,
+                 :rq ;
+         :chapter "New Dimension in Relational Database Preservation: Using Ontologies" ;
+         :doi "10.4018/978-1-4666-2669-0.ch009" ;
+         :month "06" ;
+         :pages "160-173" ;
+         :publisher "IGI Global" ;
+         :title "Innovations in XML Applications and Metadata Management: Advancing Technologies" ;
+         :year "2013" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#JHR00
+:JHR00 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :mhj ,
+               :prh ;
+       :booktitle "Logic, Language and Information: Proceedings of the First Workshop on Logic and Language" ;
+       :doi "http://hdl.handle.net/1822/597" ;
+       :month "11.29" ;
+       :title "XML and Semantic Validation" ;
+       :year "2000" ;
+       :address "Instituto de Lógica, Lenguaje e Información, Universidad de Sevilla, Espanha" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#JLRH02
+:JLRH02 rdf:type owl:NamedIndividual ,
+                 :Inproceedings ,
+                 :Publication ;
+        :author :grl ,
+                :jcr ,
+                :mhj ,
+                :prh ;
+        :booktitle "CLEI'02" ;
+        :doi "http://hdl.handle.net/1822/612" ;
+        :month "11" ;
+        :title "XCSL: XML Constraint Specification Language" ;
+        :year "2002" ;
+        :address "Montevideo, Uruguai," .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#JLRH02b
+:JLRH02b rdf:type owl:NamedIndividual ,
+                  :Article ,
+                  :Publication ;
+         :author :grl ,
+                 :jcr ,
+                 :mhj ,
+                 :prh ;
+         :doi "http://hdl.handle.net/1822/610" ;
+         :journal "ACM Crossroads" ;
+         :publisher "ACM Press" ;
+         :title "XCSL tutorial" ;
+         :volume "8.5" ;
+         :year "2002" ;
+         :uri "http://doi.acm.org/10.1145/991118.991122" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#JLRH03
+:JLRH03 rdf:type owl:NamedIndividual ,
+                 :Article ,
+                 :Publication ;
+        :author :grl ,
+                :jcr ,
+                :mhj ,
+                :prh ;
+        :journal "CLEI Electronic Journal, ISSN 0717-5000. 2003. " ;
+        :title "XCSL: XML Constraint Specification Language" ;
+        :volume "Best papers of XXVIII Conferencia Latinoamericana de Informática - CLEI, 2002" ;
+        :year "2003" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#JLRHb02
+:JLRHb02 rdf:type owl:NamedIndividual ,
+                  :Inproceedings ,
+                  :Publication ;
+         :author :grl ,
+                 :jcr ,
+                 :mhj ,
+                 :prh ;
+         :booktitle "7th International Conference on CSCW in Design" ;
+         :doi "http://hdl.handle.net/1822/601" ;
+         :month "09.25" ;
+         :title "Bidirectional Conversion between XML Documents and Relational Data Bases" ;
+         :year "2002" ;
+         :address "Rio de Janeiro - Brasil" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#JLRHc02
+:JLRHc02 rdf:type owl:NamedIndividual ,
+                  :Inproceedings ,
+                  :Publication ;
+         :author :grl ,
+                 :jcr ,
+                 :mhj ,
+                 :prh ;
+         :booktitle "XML Europe'02" ;
+         :doi "http://hdl.handle.net/1822/619" ;
+         :month "05.20" ;
+         :title "Constraint Specification Languages: comparing XCSL, Schematron and XML-Schema" ;
+         :year "2002" ;
+         :address "Barcelona - Espanha" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#JRH03
+:JRH03 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :mhj ,
+               :prh ;
+       :booktitle "XATA2003 - XML: Aplicações e Tecnologias Associadas" ;
+       :doi "http://hdl.handle.net/1822/4911" ;
+       :month "02.13-14" ;
+       :title "XML Templates for Constraints (XTC), Um Nível de Abstracção para Linguagens de Especificação de Restrições" ;
+       :year "2003" ;
+       :address "Vila Verde - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LARH07-EPIA
+:LARH07-EPIA rdf:type owl:NamedIndividual ,
+                      :Inproceedings ,
+                      :Publication ;
+             :author :grl ,
+                     :jcr ,
+                     :prh ,
+                     :rpa ;
+             :booktitle "Portuguese Conference on Artificial Intelligence (EPIA2007)" ;
+             :doi "http://hdl.handle.net/1822/7368" ;
+             :title "Topic Maps Constraint Languages: understanding and comparing" ;
+             :year "2007" ;
+             :address "Guimarães - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LATRH07-CLEI
+:LATRH07-CLEI rdf:type owl:NamedIndividual ,
+                       :Inproceedings ,
+                       :Publication ;
+              :author :grl ,
+                      :jcr ,
+                      :prh ,
+                      :rct ,
+                      :rpa ;
+              :booktitle "XXXIII Conferencia Latinoamericana de Informática (CLEI2007)" ;
+              :doi "http://hdl.handle.net/1822/7364" ;
+              :title "Implementing TMCL: XTche - a topic map schema and constraint specification language" ;
+              :year "2007" ;
+              :address "San José - Costa Rica" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LGRH07-CLEI
+:LGRH07-CLEI rdf:type owl:NamedIndividual ,
+                      :Inproceedings ,
+                      :Publication ;
+             :author :grl ,
+                     :jcr ,
+                     :jg ,
+                     :prh ;
+             :booktitle "XXXIII Conferencia Latinoamericana de Informática (CLEI2007)" ;
+             :doi "http://hdl.handle.net/1822/7354" ;
+             :title "Using Web Services to put Metamorphosis on the Web" ;
+             :year "2007" ;
+             :address "San José - Costa Rica" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LMMFRH07-TMRA
+:LMMFRH07-TMRA rdf:type owl:NamedIndividual ,
+                        :Inproceedings ,
+                        :Publication ;
+               :author :grl ,
+                       :htm ,
+                       :jcr ,
+                       :mom ,
+                       :pgf ,
+                       :prh ;
+               :booktitle "International Conference on Topic Maps Research and Applications (TMRA2007)" ;
+               :doi "http://hdl.handle.net/1822/7399" ;
+               :title "Comparing Topic Maps Constraint Specification Languages" ;
+               :year "2007" ;
+               :address "Leipzig - Germany" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LMMVRH08-XATA
+:LMMVRH08-XATA rdf:type owl:NamedIndividual ,
+                        :Inproceedings ,
+                        :Publication ;
+               :author :grl ,
+                       :hm ,
+                       :jcr ,
+                       :jv ,
+                       :mm ,
+                       :prh ;
+               :booktitle "XATA 2008 - XML: Aplicações e Tecnologias Associadas (6ª Conferência Nacional)" ;
+               :month "02.14" ;
+               :title "Generating a Semantic Network for PubMed" ;
+               :year "2008" ;
+               :address "Évora - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LPRH07-TM
+:LPRH07-TM rdf:type owl:NamedIndividual ,
+                    :Inproceedings ,
+                    :Publication ;
+           :author :grl ,
+                   :jcr ,
+                   :prh ,
+                   :rpa ;
+           :booktitle "Topic Maps 2007 - The First International Topic Maps User Conference" ;
+           :doi "http://hdl.handle.net/1822/6474" ;
+           :month "03.21" ;
+           :title "Topic Maps Constraint Specification Languages: comparing AsTMa!, OSL, and XTche" ;
+           :year "2007" ;
+           :address "Oslo - Norway" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LPRH07-XATA
+:LPRH07-XATA rdf:type owl:NamedIndividual ,
+                      :Inproceedings ,
+                      :Publication ;
+             :author :grl ,
+                     :jcr ,
+                     :prh ,
+                     :rpa ;
+             :booktitle "XATA 2007 - XML: Aplicações e Tecnologias Associadas (5ª Conferência Nacional)" ;
+             :doi "http://hdl.handle.net/1822/6482" ;
+             :month "02.14" ;
+             :title "Navegando na Rede Semântica dos Topic Maps com o Ulisses" ;
+             :year "2007" ;
+             :address "Lisboa - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LR04
+:LR04 rdf:type owl:NamedIndividual ,
+               :Inproceedings ,
+               :Publication ;
+      :author :cajo ,
+              :jcr ;
+      :booktitle "XML: Aplicações e Tecnologias Associadas (XATA 2004)" ;
+      :doi "http://hdl.handle.net/1822/559" ;
+      :isbn "972-99166-0-8" ;
+      :month "02.12" ;
+      :title "Web Services: Metodologias de Desenvolvimento" ;
+      :year "2004" ;
+      :address "Faculdade de Engenharia da Universidade do Porto - Porto" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRH03
+:LRH03 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :grl ,
+               :jcr ,
+               :prh ;
+       :booktitle "XATA 2003 - XML, Aplicações e Tecnologias Associadas" ;
+       :doi "http://hdl.handle.net/1822/620" ;
+       :month "02.13" ;
+       :title "XML Topic Map Builder: Specification and Generation" ;
+       :year "2003" ;
+       :address "Braga - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRH03b
+:LRH03b rdf:type owl:NamedIndividual ,
+                 :Inproceedings ,
+                 :Publication ;
+        :author :grl ,
+                :jcr ,
+                :prh ;
+        :booktitle "CLEI'03" ;
+        :doi "http://hdl.handle.net/1822/555" ;
+        :month "09.29" ;
+        :title "TM-Builder: Um Construtor de Ontologias baseado em Topic Maps" ;
+        :year "2003" ;
+        :address "La Paz, Bolívia" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRH03c
+:LRH03c rdf:type owl:NamedIndividual ,
+                 :Inproceedings ,
+                 :Publication ;
+        :author :grl ,
+                :jcr ,
+                :prh ;
+        :booktitle "COOPMedia 2003" ;
+        :doi "http://hdl.handle.net/1822/556" ;
+        :month "10.08" ;
+        :title "Geração automática de interfaces Web para sistemas de informação: Metamorphosis" ;
+        :year "2003" ;
+        :address "ISEP, Porto, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRH04
+:LRH04 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :grl ,
+               :jcr ,
+               :prh ;
+       :booktitle "XML: Aplicações e Tecnologias Associadas (XATA 2004)" ;
+       :doi "http://hdl.handle.net/1822/613" ;
+       :isbn "972-99166-0-8" ;
+       :month "02.12" ;
+       :title "Um Extractor de Topic Maps a partir de Recursos Heterogéneos de Informação" ;
+       :year "2004" ;
+       :address "Faculdade de Engenharia da Universidade do Porto - Porto" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRH04-Clei
+:LRH04-Clei rdf:type owl:NamedIndividual ,
+                     :Inproceedings ,
+                     :Publication ;
+            :author :grl ,
+                    :jcr ,
+                    :prh ;
+            :editor :clei04 ;
+            :booktitle "30ma Conferencia Latinoamericana de Informática (CLEI2004)" ;
+            :doi "http://hdl.handle.net/1822/594" ;
+            :isbn "9972-9876-2-0" ;
+            :month "Sept." ;
+            :title "Extração de Topic Maps no Oveia: Especificação e Processamento" ;
+            :year "2004" ;
+            :address "Sociedad Peruana de Computación, Peru" ;
+            :uri "http://clei2004.spc.org.pe/es/html/pdfs/140.pdf" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRH04-WWS
+:LRH04-WWS rdf:type owl:NamedIndividual ,
+                    :Inproceedings ,
+                    :Publication ;
+           :author :grl ,
+                   :jcr ,
+                   :prh ;
+           :booktitle "I Workshop de Web Semântica (WWS2004)" ;
+           :month "10.22" ;
+           :title "Achieving Semantic Interoperability in Heterogeneous Information Systems with Topic Maps" ;
+           :year "2004" ;
+           :address "Brasília, Brasil" ;
+           :deliverables """
+            """ .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRH04-XMLw
+:LRH04-XMLw rdf:type owl:NamedIndividual ,
+                     :Inproceedings ,
+                     :Publication ;
+            :author :grl ,
+                    :jcr ,
+                    :prh ;
+            :booktitle "XML Conference and Exhibition 2004 Proceedings" ;
+            :doi "http://hdl.handle.net/1822/681" ;
+            :month "12" ;
+            :title "XTche - A Language for Topic Maps Schema and Constraints" ;
+            :year "2004" ;
+            :address "Washington, USA" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRH05
+:LRH05 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :grl ,
+               :jcr ,
+               :prh ;
+       :booktitle "XML: Aplicações e Tecnologias Associadas (XATA 2005)" ;
+       :doi "http://hdl.handle.net/1822/1020" ;
+       :isbn "972-99166-1-6" ;
+       :month "02.10" ;
+       :title "Obtendo Interoperabilidade Semântica em Sistemas Heterogéneos de Informação com Metamorphosis" ;
+       :year "2005" ;
+       :address "Braga" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRH05-CLEI
+:LRH05-CLEI rdf:type owl:NamedIndividual ,
+                     :Inproceedings ,
+                     :Publication ;
+            :author :grl ,
+                    :jcr ,
+                    :prh ;
+            :booktitle "XXXI Conferência Latinoamericana de Informática" ;
+            :doi "http://hdl.handle.net/1822/3532" ;
+            :isbn "958-670-422-X" ;
+            :month "10.10" ;
+            :title "Ulisses: Um Navegador Conceptual para Topic Maps" ;
+            :year "2005" ;
+            :address "Santiago de Cali - Colombia" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRH05b
+:LRH05b rdf:type owl:NamedIndividual ,
+                 :Inproceedings ,
+                 :Publication ;
+        :author :grl ,
+                :jcr ,
+                :prh ;
+        :booktitle "XML: Aplicações e Tecnologias Associadas (XATA 2005)" ;
+        :doi "http://hdl.handle.net/1822/994" ;
+        :isbn "972-99166-1-6" ;
+        :month "02.10" ;
+        :title "Constraining XML Topic Maps with XTche" ;
+        :year "2005" ;
+        :address "Braga" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRH06-SBSI06
+:LRH06-SBSI06 rdf:type owl:NamedIndividual ,
+                       :Inproceedings ,
+                       :Publication ;
+              :author :grl ,
+                      :jcr ,
+                      :prh ;
+              :booktitle "III Simpósio Brasileiro de Sistemas de Informação" ;
+              :doi "http://hdl.handle.net/1822/7359" ;
+              :title "Metamorphosis: An Environment to Achieve Semantic Interoperability with Topic Maps" ;
+              :year "2006" ;
+              :address "Curitiba, Paraná - Brasil" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRH06-XATA
+:LRH06-XATA rdf:type owl:NamedIndividual ,
+                     :Inproceedings ,
+                     :Publication ;
+            :author :grl ,
+                    :jcr ,
+                    :prh ;
+            :booktitle "XATA - XML: Aplicações e Tecnologias Associadas" ;
+            :doi "http://hdl.handle.net/1822/4910" ;
+            :isbn "972-99166-2-4" ;
+            :month "02.09" ;
+            :title "Topic Maps Aplicados ao Sistema de Informação do Museu da Emigração" ;
+            :year "2006" ;
+            :address "Portalegre - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRH07-SEMINFO
+:LRH07-SEMINFO rdf:type owl:NamedIndividual ,
+                        :Inproceedings ,
+                        :Publication ;
+               :author :grl ,
+                       :jcr ,
+                       :prh ;
+               :booktitle "VI Seminário de Informática - SEMINFO, 2007, Torres, RS, Brasil." ;
+               :title "Estruturando o conhecimento com a norma ISO 13250 Topic Maps" ;
+               :year "2007" ;
+               :address "Torres, RS - Brasil" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRH97
+:LRH97 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :arl ,
+               :jcr ,
+               :prh ;
+       :booktitle "II Brasilian Symposium on Programming Languages (SBLP'97)" ;
+       :doi "http://hdl.handle.net/1822/616" ;
+       :month "09" ;
+       :title "INES, an Environment for Structured Editions of SGML Documents" ;
+       :year "1997" ;
+       :address "Campinas-SP -- Brasil" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LRHGT08
+:LRHGT08 rdf:type owl:NamedIndividual ,
+                  :Inproceedings ,
+                  :Publication ;
+         :author :grl ,
+                 :jcr ,
+                 :jg ,
+                 :prh ,
+                 :rct ;
+         :booktitle "SIGDOC'08 -- 26th ACM International Conference on Design of Communication" ;
+         :doi "http://hdl.handle.net/1822/8236" ;
+         :month "09-23" ;
+         :title "A Framework to specify, extract and manage Topic Maps driven by ontologies" ;
+         :year "2008" ;
+         :address "Lisboa, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#LSRH04
+:LSRH04 rdf:type owl:NamedIndividual ,
+                 :Inproceedings ,
+                 :Publication ;
+        :author :grl ,
+                :jcr ,
+                :prh ,
+                :ws ;
+        :booktitle "International Conference on Knowledge Engineering and Decision Support" ;
+        :doi "http://hdl.handle.net/1822/584" ;
+        :month "07.21-23" ;
+        :title "Using the Ontology Paradigm to integrate Information Systems" ;
+        :year "2004" ;
+        :address "Porto - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#MRH04
+:MRH04 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :prh ,
+               :ram ;
+       :booktitle "XML: Aplicações e Tecnologias Associadas (XATA 2004)" ;
+       :doi "http://hdl.handle.net/1822/562" ;
+       :isbn "972-99166-0-8" ;
+       :month "02.12" ;
+       :title "Comparação de Linguagens para descrição de Interfaces baseadas em XML" ;
+       :year "2004" ;
+       :address "Faculdade de Engenharia da Universidade do Porto - Porto" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RAH1998
+:RAH1998 rdf:type owl:NamedIndividual ,
+                  :Article ,
+                  :Publication ;
+         :author :jcr ,
+                 :jj ,
+                 :prh ;
+         :journal "Theoretical Computer Science journal, volume 199" ;
+         :month "06" ;
+         :title "Algebraic Specification of Documents" ;
+         :volume "Elsevier" ;
+         :year "1998" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RAH95
+:RAH95 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :jj ,
+               :prh ;
+       :booktitle "Algebraic Methods in Language Processing" ;
+       :doi "http://hdl.handle.net/1822/618" ;
+       :issn "0929-0672" ;
+       :month "12" ;
+       :title "DAVID, Algebraic Specification of Documents" ;
+       :year "1995" ;
+       :address "Twente - Holanda" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RAH96
+:RAH96 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :jj ,
+               :prh ;
+       :booktitle "SGML96" ;
+       :doi "http://hdl.handle.net/1822/622" ;
+       :month "12" ;
+       :title "Document Semantics: two approaches" ;
+       :year "1996" ;
+       :address "Boston - USA" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RARH98
+:RARH98 rdf:type owl:NamedIndividual ,
+                 :Article ,
+                 :Publication ;
+        :author :jcr ,
+                :jgr ,
+                :jj ,
+                :prh ;
+        :doi "http://hdl.handle.net/1822/644" ;
+        :issn "1099-6621" ;
+        :journal "Markup Languages: theory and practice " ;
+        :month "01" ;
+        :title "SGML Documents: Where does quality go?" ;
+        :volume "journal, num. 1 vol. 1, MIT Press" ;
+        :year "1999" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RD06-XATA
+:RD06-XATA rdf:type owl:NamedIndividual ,
+                    :Inproceedings ,
+                    :Publication ;
+           :author :jcr ,
+                   :migaldo ;
+           :booktitle "XATA - XML: Aplicações e Tecnologias Associadas" ;
+           :doi "http://hdl.handle.net/1822/4576" ;
+           :isbn "972-99166-2-4" ;
+           :month "02.09" ;
+           :title "Especificação e Geração Automática de Navegadores para Redes Semânticas Baseados em Interfaces Web" ;
+           :year "2006" ;
+           :address "Portalegre - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RFCFBC06
+:RFCFBC06 rdf:type owl:NamedIndividual ,
+                   :Misc ,
+                   :Publication ;
+          :author :fb ,
+                  :jcr ,
+                  :lcor ,
+                  :lf ,
+                  :mf ,
+                  :rc ;
+          :doi "http://hdl.handle.net/1822/6420" ;
+          :howpublished "Apresentação efectuada no Encontro Sofware Livre na Administração Pública, Torre do Tombo, Lisboa - Portugal, em 29 de Novembro de 2006." ;
+          :title "RODA - Desenvolvimento de uma plataforma tecnológica para suporte de Arquivos Digitais" ;
+          :year "2006" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RFCFBC07
+:RFCFBC07 rdf:type owl:NamedIndividual ,
+                   :Inproceedings ,
+                   :Publication ;
+          :author :fb ,
+                  :jcr ,
+                  :lcor ,
+                  :lf ,
+                  :mf ,
+                  :rc ;
+          :booktitle "XATA2007 : XML : aplicações e tecnologias associadas : actas da Conferência Nacional" ;
+          :doi "http://hdl.handle.net/1822/6224" ;
+          :month "02.15" ;
+          :title "XML e preservação digital" ;
+          :year "2007" ;
+          :address "Lisboa, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RFFC07-EML
+:RFFC07-EML rdf:type owl:NamedIndividual ,
+                     :Inproceedings ,
+                     :Publication ;
+            :author :jcr ,
+                    :lf ,
+                    :mf ,
+                    :rc ;
+            :booktitle "Extreme Markup Languages 2007, Montréal - Canada, August 2007." ;
+            :doi "http://hdl.handle.net/1822/7120" ;
+            :month "08" ;
+            :title "Relational database preservation through XML modelling" ;
+            :year "2007" ;
+            :address "Montréal - Canada" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RFFCBC08
+:RFFCBC08 rdf:type owl:NamedIndividual ,
+                   :Inproceedings ,
+                   :Publication ;
+          :author :fb ,
+                  :jcr ,
+                  :lc ,
+                  :lf ,
+                  :mf ,
+                  :rc ;
+          :booktitle "iPRES 2008: The Fifth International Conference on Preservation of Digital Objects" ;
+          :doi "http://hdl.handle.net/1822/8226" ;
+          :month "09" ;
+          :title "RODA and Crib: A Service-Oriented Digital Repository" ;
+          :year "2008" ;
+          :address "London, England" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RFFLS06
+:RFFLS06 rdf:type owl:NamedIndividual ,
+                  :Inproceedings ,
+                  :Publication ;
+         :author :as ,
+                 :jcr ,
+                 :lmf ,
+                 :mf ,
+                 :mjpl ;
+         :booktitle "2ª Conferência Internacional de Arquivos Empresariais" ;
+         :doi "http://hdl.handle.net/1822/6038" ;
+         :month "11.27" ;
+         :title "Digitarq2 : nova arquitectura aplicacional para gestão de Arquivos Definitivos" ;
+         :year "2006" ;
+         :address "Seixal, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RH2002
+:RH2002 rdf:type owl:NamedIndividual ,
+                 :Book ,
+                 :Publication ;
+        :author :jcr ,
+                :prh ;
+        :month "11" ;
+        :publisher "Colecção Tecnologias da Informação" ;
+        :title "XML e XSL: da teoria à prática" ;
+        :year "2002" ;
+        :address "FCA - Editora de Informática" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RH94
+:RH94 rdf:type owl:NamedIndividual ,
+               :Inproceedings ,
+               :Publication ;
+      :author :jcr ,
+              :prh ;
+      :booktitle "I Conferência Nacional WWW, Informação Multimédia na Internet" ;
+      :month "07" ;
+      :title "Uma experiência de utilização da Internet na gestão pedagógica e sua formalização" ;
+      :year "1995" ;
+      :address "Universidade do Minho" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RH98
+:RH98 rdf:type owl:NamedIndividual ,
+               :Article ,
+               :Publication ;
+      :author :jcr ,
+              :prh ;
+      :journal "Sistemas de Informação" ;
+      :title "Qualidade na Publicação Electrónica: como controlá-la?" ;
+      :volume "journal, num. 9, pg 69-83, Associação Portuguesa de Sistemas de Informação" ;
+      :year "1998" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RH98b
+:RH98b rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :prh ;
+       :booktitle "Quatic 98: III Encontro Nacional para a Qualidade nas Tecnologias da Informação e Comunicação" ;
+       :doi "http://hdl.handle.net/1822/621" ;
+       :title "Qualidade na Publicação Electrónica: como controlá-la?" ;
+       :year "1998" ;
+       :address "Guimarães - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RH98c
+:RH98c rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :prh ;
+       :booktitle "Workshop internacional Informação e documentos de arquivo em ambientes digitais" ;
+       :title "Informatics and Archives: a present needed symbiosis" ;
+       :year "1998" ;
+       :address "Porto - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RH98d
+:RH98d rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :prh ;
+       :booktitle "IX encontro nacional de Museus e Autarquias" ;
+       :title "Os desafios colocados pela informação estruturada no contexto dos arquivos: o arquivo distrital de Braga" ;
+       :year "1998" ;
+       :address "Loures - Portugal " .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RH99
+:RH99 rdf:type owl:NamedIndividual ,
+               :Inproceedings ,
+               :Publication ;
+      :author :jcr ,
+              :jj ;
+      :booktitle "XML Europe'99" ;
+      :doi "http://hdl.handle.net/1822/632" ;
+      :title "XML::DT - a Perl Down Translation Module" ;
+      :year "1999" ;
+      :address "Granada - Espanha" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RHHRAF98
+:RHHRAF98 rdf:type owl:NamedIndividual ,
+                   :Inproceedings ,
+                   :Publication ;
+          :author :jcr ,
+                  :jgr ,
+                  :jj ,
+                  :jlf ,
+                  :mrh ,
+                  :prh ;
+          :booktitle "Museums and the Web: An International Conference" ;
+          :doi "http://hdl.handle.net/1822/624" ;
+          :month "04.22" ;
+          :title "Adapting Museum Structures for the Web: No Changes Needed!" ;
+          :year "1998" ;
+          :address "Toronto, Canada" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RHL04-eLes
+:RHL04-eLes rdf:type owl:NamedIndividual ,
+                     :Inproceedings ,
+                     :Publication ;
+            :author :grl ,
+                    :jcr ,
+                    :prh ;
+            :booktitle "Conferência eLes'04 - E-Learning no Ensino Superior" ;
+            :doi "http://hdl.handle.net/1822/733" ;
+            :isbn "972-789-134-9" ;
+            :month "Outubro" ;
+            :title "ADRIAN: Sistema de Suporte à Produção de Conteúdos" ;
+            :year "2004" ;
+            :address "Universidade de Aveiro, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RHLA03
+:RHLA03 rdf:type owl:NamedIndividual ,
+                 :Proceedings ,
+                 :Publication ;
+        :editor :grl ,
+                :gva ,
+                :jcr ,
+                :prh ;
+        :doi "http://hdl.handle.net/1822/607" ;
+        :month "02.13-14" ;
+        :title "XATA2003 - XML: Aplicações e Tecnologias Associadas" ;
+        :year "2003" ;
+        :address "Vila Verde - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RHb98
+:RHb98 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :prh ;
+       :booktitle "SGML Europe 98 Conference" ;
+       :doi "http://hdl.handle.net/1822/636" ;
+       :month "05" ;
+       :title "Beyond DTDs: Constraining Data Content" ;
+       :year "1998" ;
+       :address "Paris - France" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RL05
+:RL05 rdf:type owl:NamedIndividual ,
+               :Book ,
+               :Publication ;
+      :author :cajo ,
+              :jcr ;
+      :isbn "972-722-421-0" ;
+      :month "03" ;
+      :publisher "Colecção Web Pro" ;
+      :title "Web Services: Aplicações Distribuídas sobre Protocolos Internet" ;
+      :year "2005" ;
+      :address "FCA - Editora de Informática" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RLA08
+:RLA08 rdf:type owl:NamedIndividual ,
+                :Proceedings ,
+                :Publication ;
+       :editor :jcl ,
+               :jcr ,
+               :sa ;
+       :doi "http://hdl.handle.net/1822/7708" ;
+       :isbn "978-972-99166-5-6" ;
+       :month "02.14" ;
+       :title "XATA2008 (6ª Conferência Nacional) - XML: Aplicações e Tecnologias Associadas" ;
+       :year "2008" ;
+       :address "Departamento de Informática da Universidade de Évora, Évora - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RLC07
+:RLC07 rdf:type owl:NamedIndividual ,
+                :Proceedings ,
+                :Publication ;
+       :editor :jcl ,
+               :jcr ,
+               :lc ;
+       :doi "http://hdl.handle.net/1822/6234" ;
+       :isbn "978-972-99166-4-9" ;
+       :month "02.14-15" ;
+       :title "XATA2007 (5ª Conferência Nacional) - XML: Aplicações e Tecnologias Associadas" ;
+       :year "2007" ;
+       :address "Faculdade de Ciências - Universidade de Lisboa, Lisboa - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RLH03
+:RLH03 rdf:type owl:NamedIndividual ,
+                :Article ,
+                :Publication ;
+       :author :grl ,
+               :jcr ,
+               :prh ;
+       :journal "III International Conference on Web Engineering (ICWE)" ;
+       :month "07.15" ;
+       :title "Ontology driven websites with Topic Maps" ;
+       :volume "Oviedo - Espanha" ;
+       :year "2003" ;
+       :deliverables """
+            """ .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RLH03b
+:RLH03b rdf:type owl:NamedIndividual ,
+                 :Inproceedings ,
+                 :Publication ;
+        :author :grl ,
+                :jcr ,
+                :prh ;
+        :booktitle "Second International Conference on Multimedia and ICTs in Education" ;
+        :doi "http://hdl.handle.net/1822/558" ;
+        :month "12.04" ;
+        :title "Adrian: a platform for E-Learning Content Prodution" ;
+        :year "2003" ;
+        :address "Badajoz - Espanha" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RLH04
+:RLH04 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :grl ,
+               :jcr ,
+               :prh ;
+       :booktitle "Electronic Publishing 2004 - Building Digital Bridges: linking cultures, commerce and science" ;
+       :doi "http://hdl.handle.net/1822/608" ;
+       :isbn "85-88130-02-05" ;
+       :month "06.23-26" ;
+       :title "Adrian - E-Learning Content Production (creating online exams)" ;
+       :year "2004" ;
+       :address "Department of Information and Documentation Science at the University of Brasilia, in Brazil" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RLH05
+:RLH05 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :grl ,
+               :jcr ,
+               :prh ;
+       :booktitle "Extreme Markup Languages 2005, Montréal - Canada, 1-5 August 2005." ;
+       :doi "http://hdl.handle.net/1822/3117" ;
+       :month "08.04" ;
+       :title "Constraining Topic Maps: A TMCL declarative implementation" ;
+       :year "2005" ;
+       :address "Montréal - Canada" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RLH05-revAPSI17
+:RLH05-revAPSI17 rdf:type owl:NamedIndividual ,
+                          :Article ,
+                          :Publication ;
+                 :author :grl ,
+                         :jcr ,
+                         :prh ;
+                 :doi "http://hdl.handle.net/1822/4365" ;
+                 :issn "0872-7031" ;
+                 :journal "Revista da Associação Portuguesa de Sistemas de Informação" ;
+                 :publisher "APSI" ;
+                 :title "Geração automática de interfaces Web para Sistemas de Informação: Metamorphosis" ;
+                 :volume "17" ;
+                 :year "2005" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RLH05b
+:RLH05b rdf:type owl:NamedIndividual ,
+                 :Inproceedings ,
+                 :Publication ;
+        :author :grl ,
+                :jcr ,
+                :prh ;
+        :booktitle "TMRA'05 - International Workshop on Topic Map Research and Applications " ;
+        :month "10.06" ;
+        :title "Metamorphosis - a Topic Maps based Environment to Handle Heterogeneous Information Resources" ;
+        :year "2005" ;
+        :address "Leipzig - Germany" ;
+        :deliverables """
+            """ .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RLH06
+:RLH06 rdf:type owl:NamedIndividual ,
+                :Inbook ,
+                :Publication ;
+       :author :grl ,
+               :jcr ,
+               :prh ;
+       :editor :lutz ,
+               :park ;
+       :chapter "Metamorphosis - A Topic Maps Based Environment to Handle Heterogeneous Information Resources" ;
+       :doi "10.1007/11676904_2" ;
+       :isbn "3-540-32527-1" ;
+       :month "02" ;
+       :pages "14-25" ;
+       :publisher "Springer-Verlag GmbH" ;
+       :title "Lecture Notes in Computer Science" ;
+       :volume "3873 / 2006" ;
+       :year "2006" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RLH07-EML
+:RLH07-EML rdf:type owl:NamedIndividual ,
+                    :Inproceedings ,
+                    :Publication ;
+           :author :grl ,
+                   :jcr ,
+                   :prh ,
+                   :rpa ;
+           :booktitle "Extreme Markup Languages 2007, Montréal - Canada, August 2007." ;
+           :doi "http://hdl.handle.net/1822/7330" ;
+           :month "08" ;
+           :title "Topic Maps applied to PubMed" ;
+           :year "2007" ;
+           :address "Montréal - Canada" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RLH2003
+:RLH2003 rdf:type owl:NamedIndividual ,
+                  :Inproceedings ,
+                  :Publication ;
+         :author :grl ,
+                 :jcr ,
+                 :prh ;
+         :booktitle "Electronic Publishing 2003: From information to knowledge" ;
+         :doi "http://hdl.handle.net/1822/553" ;
+         :month "06.25" ;
+         :title "Ontology driven Websites - Metamorphosis: a framework to specify and manage ontology driven websites" ;
+         :year "2003" ;
+         :address "Universidade do Minho - Guimarães - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RLH98
+:RLH98 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :arl ,
+               :jcr ,
+               :prh ;
+       :booktitle "Markup Technologies'98" ;
+       :doi "http://hdl.handle.net/1822/637" ;
+       :month "12" ;
+       :title "Generating SGML specific editors: from DTDs to Attribute Grammars" ;
+       :year "1998" ;
+       :address "Chicago - USA" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RLS06
+:RLS06 rdf:type owl:NamedIndividual ,
+                :Proceedings ,
+                :Publication ;
+       :editor :albie ,
+               :jcl ,
+               :jcr ;
+       :doi "http://hdl.handle.net/1822/4744" ;
+       :isbn "972-99166-2-4" ;
+       :month "02.09-10" ;
+       :title "XATA2006 (4ª Conferência Nacional) - XML: Aplicações e Tecnologias Associadas" ;
+       :year "2006" ;
+       :address "Instituto Politécnico de Portalegre, Portalegre - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RQR10
+:RQR10 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ,
+               :mam ,
+               :mjc ;
+       :booktitle "10º Congresso Nacional de Bibliotecários, Arquivistas e Documentalistas" ;
+       :doi "http://hdl.handle.net/1822/11081" ;
+       :isbn "978-972-9067-39-6" ;
+       :month "04.08" ;
+       :title "Criação e Aplicação de um modelo baseado em Topic Maps à Documentação Educativa" ;
+       :year "2010" ;
+       :address "Guimarães, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RRAH97
+:RRAH97 rdf:type owl:NamedIndividual ,
+                 :Inproceedings ,
+                 :Publication ;
+        :author :jcr ,
+                :jgr ,
+                :jj ,
+                :prh ;
+        :booktitle "SGML/XML'97" ;
+        :doi "http://hdl.handle.net/1822/617" ;
+        :month "12.08" ;
+        :title "SGML Documents: Where Does Quality Go?" ;
+        :year "1997" ;
+        :address "Washinton - USA" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RS04
+:RS04 rdf:type owl:NamedIndividual ,
+               :Proceedings ,
+               :Publication ;
+      :editor :albie ,
+              :jcr ;
+      :doi "http://hdl.handle.net/1822/602" ;
+      :isbn "972-99166-0-8" ;
+      :month "02.12-13" ;
+      :title "XATA2004 (1ª Conferência Nacional) - XML: Aplicações e Tecnologias Associadas" ;
+      :year "2004" ;
+      :address "Faculdade de Engenharia do Porto - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RS2003
+:RS2003 rdf:type owl:NamedIndividual ,
+                 :Inproceedings ,
+                 :Publication ;
+        :author :jcr ,
+                :jls ;
+        :booktitle "Electronic Publishing 2003: From information to knowledge" ;
+        :doi "http://hdl.handle.net/1822/552" ;
+        :month "06.25" ;
+        :title "Electronic Publishing of ADB editions" ;
+        :year "2003" ;
+        :address "Universidade do Minho - Guimarães - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RSL05
+:RSL05 rdf:type owl:NamedIndividual ,
+                :Proceedings ,
+                :Publication ;
+       :editor :albie ,
+               :jcl ,
+               :jcr ;
+       :doi "http://hdl.handle.net/1822/865" ;
+       :isbn "972-99166-1-6" ;
+       :month "02.10-11" ;
+       :title "XATA2005 (3ª Conferência Nacional) - XML: Aplicações e Tecnologias Associadas" ;
+       :year "2005" ;
+       :address "Casa da Torre, Vila Verde - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#RTFR04
+:RTFR04 rdf:type owl:NamedIndividual ,
+                 :Inproceedings ,
+                 :Publication ;
+        :author :jcr ,
+                :pt ,
+                :rf ,
+                :vr ;
+        :booktitle "XML: Aplicações e Tecnologias Associadas (XATA 2004)" ;
+        :doi "http://hdl.handle.net/1822/561" ;
+        :isbn "972-99166-0-8" ;
+        :month "02.12" ;
+        :title "Gerador de Web Services para cadeias de transformações de documentos XML" ;
+        :year "2004" ;
+        :address "Faculdade de Engenharia da Universidade do Porto - Porto" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Ram01
+:Ram01 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ;
+       :booktitle "XML Europe'01" ;
+       :doi "http://hdl.handle.net/1822/623" ;
+       :month "05" ;
+       :title "Constraining Content: specification and processing" ;
+       :year "2001" ;
+       :address "Berlin - Germany" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Ram03
+:Ram03 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ;
+       :booktitle "XATA 2003 - XML, Aplicações e Tecnologias Associadas" ;
+       :doi "http://hdl.handle.net/1822/554" ;
+       :month "02.13" ;
+       :title "O XML nos curriculae das licenciaturas em informática" ;
+       :year "2003" ;
+       :address "Braga - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Ram05
+:Ram05 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ;
+       :booktitle "XML: Aplicações e Tecnologias Associadas (XATA 2005)" ;
+       :doi "http://hdl.handle.net/1822/884" ;
+       :isbn "972-99166-1-6" ;
+       :month "02.10" ;
+       :title "Document Composer: uma aplicação XML para extracção de informação de repositórios XML" ;
+       :year "2005" ;
+       :address "Braga" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Ram2000
+:Ram2000 rdf:type owl:NamedIndividual ,
+                  :Phdthesis ,
+                  :Publication ;
+         :author :jcr ;
+         :doi "http://hdl.handle.net/1822/5625" ;
+         :month "07" ;
+         :school "Tese de Doutoramento" ;
+         :title "Anotação Estrutural de Documentos e sua Semântica" ;
+         :year "2000" ;
+         :address "Universidade do Minho" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Ram93
+:Ram93 rdf:type owl:NamedIndividual ,
+                :Masterthesis ,
+                :Publication ;
+       :author :jcr ;
+       :month "10" ;
+       :school "Escola de Engenharia - Universidade do Minho" ;
+       :title "Um Compilador para o GLiTCH" ;
+       :year "1993" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Ram96
+:Ram96 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ;
+       :booktitle "Workshop: Document Processing and SGML" ;
+       :month "09" ;
+       :title "DSSSL: basic topics" ;
+       :year "1996" ;
+       :address "Universidade do Minho" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Ram98
+:Ram98 rdf:type owl:NamedIndividual ,
+                :Misc ,
+                :Publication ;
+       :author :jcr ;
+       :howpublished "tutorial at Terceiro Encontro Nacional para a Qualidade nas tecnologias de informação e comunicação, Guimarães - Portugal" ;
+       :title "Tutorial: Documentação Estruturada - Será que a minha empresa deve migrar para uma tecnologia baseada em SGML?" ;
+       :year "1998" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Ram99
+:Ram99 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :jcr ;
+       :booktitle "Digital Resources for the Humanities - DRH99" ;
+       :title "Recovering Old Paper Historical Documents Through SGML/XML Modelling" ;
+       :year "1999" ;
+       :address "London - England" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#Ram99b
+:Ram99b rdf:type owl:NamedIndividual ,
+                 :Inbook ,
+                 :Publication ;
+        :author :jcr ;
+        :chapter "Extensible Markup Language (XML)- A promessa e a esperança?..." ;
+        :month "11.23-26" ;
+        :pages "49-76" ;
+        :publisher "Sociedade Brasileira de Computação (SBC)" ;
+        :title "EINE'99 - II Escola de Informática da Sociedade Brasileira de Computação" ;
+        :year "1999" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#SFRL07
+:SFRL07 rdf:type owl:NamedIndividual ,
+                 :Inproceedings ,
+                 :Publication ;
+        :author :as ,
+                :jcr ,
+                :lmf ,
+                :mjpl ;
+        :booktitle "9º CONGRESSO NACIONAL DE BIBLIOTECÁRIOS, ARQUIVISTAS E DOCUMENTALISTAS" ;
+        :doi "http://hdl.handle.net/1822/6432" ;
+        :month "03.29" ;
+        :title "Consulta Real em Ambiente Virtual: implementação de uma sala de referência e leitura virtual num arquivo" ;
+        :year "2007" ;
+        :address "Ponta Delgada, Açores, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#SMR03
+:SMR03 rdf:type owl:NamedIndividual ,
+                :Inproceedings ,
+                :Publication ;
+       :author :des ,
+               :jcr ,
+               :mcm ;
+       :booktitle "XATA2003 - XML: Aplicações e Tecnologias Associadas" ;
+       :doi "http://hdl.handle.net/1822/557" ;
+       :month "02.13-14" ;
+       :title "Xexam: uma linguagem de suporte para exames online (e-learning)" ;
+       :year "2003" ;
+       :address "Vila Verde - Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#SRFP95
+:SRFP95 rdf:type owl:NamedIndividual ,
+                 :Article ,
+                 :Publication ;
+        :author :ajp ,
+                :hs ,
+                :jcr ,
+                :jmf ;
+        :journal "Computing Systems in Engineering" ;
+        :title "A Heterogeneous Computer Vision Architecture: Implementation Issues" ;
+        :volume "volume 6, número 4/5, páginas 401-408" ;
+        :year "1995" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#VECPAR93
+:VECPAR93 rdf:type owl:NamedIndividual ,
+                   :Inproceedings ,
+                   :Publication ;
+          :author :ajp ,
+                  :hs ,
+                  :jcr ,
+                  :jmf ;
+          :booktitle "1st International Meeting on Vector and Paralell Processing" ;
+          :title "A Heterogeneous Computer Vision Architecture: Implementation Issues" ;
+          :year "1993" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#aa
+:aa rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :ipres2013 ;
+    :name "Alan Akbik" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#aab
+:aab rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :BKRFBR08 ,
+             :FBR05-CAPSI ,
+             :FBR06-Ariadne ,
+             :FBR06-XATA ,
+             :FBR07 ,
+             :FBR07-IJDL ;
+     :name "Ana Alice Baptista" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#ajp
+:ajp rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :SRFP95 ,
+             :VECPAR93 ;
+     :name "A. J. Proença" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#albie
+:albie rdf:type owl:NamedIndividual ,
+                :Editor ,
+                :Pessoa ;
+       :edita :IGI2013 ,
+              :RLS06 ,
+              :RS04 ,
+              :RSL05 ;
+       :name "Alberto Simões" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#alexandra
+:alexandra rdf:type owl:NamedIndividual ,
+                    :Author ,
+                    :Pessoa ;
+           :autora :bad2015a ,
+                   :edicic2015 ;
+           :name "Alexandra Lourenço" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#ap
+:ap rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :cisti2017 ;
+    :name "André Pereira" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#ar
+:ar rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :BKRFBR08 ;
+    :name "Andreas Rauber" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#archiving2013
+:archiving2013 rdf:type owl:NamedIndividual ,
+                        :Inproceedings ,
+                        :Publication ;
+               :author :jcr ,
+                       :lf ,
+                       :mf ;
+               :booktitle "IST Archiving 2013" ;
+               :doi "http://hdl.handle.net/1822/23978" ;
+               :month "04.02-05" ;
+               :title " Guidelines for legacy repository migration" ;
+               :year "2013" ;
+               :address "Washington DC, Estados Unidos" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#arl
+:arl rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :LRH97 ,
+             :RLH98 ;
+     :name "A. R. Lopes" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#as
+:as rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :RFFLS06 ,
+            :SFRL07 ;
+    :name "António Sousa" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#asantos
+:asantos rdf:type owl:NamedIndividual ,
+                  :Author ,
+                  :Pessoa ;
+         :autora :bad2015b ;
+         :name "André Santos" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#bad2012
+:bad2012 rdf:type owl:NamedIndividual ,
+                  :Inproceedings ,
+                  :Publication ;
+         :author :jcr ,
+                 :lf ,
+                 :mf ;
+         :booktitle "11º Congresso Nacional de Bibliotecários, Arquivistas e Documentalistas" ;
+         :doi "http://hdl.handle.net/1822/21611" ;
+         :month "10.20" ;
+         :title "Boas Práticas na Migração de Repositórios: lições aprendidas com o CALM e o ARQBASE" ;
+         :year "2012" ;
+         :address "Fundação Calouste Gulbenkian, Lisboa" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#bad2015a
+:bad2015a rdf:type owl:NamedIndividual ,
+                   :Inproceedings ,
+                   :Publication ;
+          :author :alexandra ,
+                  :jcr ,
+                  :penteado ;
+          :booktitle "12º Congresso Nacional BAD" ;
+          :doi "http://hdl.handle.net/1822/38497" ;
+          :month "10.21" ;
+          :title "Uma ontologia para os processos de negócio da Administração" ;
+          :year "2015" ;
+          :address "Universidade de Évora, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#bad2015b
+:bad2015b rdf:type owl:NamedIndividual ,
+                   :Inproceedings ,
+                   :Publication ;
+          :author :asantos ,
+                  :eloy ,
+                  :hsilva ,
+                  :jcarvalho ,
+                  :jcr ,
+                  :jmoreira ,
+                  :lf ,
+                  :mf ;
+          :booktitle "12º Congresso Nacional BAD" ;
+          :doi "http://hdl.handle.net/1822/37856" ;
+          :month "10.21" ;
+          :title "PT-CRIS: Um miradouro sobre o universo científico nacional" ;
+          :year "2015" ;
+          :address "Universidade de Évora, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#bf
+:bf rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :iPRES2016 ;
+    :name "Bruno Ferreira" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#bs
+:bs rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :ipres2013 ;
+    :name "Barbara Sierman" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#cajo
+:cajo rdf:type owl:NamedIndividual ,
+               :Author ,
+               :Pessoa ;
+      :autora :LR04 ,
+              :RL05 ;
+      :name "Carlos J. Feijó Lopes" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#cb
+:cb rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :BKRFBR08 ,
+            :icadl2012 ,
+            :ipres2012 ,
+            :or2013 ;
+    :name "Christoph Becker" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#cisti2017
+:cisti2017 rdf:type owl:NamedIndividual ,
+                    :Inproceedings ,
+                    :Publication ;
+           :author :ap ,
+                   :jcr ,
+                   :lf ,
+                   :mf ;
+           :booktitle "12th Iberian Conference on Information Systems and Technologies (CISTI)," ;
+           :doi "http://hdl.handle.net/1822/46093" ;
+           :month "06.24" ;
+           :title "RODA-in: A generic tool for the mass creation of Submission Information Packages" ;
+           :year "2017" ;
+           :address "ISCTE, Lisboa, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#clei04
+:clei04 rdf:type owl:NamedIndividual ,
+                 :Editor ,
+                 :Pessoa ;
+        :edita :LRH04-Clei ;
+        :name "Mauricio Solar and David Fernández-Baca and Ernesto Cuadros-Vargas" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#des
+:des rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :SMR03 ;
+     :name "Daniel Edgar Pinto Soares" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#dlm2014
+:dlm2014 rdf:type owl:NamedIndividual ,
+                  :Inproceedings ,
+                  :Publication ;
+         :author :hsilva ,
+                 :jcr ,
+                 :lf ;
+         :booktitle "DLM Forum – 7th Triennial Conference: Making the Information Governance Landscape in Europe" ;
+         :doi "http://hdl.handle.net/1822/35183" ;
+         :month "11.12" ;
+         :title "Database Preservation Toolkit: a flexible tool to normalize and give access to databases" ;
+         :year "2014" ;
+         :address "Lisbon, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#edicic2015
+:edicic2015 rdf:type owl:NamedIndividual ,
+                     :Inproceedings ,
+                     :Publication ;
+            :author :alexandra ,
+                    :jcr ,
+                    :penteado ;
+            :booktitle "VII Encuentro Ibérico EDICIC 2015" ;
+            :doi "http://hdl.handle.net/1822/38496" ;
+            :month "11.16" ;
+            :title "Da gestão da informação à gestão do conhecimento: uma proposta para a e-Administração em Portugal" ;
+            :year "2015" ;
+            :address "Madrid, Espanha" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#eloy
+:eloy rdf:type owl:NamedIndividual ,
+               :Author ,
+               :Pessoa ;
+      :autora :bad2015b ;
+      :name "Eloy Rodrigues" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#fb
+:fb rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :FCRBCF07 ,
+            :RFCFBC06 ,
+            :RFCFBC07 ,
+            :RFFCBC08 ;
+    :name "Francisco Barbedo" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#grl
+:grl rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :GARH09 ,
+             :JLRH02 ,
+             :JLRH02b ,
+             :JLRH03 ,
+             :JLRHb02 ,
+             :JLRHc02 ,
+             :LARH07-EPIA ,
+             :LATRH07-CLEI ,
+             :LGRH07-CLEI ,
+             :LMMFRH07-TMRA ,
+             :LMMVRH08-XATA ,
+             :LPRH07-TM ,
+             :LPRH07-XATA ,
+             :LRH03 ,
+             :LRH03b ,
+             :LRH03c ,
+             :LRH04 ,
+             :LRH04-Clei ,
+             :LRH04-WWS ,
+             :LRH04-XMLw ,
+             :LRH05 ,
+             :LRH05-CLEI ,
+             :LRH05b ,
+             :LRH06-SBSI06 ,
+             :LRH06-XATA ,
+             :LRH07-SEMINFO ,
+             :LRHGT08 ,
+             :LSRH04 ,
+             :RHL04-eLes ,
+             :RLH03 ,
+             :RLH03b ,
+             :RLH04 ,
+             :RLH05 ,
+             :RLH05-revAPSI17 ,
+             :RLH05b ,
+             :RLH06 ,
+             :RLH07-EML ,
+             :RLH2003 ;
+     :edita :RHLA03 ;
+     :name "Giovani Rubert Librelotto" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#guimaramus2012
+:guimaramus2012 rdf:type owl:NamedIndividual ,
+                         :Inproceedings ,
+                         :Publication ;
+                :author :jcr ;
+                :booktitle "Pensar a Música" ;
+                :doi "http://hdl.handle.net/1822/21660" ;
+                :month "03.23" ;
+                :title " MuseCode: à procura da linearidade na música tonal" ;
+                :year "2012" ;
+                :address "Palácio Vila Flor, Guimarães" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#gva
+:gva rdf:type owl:NamedIndividual ,
+              :Editor ,
+              :Pessoa ;
+     :edita :RHLA03 ;
+     :name "Gustavo V. Arnold" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#hm
+:hm rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :LMMVRH08-XATA ;
+    :name "Henrique Machado" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#hs
+:hs rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :SRFP95 ,
+            :VECPAR93 ;
+    :name "H. Santos" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#hsilva
+:hsilva rdf:type owl:NamedIndividual ,
+                 :Author ,
+                 :Pessoa ;
+        :autora :bad2015b ,
+                :dlm2014 ;
+        :name "Hélder Silva" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#htm
+:htm rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :LMMFRH07-TMRA ;
+     :name "H. T. Machado" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#iPRES2016
+:iPRES2016 rdf:type owl:NamedIndividual ,
+                    :Inproceedings ,
+                    :Publication ;
+           :author :bf ,
+                   :jcr ,
+                   :lf ,
+                   :mf ;
+           :booktitle "iPRES: 13th International Conference on Digital Preservation" ;
+           :doi "http://hdl.handle.net/1822/43479" ;
+           :month "10.04" ;
+           :title "Database Preservation Toolkit: A relational database conversion and normalization tool" ;
+           :year "2016" ;
+           :address "Bern, Switzerland" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#icadl2012
+:icadl2012 rdf:type owl:NamedIndividual ,
+                    :Inproceedings ,
+                    :Publication ;
+           :author :cb ,
+                   :jcr ,
+                   :kd ,
+                   :lf ,
+                   :mf ,
+                   :pp ;
+           :booktitle "14th International Conference on Asia-Pacific Digital Libraries, ICADL 2012" ;
+           :doi "http://hdl.handle.net/1822/21447" ;
+           :month "11.12" ;
+           :title "Design and architecture of a novel preservation watch system" ;
+           :year "2012" ;
+           :address "Taipei, Taiwan" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#ipres2012
+:ipres2012 rdf:type owl:NamedIndividual ,
+                    :Inproceedings ,
+                    :Publication ;
+           :author :cb ,
+                   :jcr ,
+                   :kd ,
+                   :lf ,
+                   :mf ,
+                   :pp ;
+           :booktitle "iPRES 2012 - 9th International Conference on Preservation of Digital Objects" ;
+           :doi "http://hdl.handle.net/1822/20666" ;
+           :month "11.01" ;
+           :title "Preservation watch : what to monitor and how" ;
+           :year "2012" ;
+           :address "Toronto, Canada" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#ipres2013
+:ipres2013 rdf:type owl:NamedIndividual ,
+                    :Inproceedings ,
+                    :Publication ;
+           :author :aa ,
+                   :bs ,
+                   :jcr ,
+                   :lf ,
+                   :mf ,
+                   :mr ;
+           :booktitle "iPRES 2013 - 10th International Conference on Preservation of Digital Objects" ;
+           :doi "http://hdl.handle.net/1822/25214" ;
+           :month "09.20" ;
+           :title "Automatic preservation watch using information extraction on the Web : a case study on semantic extraction of natural language for digital preservation" ;
+           :year "2013" ;
+           :address "Lisbon, Portugal" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#jcarvalho
+:jcarvalho rdf:type owl:NamedIndividual ,
+                    :Author ,
+                    :Pessoa ;
+           :autora :bad2015b ;
+           :name "José Carvalho" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#jcl
+:jcl rdf:type owl:NamedIndividual ,
+              :Editor ,
+              :Pessoa ;
+     :edita :RLA08 ,
+            :RLC07 ,
+            :RLS06 ,
+            :RSL05 ;
+     :name "João Correia Lopes" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#jcr
+:jcr rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :BKRFBR08 ,
+             :FBR05-CAPSI ,
+             :FBR06-Ariadne ,
+             :FBR06-XATA ,
+             :FBR07 ,
+             :FBR07-IJDL ,
+             :FCRBCF07 ,
+             :FFR10 ,
+             :FR04 ,
+             :FR04-capsi ,
+             :FR04b ,
+             :FR09 ,
+             :FR10 ,
+             :FR11 ,
+             :FR11b ,
+             :FR11c ,
+             :FR11d ,
+             :FR11e ,
+             :FRF-XATA ,
+             :GARH09 ,
+             :IGI2013 ,
+             :JHR00 ,
+             :JLRH02 ,
+             :JLRH02b ,
+             :JLRH03 ,
+             :JLRHb02 ,
+             :JLRHc02 ,
+             :JRH03 ,
+             :LARH07-EPIA ,
+             :LATRH07-CLEI ,
+             :LGRH07-CLEI ,
+             :LMMFRH07-TMRA ,
+             :LMMVRH08-XATA ,
+             :LPRH07-TM ,
+             :LPRH07-XATA ,
+             :LR04 ,
+             :LRH03 ,
+             :LRH03b ,
+             :LRH03c ,
+             :LRH04 ,
+             :LRH04-Clei ,
+             :LRH04-WWS ,
+             :LRH04-XMLw ,
+             :LRH05 ,
+             :LRH05-CLEI ,
+             :LRH05b ,
+             :LRH06-SBSI06 ,
+             :LRH06-XATA ,
+             :LRH07-SEMINFO ,
+             :LRH97 ,
+             :LRHGT08 ,
+             :LSRH04 ,
+             :MRH04 ,
+             :RAH1998 ,
+             :RAH95 ,
+             :RAH96 ,
+             :RARH98 ,
+             :RD06-XATA ,
+             :RFCFBC06 ,
+             :RFCFBC07 ,
+             :RFFC07-EML ,
+             :RFFCBC08 ,
+             :RFFLS06 ,
+             :RH2002 ,
+             :RH94 ,
+             :RH98 ,
+             :RH98b ,
+             :RH98c ,
+             :RH98d ,
+             :RH99 ,
+             :RHHRAF98 ,
+             :RHL04-eLes ,
+             :RHb98 ,
+             :RL05 ,
+             :RLH03 ,
+             :RLH03b ,
+             :RLH04 ,
+             :RLH05 ,
+             :RLH05-revAPSI17 ,
+             :RLH05b ,
+             :RLH06 ,
+             :RLH07-EML ,
+             :RLH2003 ,
+             :RLH98 ,
+             :RQR10 ,
+             :RRAH97 ,
+             :RS2003 ,
+             :RTFR04 ,
+             :Ram01 ,
+             :Ram03 ,
+             :Ram05 ,
+             :Ram2000 ,
+             :Ram93 ,
+             :Ram96 ,
+             :Ram98 ,
+             :Ram99 ,
+             :Ram99b ,
+             :SFRL07 ,
+             :SMR03 ,
+             :SRFP95 ,
+             :VECPAR93 ,
+             :archiving2013 ,
+             :bad2012 ,
+             :bad2015a ,
+             :bad2015b ,
+             :cisti2017 ,
+             :dlm2014 ,
+             :edicic2015 ,
+             :guimaramus2012 ,
+             :iPRES2016 ,
+             :icadl2012 ,
+             :ipres2012 ,
+             :ipres2013 ,
+             :or2013 ;
+     :edita :IGI2013 ,
+            :RHLA03 ,
+            :RLA08 ,
+            :RLC07 ,
+            :RLS06 ,
+            :RS04 ,
+            :RSL05 ;
+     :name "José Carlos Ramalho" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#jg
+:jg rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :LGRH07-CLEI ,
+            :LRHGT08 ;
+    :name "Jonas Gassen" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#jgr
+:jgr rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :RARH98 ,
+             :RHHRAF98 ,
+             :RRAH97 ;
+     :name "J. G. Rocha" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#jj
+:jj rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :RAH1998 ,
+            :RAH95 ,
+            :RAH96 ,
+            :RARH98 ,
+            :RH99 ,
+            :RHHRAF98 ,
+            :RRAH97 ;
+    :name "José João Almeida" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#jlf
+:jlf rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :RHHRAF98 ;
+     :name "J. L. Faria" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#jls
+:jls rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :RS2003 ;
+     :name "José Luis Santos" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#jmf
+:jmf rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :SRFP95 ,
+             :VECPAR93 ;
+     :name "J. M. Fernandes" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#jmoreira
+:jmoreira rdf:type owl:NamedIndividual ,
+                   :Author ,
+                   :Pessoa ;
+          :autora :bad2015b ;
+          :name "João Moreira" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#jv
+:jv rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :LMMVRH08-XATA ;
+    :name "Juliana Vizzotto" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#kd
+:kd rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :icadl2012 ,
+            :ipres2012 ,
+            :or2013 ;
+    :name "Kresimir Duretec " .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#lc
+:lc rdf:type owl:NamedIndividual ,
+             :Editor ,
+             :Pessoa ;
+    :autora :RFFCBC08 ;
+    :edita :RLC07 ;
+    :name "Luis Carriço" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#lcor
+:lcor rdf:type owl:NamedIndividual ,
+               :Author ,
+               :Pessoa ;
+      :autora :FCRBCF07 ,
+              :RFCFBC06 ,
+              :RFCFBC07 ;
+      :name "Luis Corujo" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#lf
+:lf rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :FCRBCF07 ,
+            :RFCFBC06 ,
+            :RFCFBC07 ,
+            :RFFC07-EML ,
+            :RFFCBC08 ,
+            :archiving2013 ,
+            :bad2012 ,
+            :bad2015b ,
+            :cisti2017 ,
+            :dlm2014 ,
+            :iPRES2016 ,
+            :icadl2012 ,
+            :ipres2012 ,
+            :ipres2013 ,
+            :or2013 ;
+    :name "Luis Faria" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#lmf
+:lmf rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :FFR10 ,
+             :FRF-XATA ,
+             :RFFLS06 ,
+             :SFRL07 ;
+     :name "Luis Miguel Ferros" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#lutz
+:lutz rdf:type owl:NamedIndividual ,
+               :Editor ,
+               :Pessoa ;
+      :edita :RLH06 ;
+      :name "Lutz Maicher" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#mam
+:mam rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :RQR10 ;
+     :name "Miguel Ángel Marzal Garcia-Quismondo" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#mcm
+:mcm rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :SMR03 ;
+     :name "Maria da Conceição Vieira Mota" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#mf
+:mf rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :BKRFBR08 ,
+            :FBR05-CAPSI ,
+            :FBR06-Ariadne ,
+            :FBR06-XATA ,
+            :FBR07 ,
+            :FBR07-IJDL ,
+            :FCRBCF07 ,
+            :FFR10 ,
+            :FR04 ,
+            :FR04-capsi ,
+            :FR04b ,
+            :FRF-XATA ,
+            :RFCFBC06 ,
+            :RFCFBC07 ,
+            :RFFC07-EML ,
+            :RFFCBC08 ,
+            :RFFLS06 ,
+            :archiving2013 ,
+            :bad2012 ,
+            :bad2015b ,
+            :cisti2017 ,
+            :iPRES2016 ,
+            :icadl2012 ,
+            :ipres2012 ,
+            :ipres2013 ,
+            :or2013 ;
+    :name "Miguel Ferreira" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#mhj
+:mhj rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :JHR00 ,
+             :JLRH02 ,
+             :JLRH02b ,
+             :JLRH03 ,
+             :JLRHb02 ,
+             :JLRHc02 ,
+             :JRH03 ;
+     :name "M. H. Jacinto" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#migaldo
+:migaldo rdf:type owl:NamedIndividual ,
+                  :Author ,
+                  :Pessoa ;
+         :autora :RD06-XATA ;
+         :name "Luis Miguel Alves Domingues" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#mjc
+:mjc rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :RQR10 ;
+     :name "Maria Jesus Colmenero Ruiz" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#mjpl
+:mjpl rdf:type owl:NamedIndividual ,
+               :Author ,
+               :Pessoa ;
+      :autora :RFFLS06 ,
+              :SFRL07 ;
+      :name "Maria João Pires Lima" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#mk
+:mk rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :BKRFBR08 ;
+    :name "Michael Kraxner" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#mm
+:mm rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :LMMVRH08-XATA ;
+    :name "Mirkos Martins" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#mom
+:mom rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :LMMFRH07-TMRA ;
+     :name "M. O. Martins" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#mr
+:mr rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :ipres2013 ;
+    :name "Marcel Ras" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#mrh
+:mrh rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :RHHRAF98 ;
+     :name "M. R. Henriques" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#or2013
+:or2013 rdf:type owl:NamedIndividual ,
+                 :Inproceedings ,
+                 :Publication ;
+        :author :cb ,
+                :jcr ,
+                :kd ,
+                :lf ,
+                :mf ;
+        :booktitle "Open Repositories 2013" ;
+        :doi " http://hdl.handle.net/1822/25101" ;
+        :month "07.08" ;
+        :title "Supporting the preservation lifecycle in repositories" ;
+        :year "2013" ;
+        :address "Charlottetown, Canada" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#park
+:park rdf:type owl:NamedIndividual ,
+               :Editor ,
+               :Pessoa ;
+      :edita :RLH06 ;
+      :name "Jack Park" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#penteado
+:penteado rdf:type owl:NamedIndividual ,
+                   :Author ,
+                   :Pessoa ;
+          :autora :bad2015a ,
+                  :edicic2015 ;
+          :name "Pedro Penteado" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#pgf
+:pgf rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :LMMFRH07-TMRA ;
+     :name "P. G. D. Ferreira" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#pp
+:pp rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :icadl2012 ,
+            :ipres2012 ;
+    :name "Petar Petrov" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#prh
+:prh rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :GARH09 ,
+             :JHR00 ,
+             :JLRH02 ,
+             :JLRH02b ,
+             :JLRH03 ,
+             :JLRHb02 ,
+             :JLRHc02 ,
+             :JRH03 ,
+             :LARH07-EPIA ,
+             :LATRH07-CLEI ,
+             :LGRH07-CLEI ,
+             :LMMFRH07-TMRA ,
+             :LMMVRH08-XATA ,
+             :LPRH07-TM ,
+             :LPRH07-XATA ,
+             :LRH03 ,
+             :LRH03b ,
+             :LRH03c ,
+             :LRH04 ,
+             :LRH04-Clei ,
+             :LRH04-WWS ,
+             :LRH04-XMLw ,
+             :LRH05 ,
+             :LRH05-CLEI ,
+             :LRH05b ,
+             :LRH06-SBSI06 ,
+             :LRH06-XATA ,
+             :LRH07-SEMINFO ,
+             :LRH97 ,
+             :LRHGT08 ,
+             :LSRH04 ,
+             :MRH04 ,
+             :RAH1998 ,
+             :RAH95 ,
+             :RAH96 ,
+             :RARH98 ,
+             :RH2002 ,
+             :RH94 ,
+             :RH98 ,
+             :RH98b ,
+             :RH98c ,
+             :RH98d ,
+             :RHHRAF98 ,
+             :RHL04-eLes ,
+             :RHb98 ,
+             :RLH03 ,
+             :RLH03b ,
+             :RLH04 ,
+             :RLH05 ,
+             :RLH05-revAPSI17 ,
+             :RLH05b ,
+             :RLH06 ,
+             :RLH07-EML ,
+             :RLH2003 ,
+             :RLH98 ,
+             :RRAH97 ;
+     :edita :RHLA03 ;
+     :name "Pedro Rangel Henriques" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#pt
+:pt rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :RTFR04 ;
+    :name "Pedro Taveira" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#ram
+:ram rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :MRH04 ;
+     :name "Ricardo Martins" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#rc
+:rc rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :FCRBCF07 ,
+            :RFCFBC06 ,
+            :RFCFBC07 ,
+            :RFFC07-EML ,
+            :RFFCBC08 ;
+    :name "Rui Castro" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#rct
+:rct rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :LATRH07-CLEI ,
+             :LRHGT08 ;
+     :name "Rogério Correa Turchetti" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#rf
+:rf rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :FR09 ,
+            :FR10 ,
+            :FR11 ,
+            :FR11b ,
+            :FR11c ,
+            :FR11d ,
+            :FR11e ,
+            :IGI2013 ,
+            :RTFR04 ;
+    :name "Ricardo Freitas" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#rpa
+:rpa rdf:type owl:NamedIndividual ,
+              :Author ,
+              :Pessoa ;
+     :autora :GARH09 ,
+             :LARH07-EPIA ,
+             :LATRH07-CLEI ,
+             :LPRH07-TM ,
+             :LPRH07-XATA ,
+             :RLH07-EML ;
+     :name "Renato Preigschadt de Azevedo" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#rq
+:rq rdf:type owl:NamedIndividual ,
+             :Editor ,
+             :Pessoa ;
+    :edita :IGI2013 ;
+    :name "Ricardo Queirós" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#sa
+:sa rdf:type owl:NamedIndividual ,
+             :Editor ,
+             :Pessoa ;
+    :edita :RLA08 ;
+    :name "Salvador Abreu" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#vr
+:vr rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :RTFR04 ;
+    :name "Vasco Rocha" .
+
+
+###  https://www.nuno-aac.github.io/ontologias/jcrpubs#ws
+:ws rdf:type owl:NamedIndividual ,
+             :Author ,
+             :Pessoa ;
+    :autora :LSRH04 ;
+    :name "Weber Souza" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
