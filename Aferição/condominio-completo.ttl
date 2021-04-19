@@ -1,0 +1,613 @@
+@prefix : <http://nuno-aac.github.io/ontologias/condominio#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://nuno-aac.github.io/ontologias/condominio> .
+
+<http://nuno-aac.github.io/ontologias/condominio> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://nuno-aac.github.io/ontologias/condominio#associadoA
+<http://nuno-aac.github.io/ontologias/condominio#associadoA> rdf:type owl:ObjectProperty ;
+                                                                   owl:inverseOf <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> ;
+                                                                   rdfs:domain <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                   rdfs:range <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                              <http://nuno-aac.github.io/ontologias/condominio#Fracao> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#fezMovimento
+<http://nuno-aac.github.io/ontologias/condominio#fezMovimento> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://nuno-aac.github.io/ontologias/condominio#dataMovimento
+<http://nuno-aac.github.io/ontologias/condominio#dataMovimento> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:domain <http://nuno-aac.github.io/ontologias/condominio#Movimento> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#descricao
+<http://nuno-aac.github.io/ontologias/condominio#descricao> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:domain <http://nuno-aac.github.io/ontologias/condominio#Fracao> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento
+<http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:domain <http://nuno-aac.github.io/ontologias/condominio#Movimento> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#mensalidade
+<http://nuno-aac.github.io/ontologias/condominio#mensalidade> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:domain <http://nuno-aac.github.io/ontologias/condominio#Fracao> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#permilagem
+<http://nuno-aac.github.io/ontologias/condominio#permilagem> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain <http://nuno-aac.github.io/ontologias/condominio#Fracao> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#tipoMovimento
+<http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:domain <http://nuno-aac.github.io/ontologias/condominio#Movimento> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento
+<http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain <http://nuno-aac.github.io/ontologias/condominio#Fracao> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#valorMovimento
+<http://nuno-aac.github.io/ontologias/condominio#valorMovimento> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:domain <http://nuno-aac.github.io/ontologias/condominio#Movimento> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://nuno-aac.github.io/ontologias/condominio#Entidade
+<http://nuno-aac.github.io/ontologias/condominio#Entidade> rdf:type owl:Class .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#Fracao
+<http://nuno-aac.github.io/ontologias/condominio#Fracao> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://nuno-aac.github.io/ontologias/condominio#Entidade> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#Movimento
+<http://nuno-aac.github.io/ontologias/condominio#Movimento> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://nuno-aac.github.io/ontologias/condominio#A
+<http://nuno-aac.github.io/ontologias/condominio#A> rdf:type owl:NamedIndividual ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#descricao> "Loja" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#mensalidade> "6.06" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#permilagem> "50" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento> 0 .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#CGD
+<http://nuno-aac.github.io/ontologias/condominio#CGD> rdf:type owl:NamedIndividual ,
+                                                                     <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                     <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                            <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-001> ,
+                                                                                                                                 <http://nuno-aac.github.io/ontologias/condominio#2020-006> ,
+                                                                                                                                 <http://nuno-aac.github.io/ontologias/condominio#2020-021> ,
+                                                                                                                                 <http://nuno-aac.github.io/ontologias/condominio#2020-024> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#CMB
+<http://nuno-aac.github.io/ontologias/condominio#CMB> rdf:type owl:NamedIndividual ,
+                                                                     <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                     <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                            <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-013> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#EDP
+<http://nuno-aac.github.io/ontologias/condominio#EDP> rdf:type owl:NamedIndividual ,
+                                                                     <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                     <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                            <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-004> ,
+                                                                                                                                 <http://nuno-aac.github.io/ontologias/condominio#2020-019> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#F
+<http://nuno-aac.github.io/ontologias/condominio#F> rdf:type owl:NamedIndividual ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-014> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#descricao> "1º Dto" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#mensalidade> "36.45" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#permilagem> "24" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento> 4 .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#G
+<http://nuno-aac.github.io/ontologias/condominio#G> rdf:type owl:NamedIndividual ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-010> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#descricao> "1º Esq" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#mensalidade> "51.63" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#permilagem> "34" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento> 3 .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#H
+<http://nuno-aac.github.io/ontologias/condominio#H> rdf:type owl:NamedIndividual ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-003> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#descricao> "2º Dto" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#mensalidade> "36.45" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#permilagem> "24" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento> 0 .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#I
+<http://nuno-aac.github.io/ontologias/condominio#I> rdf:type owl:NamedIndividual ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-018> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#descricao> "3º Dto" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#mensalidade> "36.45" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#permilagem> "24" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento> 12 .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#J
+<http://nuno-aac.github.io/ontologias/condominio#J> rdf:type owl:NamedIndividual ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-010> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#descricao> "3º Esq" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#mensalidade> "51.63" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#permilagem> "34" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento> 3 .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#Kone
+<http://nuno-aac.github.io/ontologias/condominio#Kone> rdf:type owl:NamedIndividual ,
+                                                                      <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                      <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                             <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-009> ,
+                                                                                                                                  <http://nuno-aac.github.io/ontologias/condominio#2020-031> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#L
+<http://nuno-aac.github.io/ontologias/condominio#L> rdf:type owl:NamedIndividual ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-030> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#descricao> "4º Dto" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#mensalidade> "36.45" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#permilagem> "24" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento> 12 .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#Limpeza
+<http://nuno-aac.github.io/ontologias/condominio#Limpeza> rdf:type owl:NamedIndividual ,
+                                                                         <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                         <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                                <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-029> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#M
+<http://nuno-aac.github.io/ontologias/condominio#M> rdf:type owl:NamedIndividual ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-015> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#descricao> "5º Dto" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#mensalidade> "36.45" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#permilagem> "24" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento> 6 .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#N
+<http://nuno-aac.github.io/ontologias/condominio#N> rdf:type owl:NamedIndividual ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-007> ,
+                                                                                                                               <http://nuno-aac.github.io/ontologias/condominio#2020-017> ,
+                                                                                                                               <http://nuno-aac.github.io/ontologias/condominio#2020-023> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#descricao> "5º Esq" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#mensalidade> "51.63" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#permilagem> "34" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento> 4 .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#O
+<http://nuno-aac.github.io/ontologias/condominio#O> rdf:type owl:NamedIndividual ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-026> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#descricao> "6º Dto" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#mensalidade> "36.45" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#permilagem> "24" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento> 8 .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#P
+<http://nuno-aac.github.io/ontologias/condominio#P> rdf:type owl:NamedIndividual ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-005> ,
+                                                                                                                               <http://nuno-aac.github.io/ontologias/condominio#2020-011> ,
+                                                                                                                               <http://nuno-aac.github.io/ontologias/condominio#2020-022> ,
+                                                                                                                               <http://nuno-aac.github.io/ontologias/condominio#2020-027> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#descricao> "7º Dto" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#mensalidade> "36.45" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#permilagem> "24" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento> 4 .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#PluriRapel
+<http://nuno-aac.github.io/ontologias/condominio#PluriRapel> rdf:type owl:NamedIndividual ,
+                                                                            <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                            <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-016> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#Q
+<http://nuno-aac.github.io/ontologias/condominio#Q> rdf:type owl:NamedIndividual ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-002> ,
+                                                                                                                               <http://nuno-aac.github.io/ontologias/condominio#2020-008> ,
+                                                                                                                               <http://nuno-aac.github.io/ontologias/condominio#2020-020> ,
+                                                                                                                               <http://nuno-aac.github.io/ontologias/condominio#2020-025> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#descricao> "7º Esq" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#mensalidade> "51.63" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#permilagem> "34" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento> 4 .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#R
+<http://nuno-aac.github.io/ontologias/condominio#R> rdf:type owl:NamedIndividual ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                   <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#descricao> "8º Dto" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#mensalidade> "36.45" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#permilagem> "24" ;
+                                                          <http://nuno-aac.github.io/ontologias/condominio#ultimoPagamento> 0 .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#Serralheiro
+<http://nuno-aac.github.io/ontologias/condominio#Serralheiro> rdf:type owl:NamedIndividual ,
+                                                                             <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                             <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                                    <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-012> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#Vizinhos
+<http://nuno-aac.github.io/ontologias/condominio#Vizinhos> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Entidade> ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Fracao> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#fezMovimento> <http://nuno-aac.github.io/ontologias/condominio#2020-028> .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-001
+<http://nuno-aac.github.io/ontologias/condominio#2020-001> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#CGD> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-01-04" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Manutenção da conta" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Despesa" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "7.28" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-002
+<http://nuno-aac.github.io/ontologias/condominio#2020-002> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#Q> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-01-06" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Janeiro" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "64" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-003
+<http://nuno-aac.github.io/ontologias/condominio#2020-003> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#H> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-01-06" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Abril a Dezembro de 2019" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "406.62" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-004
+<http://nuno-aac.github.io/ontologias/condominio#2020-004> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#EDP> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-01-08" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Luz" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Despesa" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "222.65" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-005
+<http://nuno-aac.github.io/ontologias/condominio#2020-005> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#P> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-01-16" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Janeiro" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "45.18" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-006
+<http://nuno-aac.github.io/ontologias/condominio#2020-006> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#CGD> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-02-01" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Manutenção da conta" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Despesa" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "7.28" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-007
+<http://nuno-aac.github.io/ontologias/condominio#2020-007> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#N> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-02-04" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Fevereiro" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "64" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-008
+<http://nuno-aac.github.io/ontologias/condominio#2020-008> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#Q> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-02-06" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Fevereiro" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "64" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-009
+<http://nuno-aac.github.io/ontologias/condominio#2020-009> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#Kone> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-01-20" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Manutenção dos elevadores: 1º trimestre" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Despesa" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "439.77" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-010
+<http://nuno-aac.github.io/ontologias/condominio#2020-010> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#G> ,
+                                                                                                                                    <http://nuno-aac.github.io/ontologias/condominio#J> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-02-12" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Janeiro, Fevereiro e Março" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "384" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-011
+<http://nuno-aac.github.io/ontologias/condominio#2020-011> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#P> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-02-20" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Fevereiro" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "45.18" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-012
+<http://nuno-aac.github.io/ontologias/condominio#2020-012> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#Serralheiro> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-02-24" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Concerto do trinco da porta" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Despesa" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "20" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-013
+<http://nuno-aac.github.io/ontologias/condominio#2020-013> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#CMB> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-02-24" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Inspeção dos elevadores" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Despesa" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "174.3" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-014
+<http://nuno-aac.github.io/ontologias/condominio#2020-014> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#F> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-02-24" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Acertos: Janeiro, Fevereiro, Março, Abril e 13.58 de Maio" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "194.3" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-015
+<http://nuno-aac.github.io/ontologias/condominio#2020-015> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#M> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-03-11" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Janeiro a Junho" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "271.08" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-016
+<http://nuno-aac.github.io/ontologias/condominio#2020-016> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#PluriRapel> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-03-11" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Reparação das fachadas" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Despesa" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "1655" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-017
+<http://nuno-aac.github.io/ontologias/condominio#2020-017> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#N> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-02-26" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Março" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "64" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-018
+<http://nuno-aac.github.io/ontologias/condominio#2020-018> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#I> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-02-29" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Janeiro a Dezembro" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "542.16" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-019
+<http://nuno-aac.github.io/ontologias/condominio#2020-019> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#EDP> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-03-04" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Luz" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Despesa" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "236.59" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-020
+<http://nuno-aac.github.io/ontologias/condominio#2020-020> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#Q> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-03-06" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Março" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "64" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-021
+<http://nuno-aac.github.io/ontologias/condominio#2020-021> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#CGD> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-03-07" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Manutenção da conta" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Despesa" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "7.28" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-022
+<http://nuno-aac.github.io/ontologias/condominio#2020-022> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#P> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-03-15" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Março" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "45.18" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-023
+<http://nuno-aac.github.io/ontologias/condominio#2020-023> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#N> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-03-30" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Abril" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "64" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-024
+<http://nuno-aac.github.io/ontologias/condominio#2020-024> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#CGD> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-04-04" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Manutenção da conta" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Despesa" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "7.28" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-025
+<http://nuno-aac.github.io/ontologias/condominio#2020-025> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#Q> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-04-06" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Abril" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "64" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-026
+<http://nuno-aac.github.io/ontologias/condominio#2020-026> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#O> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-04-07" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Abril a Agosto" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "225.9" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-027
+<http://nuno-aac.github.io/ontologias/condominio#2020-027> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#P> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-04-14" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Abril" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "45.18" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-028
+<http://nuno-aac.github.io/ontologias/condominio#2020-028> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#Vizinhos> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-04-15" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Luz Comum" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Despesa" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "207.98" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-029
+<http://nuno-aac.github.io/ontologias/condominio#2020-029> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#Limpeza> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-04-15" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Limpeza 2020" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Despesa" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "1080" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-030
+<http://nuno-aac.github.io/ontologias/condominio#2020-030> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#L> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-04-15" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Janeiro a Dezembro" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Receita" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "542.16" .
+
+
+###  http://nuno-aac.github.io/ontologias/condominio#2020-031
+<http://nuno-aac.github.io/ontologias/condominio#2020-031> rdf:type owl:NamedIndividual ,
+                                                                          <http://nuno-aac.github.io/ontologias/condominio#Movimento> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#associadoA> <http://nuno-aac.github.io/ontologias/condominio#Kone> ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#dataMovimento> "2020-04-01" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#descricaoMovimento> "Manutenção dos elevadores: 2º trimestre" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#tipoMovimento> "Despesa" ;
+                                                                 <http://nuno-aac.github.io/ontologias/condominio#valorMovimento> "439.77" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

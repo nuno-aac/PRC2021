@@ -1,0 +1,42 @@
+# PREFIXOS
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX : <http://nuno-aac.github.io/ontologias/condominio#>
+
+
+# 1
+SELECT * WHERE { 
+    ?ent rdf:type :Entidade
+}
+
+# 2
+SELECT * WHERE { 
+    ?f rdf:type :Fracao .
+    ?f :ultimoPagamento ?pag
+    filter(?pag < 4)
+}
+
+# 3
+SELECT ?e (sum(xsd:float(?v)) AS ?despesa) 
+WHERE { 
+    ?e rdf:type :Entidade .
+    ?e :fezMovimento ?m .
+    ?m :tipoMovimento "Despesa" .
+    ?m :valorMovimento ?v
+} GROUP BY ?e
+
+# 4
+SELECT (sum(xsd:float(?mens) * ?pag) AS ?receita) 
+WHERE { 
+    ?f rdf:type :Fracao .
+	?f :ultimoPagamento ?pag .
+    ?f :mensalidade ?mens
+}
+
+# 5
+SELECT ?f (sum(xsd:float(?mens) * ?pag) AS ?receita) 
+WHERE { 
+    ?f rdf:type :Fracao .
+	?f :ultimoPagamento ?pag .
+    ?f :mensalidade ?mens
+} GROUP BY ?f
