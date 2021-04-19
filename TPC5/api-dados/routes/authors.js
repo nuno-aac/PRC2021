@@ -8,6 +8,7 @@ router.get('/', function(req, res, next) {
     let body = {
         query: `select * where {
                     ?author rdf:type <https://www.nuno-aac.github.io/ontologias/jcrpubs#Pessoa> .
+                    ?author <https://www.nuno-aac.github.io/ontologias/jcrpubs#name> ?name
                 }`
             }
 

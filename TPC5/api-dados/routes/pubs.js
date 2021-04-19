@@ -18,6 +18,7 @@ router.get('/', function(req, res, next) {
                     ?pub <https://www.nuno-aac.github.io/ontologias/jcrpubs#year> ?year .
                     ?pub <https://www.nuno-aac.github.io/ontologias/jcrpubs#title> ?title .
                     ${authorFilter}
+                    FILTER (?type != <https://www.nuno-aac.github.io/ontologias/jcrpubs#Publication>)
                 }`
             }
 
