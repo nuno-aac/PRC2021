@@ -1,0 +1,62 @@
+# PREFIXES
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX : <http://prc.di.uminho.pt/2021/myfamily#>
+
+
+# 1
+CONSTRUCT {
+    ?filho1 :eIrmao ?filho2
+} WHERE {
+   	?filho1 :temProgenitor ?pai .
+    ?pai :eProgenitorDe ?filho2
+    FILTER (?filho1 != ?filho2)
+} 
+
+# 2
+CONSTRUCT {
+    ?filho :eBisavo ?bisavo
+} WHERE {
+   	?filho :temProgenitor ?pais .
+    ?pais :temProgenitor ?avos .
+    ?avos :temPai ?bisavo   
+} 
+
+# 3
+CONSTRUCT {
+    ?descendente :eDescendente ?pessoa
+} WHERE {
+   	?pessoa :eProgenitorDe+ ?descendente
+} 
+
+# 4
+CONSTRUCT {
+    ?primo1 :ePrimo ?primo2
+} WHERE {
+   	?primo1 :temProgenitor ?pai1 .
+    ?pai1 :temProgenitor ?avo .
+    ?avo :eProgenitorDe ?pai2 .
+    ?pai2 :eProgenitorDe ?primo2
+    FILTER (?primo1 != ?primo2)
+} 
+
+# 5
+CONSTRUCT {
+    ?mae :sexo "F".
+    ?pai :sexo "M"
+} WHERE {
+    OPTIONAL{ ?p :temPai ?pai } 
+    OPTIONAL{ ?p :temMae ?mae }
+} 
+
+# Foi acrescentado a ontologia a relação 
+# ###  http://prc.di.uminho.pt/2021/myfamily#relDireta
+# :relDireta rdf:type owl:ObjectProperty .
+# todas as relações já presentes foram tornadas subpropriedades desta
+
+CONSTRUCT {
+    :José_Carlos_Leite_Ramalho_1967 :temRelacaoCom ?rel
+} WHERE {
+    :José_Carlos_Leite_Ramalho_1967 :relDireta+ ?rel 
+} 

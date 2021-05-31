@@ -1,0 +1,6211 @@
+@prefix : <https://www.nuno-aac.github.io/ontologias/emd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://www.nuno-aac.github.io/ontologias/emd> .
+
+<https://www.nuno-aac.github.io/ontologias/emd> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://www.nuno-aac.github.io/ontologias/emd#clubeTemAtleta
+:clubeTemAtleta rdf:type owl:ObjectProperty ;
+                owl:inverseOf :temClube .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#modalidadeTemAtleta
+:modalidadeTemAtleta rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :participaModalidade .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#participaModalidade
+:participaModalidade rdf:type owl:ObjectProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#refereAtleta
+:refereAtleta rdf:type owl:ObjectProperty ;
+              owl:inverseOf :temExame .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#temClube
+:temClube rdf:type owl:ObjectProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#temExame
+:temExame rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://www.nuno-aac.github.io/ontologias/emd#dataEMD
+:dataEMD rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#email
+:email rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#genero
+:genero rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#idade
+:idade rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#isFederado
+:isFederado rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#morada
+:morada rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#nome
+:nome rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#resultado
+:resultado rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://www.nuno-aac.github.io/ontologias/emd#Atleta
+:Atleta rdf:type owl:Class .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#Clube
+:Clube rdf:type owl:Class .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#EMD
+:EMD rdf:type owl:Class .
+
+
+###  https://www.nuno-aac.github.io/ontologias/emd#Modalidade
+:Modalidade rdf:type owl:Class .
+
+
+### Individuals
+
+### https://www.nuno-aac.github.io/ontologias/emd#Futebol
+:Futebol  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Triatlo
+:Triatlo  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Badminton
+:Badminton  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Ciclismo
+:Ciclismo  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Patinagem
+:Patinagem  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Parapente
+:Parapente  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Orientaçao
+:Orientaçao  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Esgrima
+:Esgrima  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#BTT
+:BTT  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Atletismo
+:Atletismo  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#SUP
+:SUP  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Basquetebol
+:Basquetebol  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Karate
+:Karate  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Dança
+:Dança  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Andebol
+:Andebol  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Equitaçao
+:Equitaçao  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Tenis
+:Tenis  rdf:type owl:NamedIndividual ,
+        :Modalidade .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#GDGoma
+:GDGoma  rdf:type owl:NamedIndividual ,
+        :Clube .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#AVCfamalicao
+:AVCfamalicao  rdf:type owl:NamedIndividual ,
+        :Clube .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#ABCbraga
+:ABCbraga  rdf:type owl:NamedIndividual ,
+        :Clube .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Clube_de_Orientaçao_do_Minho
+:Clube_de_Orientaçao_do_Minho  rdf:type owl:NamedIndividual ,
+        :Clube .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#SCBraga
+:SCBraga  rdf:type owl:NamedIndividual ,
+        :Clube .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#ACDRcrespos
+:ACDRcrespos  rdf:type owl:NamedIndividual ,
+        :Clube .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#ACRroriz
+:ACRroriz  rdf:type owl:NamedIndividual ,
+        :Clube .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Vitoria
+:Vitoria  rdf:type owl:NamedIndividual ,
+        :Clube .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#AmigosMontanha
+:AmigosMontanha  rdf:type owl:NamedIndividual ,
+        :Clube .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#EDViana
+:EDViana  rdf:type owl:NamedIndividual ,
+        :Clube .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ee00725274024d5a2
+:60b3ee0ee00725274024d5a2  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Emily_Terrell ;
+        :dataEMD "2020-07-27" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e62b59d062f2018a3
+:60b3ee0e62b59d062f2018a3  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Medina_Hartman ;
+        :dataEMD "2019-01-17" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e01ada8b23fc63b31
+:60b3ee0e01ada8b23fc63b31  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Andrews_Rivas ;
+        :dataEMD "2020-04-09" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e6ab8471af29e2014
+:60b3ee0e6ab8471af29e2014  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Marcella_Combs ;
+        :dataEMD "2020-06-12" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ed16d4695ffdf5f17
+:60b3ee0ed16d4695ffdf5f17  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Mendoza_Buckner ;
+        :dataEMD "2019-09-13" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e2707c21708cc3418
+:60b3ee0e2707c21708cc3418  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Sellers_Copeland ;
+        :dataEMD "2021-04-25" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e4a1e0233af16ac8c
+:60b3ee0e4a1e0233af16ac8c  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Bernard_Stokes ;
+        :dataEMD "2020-12-29" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ed5225a2a93a69c3a
+:60b3ee0ed5225a2a93a69c3a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Alfreda_Raymond ;
+        :dataEMD "2021-03-04" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e9488e742d1600f58
+:60b3ee0e9488e742d1600f58  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Alston_Green ;
+        :dataEMD "2021-05-29" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ef8b2c3b732bc0d82
+:60b3ee0ef8b2c3b732bc0d82  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Paige_Mccarthy ;
+        :dataEMD "2019-10-27" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ec14a4ad7e917ed36
+:60b3ee0ec14a4ad7e917ed36  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Claudine_Gill ;
+        :dataEMD "2020-08-09" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ecf1638e25755912c
+:60b3ee0ecf1638e25755912c  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Summer_Calhoun ;
+        :dataEMD "2019-12-03" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e2fac3611c3cd7291
+:60b3ee0e2fac3611c3cd7291  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Slater_David ;
+        :dataEMD "2020-01-22" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e1f3d25c518678bd7
+:60b3ee0e1f3d25c518678bd7  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Ophelia_Boyd ;
+        :dataEMD "2020-09-03" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ee62c8f8a846459ea
+:60b3ee0ee62c8f8a846459ea  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Evans_Singleton ;
+        :dataEMD "2019-08-02" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e0539642b38645cb3
+:60b3ee0e0539642b38645cb3  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Church_Bishop ;
+        :dataEMD "2020-08-07" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e3f327a6ba71f77b0
+:60b3ee0e3f327a6ba71f77b0  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Woodard_Bennett ;
+        :dataEMD "2019-07-13" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e30fc3c2042f955eb
+:60b3ee0e30fc3c2042f955eb  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Vasquez_Michael ;
+        :dataEMD "2019-09-15" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ee90bdefcc8703185
+:60b3ee0ee90bdefcc8703185  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Holloway_Maxwell ;
+        :dataEMD "2019-09-04" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e559fb2fd0142f64c
+:60b3ee0e559fb2fd0142f64c  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Michele_Barber ;
+        :dataEMD "2020-02-04" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0eb2087f8cccef830d
+:60b3ee0eb2087f8cccef830d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Chambers_Burton ;
+        :dataEMD "2020-03-01" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ea0dc6768a6ca7192
+:60b3ee0ea0dc6768a6ca7192  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Massey_Goodman ;
+        :dataEMD "2021-03-26" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ee3d27702cac0b7cd
+:60b3ee0ee3d27702cac0b7cd  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Klein_Cameron ;
+        :dataEMD "2021-02-26" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e23a38b2da3f0a76e
+:60b3ee0e23a38b2da3f0a76e  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Lambert_Mueller ;
+        :dataEMD "2020-07-11" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e172e761f8d52c213
+:60b3ee0e172e761f8d52c213  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Ewing_Drake ;
+        :dataEMD "2021-02-15" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e2573d42d411cc591
+:60b3ee0e2573d42d411cc591  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Lester_Manning ;
+        :dataEMD "2019-01-04" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ee95a95d0c9bc3e5f
+:60b3ee0ee95a95d0c9bc3e5f  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Nina_Fowler ;
+        :dataEMD "2020-04-16" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0effaf9b013df4203d
+:60b3ee0effaf9b013df4203d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Lynn_Shaw ;
+        :dataEMD "2020-07-25" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ee3f58fda00f17cc6
+:60b3ee0ee3f58fda00f17cc6  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Betty_Blake ;
+        :dataEMD "2021-01-13" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ee7cb2701483df2c9
+:60b3ee0ee7cb2701483df2c9  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Oneill_Roth ;
+        :dataEMD "2020-10-23" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e74703dea724376f8
+:60b3ee0e74703dea724376f8  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Roxanne_Miles ;
+        :dataEMD "2019-06-03" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ef3bfaf77b4e67849
+:60b3ee0ef3bfaf77b4e67849  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Cecelia_Adams ;
+        :dataEMD "2019-04-20" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e54b12900f5e6c314
+:60b3ee0e54b12900f5e6c314  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Irma_Jacobs ;
+        :dataEMD "2019-12-12" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ef050e91efe68a668
+:60b3ee0ef050e91efe68a668  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Angelia_Noel ;
+        :dataEMD "2020-12-23" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e536b83d9d562f9c8
+:60b3ee0e536b83d9d562f9c8  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Sallie_Shaffer ;
+        :dataEMD "2020-06-02" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e6dbcbe60effe125d
+:60b3ee0e6dbcbe60effe125d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Jordan_Bonner ;
+        :dataEMD "2020-06-22" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e8b4f7dca2601ddfc
+:60b3ee0e8b4f7dca2601ddfc  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Bartlett_Sexton ;
+        :dataEMD "2019-12-17" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e59411e4e9d97d70a
+:60b3ee0e59411e4e9d97d70a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Opal_Stewart ;
+        :dataEMD "2019-07-27" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ee78616dd040e4dca
+:60b3ee0ee78616dd040e4dca  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Ola_Glover ;
+        :dataEMD "2020-11-26" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ea3043984230726fc
+:60b3ee0ea3043984230726fc  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Shelia_York ;
+        :dataEMD "2019-11-21" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e242cedae88a5f12c
+:60b3ee0e242cedae88a5f12c  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Raquel_Ratliff ;
+        :dataEMD "2019-07-31" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e846df12b8f8e750d
+:60b3ee0e846df12b8f8e750d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Burke_Weeks ;
+        :dataEMD "2019-09-14" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e3f165afa6f23a0eb
+:60b3ee0e3f165afa6f23a0eb  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Best_French ;
+        :dataEMD "2019-04-30" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e0ee0185da196c9ab
+:60b3ee0e0ee0185da196c9ab  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Fowler_Alvarez ;
+        :dataEMD "2019-10-08" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ecfbe9bf6149ba53b
+:60b3ee0ecfbe9bf6149ba53b  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Terri_Avila ;
+        :dataEMD "2020-03-16" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e84beb8fe0be593a5
+:60b3ee0e84beb8fe0be593a5  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Alford_Small ;
+        :dataEMD "2019-10-14" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ebab436c1d23c2a84
+:60b3ee0ebab436c1d23c2a84  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Key_Arnold ;
+        :dataEMD "2020-03-01" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e20e993d5010857a4
+:60b3ee0e20e993d5010857a4  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Nguyen_Diaz ;
+        :dataEMD "2021-04-16" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ee409ac878ba9b99b
+:60b3ee0ee409ac878ba9b99b  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Sherry_Morales ;
+        :dataEMD "2021-04-04" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ed7a60ecd07dadb9e
+:60b3ee0ed7a60ecd07dadb9e  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Crane_Ballard ;
+        :dataEMD "2019-09-11" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e07cb41f968328e60
+:60b3ee0e07cb41f968328e60  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Terry_Chaney ;
+        :dataEMD "2020-07-11" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ee48920a886a461e2
+:60b3ee0ee48920a886a461e2  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Sheppard_Bryant ;
+        :dataEMD "2019-03-04" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e79c5349b29557a62
+:60b3ee0e79c5349b29557a62  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Janis_Mckinney ;
+        :dataEMD "2020-11-03" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e3bffb9b3df6f5ea4
+:60b3ee0e3bffb9b3df6f5ea4  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Sue_Waters ;
+        :dataEMD "2020-05-10" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e03c621784bf7b2eb
+:60b3ee0e03c621784bf7b2eb  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Cynthia_Page ;
+        :dataEMD "2019-05-30" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ea96d47b79642735d
+:60b3ee0ea96d47b79642735d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Montgomery_Rhodes ;
+        :dataEMD "2019-10-14" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e63cc2530b136daef
+:60b3ee0e63cc2530b136daef  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Claire_Joyce ;
+        :dataEMD "2021-03-22" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e8a311b08fca3541b
+:60b3ee0e8a311b08fca3541b  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Evangelina_Key ;
+        :dataEMD "2021-04-16" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ea9b4c2114abcf6d7
+:60b3ee0ea9b4c2114abcf6d7  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Effie_Gibson ;
+        :dataEMD "2020-11-24" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e16fc834f28234ef4
+:60b3ee0e16fc834f28234ef4  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Maureen_Cobb ;
+        :dataEMD "2021-03-16" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0efe55045feaaea0d0
+:60b3ee0efe55045feaaea0d0  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Dee_Holman ;
+        :dataEMD "2020-11-22" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e53dad18808565be7
+:60b3ee0e53dad18808565be7  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Larson_Morin ;
+        :dataEMD "2019-02-13" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e25015995bacd5bed
+:60b3ee0e25015995bacd5bed  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Ursula_Martinez ;
+        :dataEMD "2021-01-29" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ed8819374df399b72
+:60b3ee0ed8819374df399b72  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :English_Clemons ;
+        :dataEMD "2020-10-10" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e47a5478e9b66110d
+:60b3ee0e47a5478e9b66110d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Stella_Jackson ;
+        :dataEMD "2020-10-28" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0eddf26117e9d32bcb
+:60b3ee0eddf26117e9d32bcb  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Haley_Joseph ;
+        :dataEMD "2019-05-01" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ebc5f8bcac6a4b89d
+:60b3ee0ebc5f8bcac6a4b89d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Kelsey_Roberts ;
+        :dataEMD "2020-04-09" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e9f0c3dbf2ecc854f
+:60b3ee0e9f0c3dbf2ecc854f  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Watson_Lynch ;
+        :dataEMD "2019-06-26" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e6cb88f8d26691e15
+:60b3ee0e6cb88f8d26691e15  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Chasity_Coffey ;
+        :dataEMD "2021-05-14" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e0797a9f03b138d18
+:60b3ee0e0797a9f03b138d18  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Paula_Delaney ;
+        :dataEMD "2021-02-26" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e769aecb50db619f2
+:60b3ee0e769aecb50db619f2  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Galloway_Sanders ;
+        :dataEMD "2019-06-27" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e553355b77862ea98
+:60b3ee0e553355b77862ea98  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Tina_Blankenship ;
+        :dataEMD "2021-04-12" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ee3bb3fd71f515d88
+:60b3ee0ee3bb3fd71f515d88  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Whitehead_Montgomery ;
+        :dataEMD "2021-04-11" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ed5dd8522cc53e7b0
+:60b3ee0ed5dd8522cc53e7b0  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Dominguez_Chambers ;
+        :dataEMD "2021-04-22" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e28ab1329e2ed0888
+:60b3ee0e28ab1329e2ed0888  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Booth_Eaton ;
+        :dataEMD "2019-05-23" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e7524108bf9936414
+:60b3ee0e7524108bf9936414  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Joanna_Grant ;
+        :dataEMD "2019-07-14" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e59e86eaf9b9a5372
+:60b3ee0e59e86eaf9b9a5372  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Jeri_Pearson ;
+        :dataEMD "2019-03-28" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e13085dc64e17e4b0
+:60b3ee0e13085dc64e17e4b0  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Sanchez_Mcgee ;
+        :dataEMD "2021-05-13" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e3d4f8a3a439f8b7a
+:60b3ee0e3d4f8a3a439f8b7a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Magdalena_Francis ;
+        :dataEMD "2019-12-02" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e6edaad4b8a63efae
+:60b3ee0e6edaad4b8a63efae  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Morris_Poole ;
+        :dataEMD "2021-05-19" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e538d62e10eba66b6
+:60b3ee0e538d62e10eba66b6  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Rodriguez_Gonzalez ;
+        :dataEMD "2021-02-16" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0eca6dd1525f201090
+:60b3ee0eca6dd1525f201090  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Christine_Rice ;
+        :dataEMD "2021-05-18" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e472001f8e05a40ee
+:60b3ee0e472001f8e05a40ee  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Valdez_Harper ;
+        :dataEMD "2020-11-10" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e3b279f45e79cd6fa
+:60b3ee0e3b279f45e79cd6fa  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Berta_Clay ;
+        :dataEMD "2021-04-24" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0eee4b8338800e6003
+:60b3ee0eee4b8338800e6003  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Bonnie_Sandoval ;
+        :dataEMD "2019-10-18" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e66f3d4c3cc778b1e
+:60b3ee0e66f3d4c3cc778b1e  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Stein_Wiggins ;
+        :dataEMD "2020-11-24" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e278b7161e71d9ceb
+:60b3ee0e278b7161e71d9ceb  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Tanya_Mcclain ;
+        :dataEMD "2020-12-08" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e7ded570068dce1d9
+:60b3ee0e7ded570068dce1d9  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Perry_Sanford ;
+        :dataEMD "2021-02-23" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e94c479068389f5e3
+:60b3ee0e94c479068389f5e3  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Maxine_Rutledge ;
+        :dataEMD "2019-10-10" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e7ac2f667ececc242
+:60b3ee0e7ac2f667ececc242  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Tucker_Morse ;
+        :dataEMD "2020-07-01" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0eabfeddd7f84fd275
+:60b3ee0eabfeddd7f84fd275  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Thelma_Schmidt ;
+        :dataEMD "2020-05-17" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e3d51473e1b41004b
+:60b3ee0e3d51473e1b41004b  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Charles_Kim ;
+        :dataEMD "2020-03-24" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e926c1d538dfaabd3
+:60b3ee0e926c1d538dfaabd3  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Duncan_Davidson ;
+        :dataEMD "2020-01-27" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ea6339abf19460649
+:60b3ee0ea6339abf19460649  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Gertrude_Dillon ;
+        :dataEMD "2019-04-07" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e059b32a47b518e93
+:60b3ee0e059b32a47b518e93  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Brennan_Santana ;
+        :dataEMD "2019-02-06" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e57b3659681466acf
+:60b3ee0e57b3659681466acf  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Ball_Barlow ;
+        :dataEMD "2020-11-09" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e651ec286b869976d
+:60b3ee0e651ec286b869976d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Oneil_Baxter ;
+        :dataEMD "2020-05-10" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e67043c92ce84a97c
+:60b3ee0e67043c92ce84a97c  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Helena_Mayo ;
+        :dataEMD "2020-10-09" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0ea5d75fed720e4820
+:60b3ee0ea5d75fed720e4820  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Martin_Brewer ;
+        :dataEMD "2021-05-10" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee0e9dc10b681d5212b5
+:60b3ee0e9dc10b681d5212b5  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Wilder_Greene ;
+        :dataEMD "2019-10-13" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee817af5fb3fb1e153ef
+:60b3ee817af5fb3fb1e153ef  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Harrison_Finch ;
+        :dataEMD "2019-06-23" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81145de55fffb7bdfa
+:60b3ee81145de55fffb7bdfa  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Jordan_Alvarez ;
+        :dataEMD "2019-01-01" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee811a4429c17e036357
+:60b3ee811a4429c17e036357  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Lane_Norton ;
+        :dataEMD "2020-04-27" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8115745fe4ce8dbc5a
+:60b3ee8115745fe4ce8dbc5a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Carrillo_Munoz ;
+        :dataEMD "2020-07-06" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8128adc82a45f8023d
+:60b3ee8128adc82a45f8023d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Barrett_Frederick ;
+        :dataEMD "2020-06-18" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81525963fc4fd2cf9d
+:60b3ee81525963fc4fd2cf9d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Harmon_Stone ;
+        :dataEMD "2019-06-12" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81e69c16cc6108e7ad
+:60b3ee81e69c16cc6108e7ad  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Chandra_Potts ;
+        :dataEMD "2021-01-18" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81ec958ef30a9daa8d
+:60b3ee81ec958ef30a9daa8d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :John_Warner ;
+        :dataEMD "2021-01-12" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee813905ebb273d5d9a0
+:60b3ee813905ebb273d5d9a0  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Casey_Bowman ;
+        :dataEMD "2019-03-09" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8106e9b44af3270a40
+:60b3ee8106e9b44af3270a40  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Mccullough_Pena ;
+        :dataEMD "2020-04-23" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee812f35f4ff3c2edecf
+:60b3ee812f35f4ff3c2edecf  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Brianna_Bentley ;
+        :dataEMD "2019-06-27" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee819d5bb33e21ff7e16
+:60b3ee819d5bb33e21ff7e16  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Nixon_Hendrix ;
+        :dataEMD "2021-02-26" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81ce306eb25d963bb0
+:60b3ee81ce306eb25d963bb0  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Buckner_Luna ;
+        :dataEMD "2019-07-11" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8138f5b0173e1bc637
+:60b3ee8138f5b0173e1bc637  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Britt_Zamora ;
+        :dataEMD "2019-08-25" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81f5035e13f1db0069
+:60b3ee81f5035e13f1db0069  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Hendrix_Bauer ;
+        :dataEMD "2020-11-14" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8131597dae8f73a11b
+:60b3ee8131597dae8f73a11b  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Travis_Sampson ;
+        :dataEMD "2019-10-30" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81e32abefb2a9e8629
+:60b3ee81e32abefb2a9e8629  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Darla_Ware ;
+        :dataEMD "2019-11-22" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee815852d8fc2dc33e8a
+:60b3ee815852d8fc2dc33e8a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Peters_Vaughn ;
+        :dataEMD "2020-01-17" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee815e7f792d741f2228
+:60b3ee815e7f792d741f2228  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Lawrence_Herman ;
+        :dataEMD "2020-10-25" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee815b7d9a126c47165d
+:60b3ee815b7d9a126c47165d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Chang_Oneill ;
+        :dataEMD "2019-07-26" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81e769b6603a6525c6
+:60b3ee81e769b6603a6525c6  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Patrick_Mcintyre ;
+        :dataEMD "2020-12-20" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee815cb65367e6de0b3c
+:60b3ee815cb65367e6de0b3c  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Joyce_Evans ;
+        :dataEMD "2020-01-11" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee813bd664873721a6a1
+:60b3ee813bd664873721a6a1  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Larsen_Villarreal ;
+        :dataEMD "2019-07-03" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81e901a8c787b38008
+:60b3ee81e901a8c787b38008  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Morrow_Yang ;
+        :dataEMD "2020-03-09" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81874f8871966eedd1
+:60b3ee81874f8871966eedd1  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Dunn_Horn ;
+        :dataEMD "2021-02-04" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81146b3cd8954b7256
+:60b3ee81146b3cd8954b7256  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Viola_Medina ;
+        :dataEMD "2019-09-04" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81e02e5fb35760bec3
+:60b3ee81e02e5fb35760bec3  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Valdez_Barnes ;
+        :dataEMD "2021-05-14" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8162c5de4569ccfe2f
+:60b3ee8162c5de4569ccfe2f  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Sweet_Gibbs ;
+        :dataEMD "2019-08-29" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81034e5cb2050e882a
+:60b3ee81034e5cb2050e882a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Addie_Hayes ;
+        :dataEMD "2019-07-17" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81a545dd3ccaea41b0
+:60b3ee81a545dd3ccaea41b0  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :May_Holt ;
+        :dataEMD "2021-04-25" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee817c1ce5b6cb67302a
+:60b3ee817c1ce5b6cb67302a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Christensen_Boyd ;
+        :dataEMD "2019-12-31" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81cdbf91a4db1113eb
+:60b3ee81cdbf91a4db1113eb  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Workman_Franks ;
+        :dataEMD "2019-03-18" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81ed581129ff3b2087
+:60b3ee81ed581129ff3b2087  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Lucile_Underwood ;
+        :dataEMD "2020-01-05" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81e62094c1d0bfca5c
+:60b3ee81e62094c1d0bfca5c  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Heath_Bishop ;
+        :dataEMD "2019-08-09" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81bc1a4f4c3bc26de1
+:60b3ee81bc1a4f4c3bc26de1  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Rosales_Mejia ;
+        :dataEMD "2019-04-12" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81e20d4412bdf4f468
+:60b3ee81e20d4412bdf4f468  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Ray_Howe ;
+        :dataEMD "2019-02-02" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81956a3fcc57d06c8c
+:60b3ee81956a3fcc57d06c8c  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Suarez_Campbell ;
+        :dataEMD "2019-07-05" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8125e3c7f8ae2daa67
+:60b3ee8125e3c7f8ae2daa67  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Shaffer_Le ;
+        :dataEMD "2020-01-20" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81c0d4102a9f396149
+:60b3ee81c0d4102a9f396149  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Justine_Wise ;
+        :dataEMD "2019-02-08" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81b5064ca4e9536d3c
+:60b3ee81b5064ca4e9536d3c  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Villarreal_Tucker ;
+        :dataEMD "2019-10-14" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8195bd88f9e936aca7
+:60b3ee8195bd88f9e936aca7  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Monica_Neal ;
+        :dataEMD "2021-04-05" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81864959e7fb8bc864
+:60b3ee81864959e7fb8bc864  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Lloyd_Dotson ;
+        :dataEMD "2019-05-11" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8187b3e7d863bbaf97
+:60b3ee8187b3e7d863bbaf97  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Mccray_Barker ;
+        :dataEMD "2019-01-29" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81afbc52a666850b8c
+:60b3ee81afbc52a666850b8c  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Sellers_Hunter ;
+        :dataEMD "2019-02-14" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81d74bfab7c22b5eaa
+:60b3ee81d74bfab7c22b5eaa  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Cathryn_Fletcher ;
+        :dataEMD "2021-01-31" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee810078ab3f7321a731
+:60b3ee810078ab3f7321a731  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Dee_Lowery ;
+        :dataEMD "2020-02-29" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81a40cc7fc63be65ad
+:60b3ee81a40cc7fc63be65ad  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Freeman_Wyatt ;
+        :dataEMD "2019-04-25" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81efda597f9d074638
+:60b3ee81efda597f9d074638  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Guy_Drake ;
+        :dataEMD "2020-01-09" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81d9e0e05421b4d08e
+:60b3ee81d9e0e05421b4d08e  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Mendez_Good ;
+        :dataEMD "2019-07-01" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee813611a9e67c3546a3
+:60b3ee813611a9e67c3546a3  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Burnett_Hogan ;
+        :dataEMD "2019-03-03" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee816e416ff33c21634a
+:60b3ee816e416ff33c21634a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Jamie_Cherry ;
+        :dataEMD "2020-08-03" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81858e8c650b8d992f
+:60b3ee81858e8c650b8d992f  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Bird_Noble ;
+        :dataEMD "2019-09-06" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee817468bb467a39e2f8
+:60b3ee817468bb467a39e2f8  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Burgess_Bradshaw ;
+        :dataEMD "2020-08-11" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8117de88dc519ae9d3
+:60b3ee8117de88dc519ae9d3  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Laura_Jacobson ;
+        :dataEMD "2020-10-22" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8160bf5c46dcb3cfa7
+:60b3ee8160bf5c46dcb3cfa7  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Blair_Sherman ;
+        :dataEMD "2020-09-06" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81ea2bed08bf81e861
+:60b3ee81ea2bed08bf81e861  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Bobbi_Hawkins ;
+        :dataEMD "2020-09-01" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81051fe3467036095a
+:60b3ee81051fe3467036095a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Montoya_Anthony ;
+        :dataEMD "2019-12-21" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8152ddb1911c44b96a
+:60b3ee8152ddb1911c44b96a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Hooper_Kirby ;
+        :dataEMD "2021-01-29" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81839f04840d199de9
+:60b3ee81839f04840d199de9  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Wolfe_Baird ;
+        :dataEMD "2020-12-30" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81375cc4e9aba8bc6e
+:60b3ee81375cc4e9aba8bc6e  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Lamb_Graham ;
+        :dataEMD "2019-01-03" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81422fd173977583e5
+:60b3ee81422fd173977583e5  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Valentine_Fitzgerald ;
+        :dataEMD "2021-04-22" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee813c7547937e764cab
+:60b3ee813c7547937e764cab  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Herminia_Mooney ;
+        :dataEMD "2020-06-26" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee818db2661d700d6ea3
+:60b3ee818db2661d700d6ea3  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Golden_Hopkins ;
+        :dataEMD "2019-09-08" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee811426bce48b453191
+:60b3ee811426bce48b453191  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Lancaster_Andrews ;
+        :dataEMD "2020-12-22" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81d13fde44c2e74aab
+:60b3ee81d13fde44c2e74aab  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Elena_Sullivan ;
+        :dataEMD "2019-08-15" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81ef9b6d894223a9fd
+:60b3ee81ef9b6d894223a9fd  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Deana_Ramsey ;
+        :dataEMD "2020-04-26" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8154161dd7358b2e65
+:60b3ee8154161dd7358b2e65  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Mayra_Rose ;
+        :dataEMD "2019-12-01" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81fcb5c8f9970e2899
+:60b3ee81fcb5c8f9970e2899  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Tina_Salinas ;
+        :dataEMD "2020-07-27" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81e97e332884e1299a
+:60b3ee81e97e332884e1299a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Sheila_Caldwell ;
+        :dataEMD "2020-05-24" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8151ebf5ddaa5ca13c
+:60b3ee8151ebf5ddaa5ca13c  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Hudson_Duffy ;
+        :dataEMD "2020-01-02" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee818e25f41f67491f02
+:60b3ee818e25f41f67491f02  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Guzman_Douglas ;
+        :dataEMD "2021-04-22" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee817ca74f6cb607c6f9
+:60b3ee817ca74f6cb607c6f9  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Ethel_Bartlett ;
+        :dataEMD "2019-12-09" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee818cd611e6bf56f2f1
+:60b3ee818cd611e6bf56f2f1  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Doyle_Odom ;
+        :dataEMD "2021-04-13" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81c1515414ac1fb549
+:60b3ee81c1515414ac1fb549  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Araceli_Castaneda ;
+        :dataEMD "2020-06-02" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81d15fe413bd86d938
+:60b3ee81d15fe413bd86d938  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Fuentes_Walker ;
+        :dataEMD "2020-06-04" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81e2dc932e4e6f7e51
+:60b3ee81e2dc932e4e6f7e51  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Sarah_Moore ;
+        :dataEMD "2019-01-09" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81f9666482a5c13406
+:60b3ee81f9666482a5c13406  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Cheryl_Watson ;
+        :dataEMD "2019-10-25" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81d7dbdba97369e927
+:60b3ee81d7dbdba97369e927  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Langley_Velez ;
+        :dataEMD "2019-04-12" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81e024b81dde892dd6
+:60b3ee81e024b81dde892dd6  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Alisa_Morrison ;
+        :dataEMD "2019-06-30" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81c5073acaa4febef6
+:60b3ee81c5073acaa4febef6  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Malinda_Merritt ;
+        :dataEMD "2019-12-29" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81963e6ecf70e3d586
+:60b3ee81963e6ecf70e3d586  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Lenora_Kane ;
+        :dataEMD "2020-07-30" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8122f33125935e59d3
+:60b3ee8122f33125935e59d3  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Cabrera_Curtis ;
+        :dataEMD "2021-02-25" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81828ee0dba6850475
+:60b3ee81828ee0dba6850475  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Roseann_Benjamin ;
+        :dataEMD "2020-05-28" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8152b3f05331a47645
+:60b3ee8152b3f05331a47645  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Stafford_Ray ;
+        :dataEMD "2020-04-29" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81411e7acd216d0bf0
+:60b3ee81411e7acd216d0bf0  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Jewel_Trevino ;
+        :dataEMD "2019-09-18" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8103ed6d19e90ce9f7
+:60b3ee8103ed6d19e90ce9f7  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Mckenzie_Woods ;
+        :dataEMD "2020-09-04" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8182b8712a2f15e41a
+:60b3ee8182b8712a2f15e41a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Jean_Conley ;
+        :dataEMD "2020-12-10" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee811a2021b6b24ffbc2
+:60b3ee811a2021b6b24ffbc2  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Conway_Alexander ;
+        :dataEMD "2020-09-14" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81c44446a9eceefd87
+:60b3ee81c44446a9eceefd87  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Maryann_Joyce ;
+        :dataEMD "2020-04-08" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee812d50aad901e7e243
+:60b3ee812d50aad901e7e243  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Ayers_Carroll ;
+        :dataEMD "2019-07-31" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee816b42d22ea075aba7
+:60b3ee816b42d22ea075aba7  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Bonita_Mccormick ;
+        :dataEMD "2019-01-29" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee812a4b8125a96689a0
+:60b3ee812a4b8125a96689a0  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Kathy_Kramer ;
+        :dataEMD "2019-04-28" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81b71a63346d0243e7
+:60b3ee81b71a63346d0243e7  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Tonia_Bryan ;
+        :dataEMD "2020-10-10" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81559385200672594d
+:60b3ee81559385200672594d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Barker_Mercer ;
+        :dataEMD "2020-02-02" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81a113b4cb68ef5906
+:60b3ee81a113b4cb68ef5906  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Mcfarland_Tyson ;
+        :dataEMD "2019-05-19" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81655cc723f988a62d
+:60b3ee81655cc723f988a62d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Meagan_Carter ;
+        :dataEMD "2021-02-19" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee8186fff74d432c9259
+:60b3ee8186fff74d432c9259  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Catalina_Webb ;
+        :dataEMD "2019-06-25" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81051bf4a2138bb141
+:60b3ee81051bf4a2138bb141  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Moses_Sargent ;
+        :dataEMD "2020-10-31" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81c4345661feac7a9a
+:60b3ee81c4345661feac7a9a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Preston_Mccall ;
+        :dataEMD "2021-02-19" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3ee81451b811209c3deef
+:60b3ee81451b811209c3deef  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Christian_Clements ;
+        :dataEMD "2019-06-30" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb933e50bd455af89a9
+:60b3eeb933e50bd455af89a9  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Jeanine_Hester ;
+        :dataEMD "2020-08-30" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9b701a941937c0dd8
+:60b3eeb9b701a941937c0dd8  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Tonia_Espinoza ;
+        :dataEMD "2020-08-12" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9fc87ff10010ae517
+:60b3eeb9fc87ff10010ae517  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Alyssa_Howard ;
+        :dataEMD "2019-08-25" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9e966a3cf1239840a
+:60b3eeb9e966a3cf1239840a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Merrill_Fulton ;
+        :dataEMD "2020-06-29" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9dbbc9f23e5c888ac
+:60b3eeb9dbbc9f23e5c888ac  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Jaime_Erickson ;
+        :dataEMD "2020-11-01" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9425c872217db611e
+:60b3eeb9425c872217db611e  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Felicia_Skinner ;
+        :dataEMD "2019-09-09" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb967d2dd4be3e2c87d
+:60b3eeb967d2dd4be3e2c87d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Margaret_Bray ;
+        :dataEMD "2020-07-12" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb944e8f43647ed05f2
+:60b3eeb944e8f43647ed05f2  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Etta_Cotton ;
+        :dataEMD "2021-03-04" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9bc3d74e0cb400631
+:60b3eeb9bc3d74e0cb400631  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Kelley_Davidson ;
+        :dataEMD "2020-10-18" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb934a2174ec11d92a6
+:60b3eeb934a2174ec11d92a6  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Crawford_Merritt ;
+        :dataEMD "2019-08-18" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9fa4e587712a640d4
+:60b3eeb9fa4e587712a640d4  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Kim_Buck ;
+        :dataEMD "2020-11-04" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb948dd398953308f2d
+:60b3eeb948dd398953308f2d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Gilda_Schmidt ;
+        :dataEMD "2019-07-01" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9a2085e98659a2f5b
+:60b3eeb9a2085e98659a2f5b  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Mcintosh_Aguirre ;
+        :dataEMD "2019-04-09" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9bfd86db079523f51
+:60b3eeb9bfd86db079523f51  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Ida_Bradshaw ;
+        :dataEMD "2020-11-25" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb98614ea36f88963ba
+:60b3eeb98614ea36f88963ba  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Jefferson_Pacheco ;
+        :dataEMD "2020-04-08" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb910808af364c63729
+:60b3eeb910808af364c63729  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Olson_Hickman ;
+        :dataEMD "2020-12-14" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb939a5cb2da478d86c
+:60b3eeb939a5cb2da478d86c  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Malinda_Mccall ;
+        :dataEMD "2020-06-09" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb92b1debc068c42080
+:60b3eeb92b1debc068c42080  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Raquel_Dejesus ;
+        :dataEMD "2020-10-06" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9ec44aba1040d2e1e
+:60b3eeb9ec44aba1040d2e1e  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Daniel_Chambers ;
+        :dataEMD "2020-02-06" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9a9f081f26deada43
+:60b3eeb9a9f081f26deada43  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Samantha_Sharp ;
+        :dataEMD "2019-12-21" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9468961b15e8e1277
+:60b3eeb9468961b15e8e1277  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Robert_Herman ;
+        :dataEMD "2021-01-09" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9edcbd2a0befa0a74
+:60b3eeb9edcbd2a0befa0a74  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Olive_Chapman ;
+        :dataEMD "2021-02-20" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb97aecf09da8650e19
+:60b3eeb97aecf09da8650e19  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Mccoy_Blackburn ;
+        :dataEMD "2019-04-30" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9d7265f5ab15e4fed
+:60b3eeb9d7265f5ab15e4fed  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Lambert_Ferrell ;
+        :dataEMD "2020-12-10" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9217c0274b8a1022b
+:60b3eeb9217c0274b8a1022b  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Small_Coffey ;
+        :dataEMD "2019-03-12" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9cc832d080dd2c0e0
+:60b3eeb9cc832d080dd2c0e0  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Hicks_Daniels ;
+        :dataEMD "2019-05-03" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9bc920eef418c62ac
+:60b3eeb9bc920eef418c62ac  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Meghan_Cabrera ;
+        :dataEMD "2019-03-23" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9cf9c078af09a7b74
+:60b3eeb9cf9c078af09a7b74  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Hubbard_Hart ;
+        :dataEMD "2019-01-12" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb968346da5d651b20d
+:60b3eeb968346da5d651b20d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Chelsea_Gallegos ;
+        :dataEMD "2020-07-25" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb91afe89807606d176
+:60b3eeb91afe89807606d176  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Natalie_Figueroa ;
+        :dataEMD "2020-03-16" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9080c70a07ef5c4ac
+:60b3eeb9080c70a07ef5c4ac  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Hayes_Ward ;
+        :dataEMD "2020-11-20" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb96f9b421618f39954
+:60b3eeb96f9b421618f39954  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Graves_Mccray ;
+        :dataEMD "2019-10-13" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb90afb40019dea8a64
+:60b3eeb90afb40019dea8a64  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Mavis_Riley ;
+        :dataEMD "2020-09-27" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb90fc3f9678fed0903
+:60b3eeb90fc3f9678fed0903  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Salas_Joseph ;
+        :dataEMD "2019-09-09" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9f0342bd19d6a5a39
+:60b3eeb9f0342bd19d6a5a39  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Carly_Peck ;
+        :dataEMD "2020-10-22" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb966fd425e94c59395
+:60b3eeb966fd425e94c59395  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Ramirez_Blevins ;
+        :dataEMD "2019-02-16" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb91977642e615c41e3
+:60b3eeb91977642e615c41e3  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Parks_Saunders ;
+        :dataEMD "2020-12-31" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb93a24ff700a3928d5
+:60b3eeb93a24ff700a3928d5  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Leanne_Armstrong ;
+        :dataEMD "2021-01-13" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb99c434fb1a7c7c633
+:60b3eeb99c434fb1a7c7c633  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Kline_Stark ;
+        :dataEMD "2020-03-22" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9f430b0e9e81165c4
+:60b3eeb9f430b0e9e81165c4  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Elliott_Guzman ;
+        :dataEMD "2019-02-18" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb94d27b52fe1b15f19
+:60b3eeb94d27b52fe1b15f19  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Liz_Baldwin ;
+        :dataEMD "2019-08-06" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb91ab516aa15e1199a
+:60b3eeb91ab516aa15e1199a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Warner_Bullock ;
+        :dataEMD "2020-10-16" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb97b17e786bdf88e29
+:60b3eeb97b17e786bdf88e29  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Santana_Harper ;
+        :dataEMD "2019-12-18" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb95762eb38f4ae9a22
+:60b3eeb95762eb38f4ae9a22  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Imelda_Odonnell ;
+        :dataEMD "2019-01-18" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9c05f073a238c4aa6
+:60b3eeb9c05f073a238c4aa6  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Lila_Curry ;
+        :dataEMD "2020-09-24" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9c82e74bc1831a3be
+:60b3eeb9c82e74bc1831a3be  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Milagros_Ellis ;
+        :dataEMD "2020-02-06" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9e81cdbbee14cab97
+:60b3eeb9e81cdbbee14cab97  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Stafford_Hale ;
+        :dataEMD "2019-07-15" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb983fb3181e8f43d12
+:60b3eeb983fb3181e8f43d12  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Blevins_Cline ;
+        :dataEMD "2021-05-05" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9817b6dc6e2848304
+:60b3eeb9817b6dc6e2848304  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Marisol_Owen ;
+        :dataEMD "2020-07-15" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9ab56338f42cdaf13
+:60b3eeb9ab56338f42cdaf13  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Mcintyre_Walsh ;
+        :dataEMD "2020-07-02" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9de8d709dd3fd086f
+:60b3eeb9de8d709dd3fd086f  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Valarie_Silva ;
+        :dataEMD "2020-11-06" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9077997c0e212f286
+:60b3eeb9077997c0e212f286  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Jimmie_Beck ;
+        :dataEMD "2020-01-06" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb916caa13610b8cadf
+:60b3eeb916caa13610b8cadf  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Amparo_Price ;
+        :dataEMD "2019-08-30" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9c65ee38149a83dfc
+:60b3eeb9c65ee38149a83dfc  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Susanna_Lowery ;
+        :dataEMD "2021-01-24" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb97c9c1d91087c47a4
+:60b3eeb97c9c1d91087c47a4  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Flynn_Huber ;
+        :dataEMD "2020-08-23" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb97aabcddbffca43f3
+:60b3eeb97aabcddbffca43f3  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Elaine_Allen ;
+        :dataEMD "2019-03-29" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb935b59a6c217af521
+:60b3eeb935b59a6c217af521  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Gwen_Pate ;
+        :dataEMD "2020-09-24" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb972a330700a58a10a
+:60b3eeb972a330700a58a10a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Leila_Solis ;
+        :dataEMD "2020-08-19" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9a78530cac96a3f79
+:60b3eeb9a78530cac96a3f79  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Mercedes_Heath ;
+        :dataEMD "2021-04-17" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9235de1538781611d
+:60b3eeb9235de1538781611d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Althea_Fitzpatrick ;
+        :dataEMD "2019-05-03" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9f7311f86c6a33646
+:60b3eeb9f7311f86c6a33646  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Arlene_Morton ;
+        :dataEMD "2019-12-09" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9354e8a0e1817c201
+:60b3eeb9354e8a0e1817c201  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Mosley_Gonzales ;
+        :dataEMD "2020-09-26" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9e6ca114d8ab96bc4
+:60b3eeb9e6ca114d8ab96bc4  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Torres_Hardy ;
+        :dataEMD "2019-08-31" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb945accec6f3eb9c3d
+:60b3eeb945accec6f3eb9c3d  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Annmarie_Petersen ;
+        :dataEMD "2020-12-13" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb92a2f391cda5b305e
+:60b3eeb92a2f391cda5b305e  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Osborn_Green ;
+        :dataEMD "2020-12-03" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9a57cc0f98a998c9a
+:60b3eeb9a57cc0f98a998c9a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Davenport_Dominguez ;
+        :dataEMD "2020-08-26" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb94b33eaa274778def
+:60b3eeb94b33eaa274778def  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Barton_Massey ;
+        :dataEMD "2019-12-20" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9a78fd4bfe9e36453
+:60b3eeb9a78fd4bfe9e36453  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Holly_Bowen ;
+        :dataEMD "2019-06-09" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9868c63b27774163f
+:60b3eeb9868c63b27774163f  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Dennis_Crawford ;
+        :dataEMD "2020-06-28" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9a857578bd25302db
+:60b3eeb9a857578bd25302db  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Oliver_Mcleod ;
+        :dataEMD "2019-05-25" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9abbaec58aed568da
+:60b3eeb9abbaec58aed568da  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Tameka_Orr ;
+        :dataEMD "2019-03-01" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb90d885cf3327fe6bd
+:60b3eeb90d885cf3327fe6bd  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Foster_Strickland ;
+        :dataEMD "2020-05-28" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb91ded4fa3db5fdf8e
+:60b3eeb91ded4fa3db5fdf8e  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Marlene_Rodgers ;
+        :dataEMD "2019-10-26" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb909f2540c651ec8ff
+:60b3eeb909f2540c651ec8ff  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Shari_Mathews ;
+        :dataEMD "2020-04-12" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb91c3038d321c60bb3
+:60b3eeb91c3038d321c60bb3  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Josie_Rasmussen ;
+        :dataEMD "2021-05-07" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9c4b1d5f4d4a0099b
+:60b3eeb9c4b1d5f4d4a0099b  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Shelton_Walton ;
+        :dataEMD "2020-06-22" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9cded7ae5d2724d52
+:60b3eeb9cded7ae5d2724d52  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Odonnell_Russell ;
+        :dataEMD "2020-11-21" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb91485796dedd2444b
+:60b3eeb91485796dedd2444b  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Elba_Le ;
+        :dataEMD "2021-02-04" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9fbb0206c040aa4f1
+:60b3eeb9fbb0206c040aa4f1  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Sweet_Woodward ;
+        :dataEMD "2019-10-20" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9ef81456a2178baca
+:60b3eeb9ef81456a2178baca  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Wilkins_Cummings ;
+        :dataEMD "2020-02-24" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb929306aeaff7f31a0
+:60b3eeb929306aeaff7f31a0  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Rogers_Noel ;
+        :dataEMD "2021-02-04" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb99d4b85092734ded4
+:60b3eeb99d4b85092734ded4  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Hodges_Ashley ;
+        :dataEMD "2021-03-08" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb96b4950f33f42c5b6
+:60b3eeb96b4950f33f42c5b6  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Curtis_Dillon ;
+        :dataEMD "2020-12-19" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9c4c935218799831f
+:60b3eeb9c4c935218799831f  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Lelia_Oliver ;
+        :dataEMD "2021-02-08" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb91dbe172db8fd8f61
+:60b3eeb91dbe172db8fd8f61  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Fuentes_Rogers ;
+        :dataEMD "2019-02-07" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9c7550e5dc5a5ddb1
+:60b3eeb9c7550e5dc5a5ddb1  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Carole_Lindsey ;
+        :dataEMD "2020-05-28" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb95632a2a2915ae72b
+:60b3eeb95632a2a2915ae72b  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Martinez_Johns ;
+        :dataEMD "2019-07-27" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9af56ea737b79ac30
+:60b3eeb9af56ea737b79ac30  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Kellie_Holland ;
+        :dataEMD "2020-07-21" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9e387855b0de81d09
+:60b3eeb9e387855b0de81d09  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Mathis_Kirk ;
+        :dataEMD "2019-06-27" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb93bfe7ecd8361f659
+:60b3eeb93bfe7ecd8361f659  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Bertha_Shelton ;
+        :dataEMD "2019-10-22" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9860033876d65f5f7
+:60b3eeb9860033876d65f5f7  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Bonnie_Diaz ;
+        :dataEMD "2020-01-08" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb97a2511a770990f0f
+:60b3eeb97a2511a770990f0f  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Becker_Talley ;
+        :dataEMD "2020-08-23" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9080a93e404ab974a
+:60b3eeb9080a93e404ab974a  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Zelma_Bell ;
+        :dataEMD "2019-08-11" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb96e988bb711c0c940
+:60b3eeb96e988bb711c0c940  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Stanton_Cox ;
+        :dataEMD "2019-09-29" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb97d329fb5b3d7379b
+:60b3eeb97d329fb5b3d7379b  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Cindy_Shepherd ;
+        :dataEMD "2020-07-15" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb95b00f32d469ef4b2
+:60b3eeb95b00f32d469ef4b2  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Knapp_Buckner ;
+        :dataEMD "2020-09-20" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb91accf4bd8b426245
+:60b3eeb91accf4bd8b426245  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Callahan_Mitchell ;
+        :dataEMD "2020-11-27" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9dd4dc919156890ee
+:60b3eeb9dd4dc919156890ee  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Allie_Lyons ;
+        :dataEMD "2021-01-10" ;
+        :resultado 0 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9d9f01093dc14973f
+:60b3eeb9d9f01093dc14973f  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Tammy_Bryant ;
+        :dataEMD "2020-05-08" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#60b3eeb9d027f625a1b63723
+:60b3eeb9d027f625a1b63723  rdf:type owl:NamedIndividual ,
+        :EMD ;
+        :refereAtleta :Carissa_Rosario ;
+        :dataEMD "2021-01-02" ;
+        :resultado 1 .
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Emily_Terrell
+:Emily_Terrell  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Emily Terrell" ;
+    :email "emily.terrell@gdgoma.org" ;
+    :genero "F" ;
+    :idade "28" ;
+    :morada "Clay" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Medina_Hartman
+:Medina_Hartman  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Medina Hartman" ;
+    :email "medina.hartman@avcfamalicão.name" ;
+    :genero "M" ;
+    :idade "34" ;
+    :morada "Orick" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Andrews_Rivas
+:Andrews_Rivas  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Andrews Rivas" ;
+    :email "andrews.rivas@abcbraga.us" ;
+    :genero "F" ;
+    :idade "24" ;
+    :morada "Saticoy" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Marcella_Combs
+:Marcella_Combs  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Marcella Combs" ;
+    :email "marcella.combs@clube de orientação do minho.com" ;
+    :genero "M" ;
+    :idade "24" ;
+    :morada "Manila" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Mendoza_Buckner
+:Mendoza_Buckner  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Mendoza Buckner" ;
+    :email "mendoza.buckner@scbraga.ca" ;
+    :genero "M" ;
+    :idade "23" ;
+    :morada "Brogan" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Sellers_Copeland
+:Sellers_Copeland  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Sellers Copeland" ;
+    :email "sellers.copeland@clube de orientação do minho.net" ;
+    :genero "F" ;
+    :idade "28" ;
+    :morada "Spelter" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Bernard_Stokes
+:Bernard_Stokes  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Bernard Stokes" ;
+    :email "bernard.stokes@avcfamalicão.biz" ;
+    :genero "M" ;
+    :idade "34" ;
+    :morada "Sussex" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Alfreda_Raymond
+:Alfreda_Raymond  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Alfreda Raymond" ;
+    :email "alfreda.raymond@abcbraga.tv" ;
+    :genero "M" ;
+    :idade "30" ;
+    :morada "Sultana" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Alston_Green
+:Alston_Green  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Alston Green" ;
+    :email "alston.green@scbraga.biz" ;
+    :genero "M" ;
+    :idade "29" ;
+    :morada "Thornport" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Paige_Mccarthy
+:Paige_Mccarthy  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Paige Mccarthy" ;
+    :email "paige.mccarthy@acdrcrespos.co.uk" ;
+    :genero "M" ;
+    :idade "32" ;
+    :morada "Brandywine" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Claudine_Gill
+:Claudine_Gill  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Claudine Gill" ;
+    :email "claudine.gill@acrroriz.me" ;
+    :genero "F" ;
+    :idade "33" ;
+    :morada "Katonah" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Summer_Calhoun
+:Summer_Calhoun  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Summer Calhoun" ;
+    :email "summer.calhoun@clube de orientação do minho.info" ;
+    :genero "F" ;
+    :idade "26" ;
+    :morada "National" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Slater_David
+:Slater_David  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Slater David" ;
+    :email "slater.david@vitoria.org" ;
+    :genero "M" ;
+    :idade "25" ;
+    :morada "Chicopee" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Ophelia_Boyd
+:Ophelia_Boyd  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Ophelia Boyd" ;
+    :email "ophelia.boyd@amigosmontanha.name" ;
+    :genero "M" ;
+    :idade "21" ;
+    :morada "Chaparrito" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Evans_Singleton
+:Evans_Singleton  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Evans Singleton" ;
+    :email "evans.singleton@clube de orientação do minho.us" ;
+    :genero "M" ;
+    :idade "25" ;
+    :morada "Sunwest" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Church_Bishop
+:Church_Bishop  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Church Bishop" ;
+    :email "church.bishop@vitoria.com" ;
+    :genero "M" ;
+    :idade "28" ;
+    :morada "Vallonia" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Woodard_Bennett
+:Woodard_Bennett  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Woodard Bennett" ;
+    :email "woodard.bennett@edviana.ca" ;
+    :genero "F" ;
+    :idade "33" ;
+    :morada "Ruckersville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Vasquez_Michael
+:Vasquez_Michael  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Basquetebol ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Vasquez Michael" ;
+    :email "vasquez.michael@vitoria.net" ;
+    :genero "M" ;
+    :idade "27" ;
+    :morada "Munjor" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Holloway_Maxwell
+:Holloway_Maxwell  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Holloway Maxwell" ;
+    :email "holloway.maxwell@avcfamalicão.biz" ;
+    :genero "F" ;
+    :idade "30" ;
+    :morada "Waikele" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Michele_Barber
+:Michele_Barber  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Michele Barber" ;
+    :email "michele.barber@clube de orientação do minho.tv" ;
+    :genero "F" ;
+    :idade "27" ;
+    :morada "Oberlin" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Chambers_Burton
+:Chambers_Burton  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Chambers Burton" ;
+    :email "chambers.burton@vitoria.biz" ;
+    :genero "M" ;
+    :idade "25" ;
+    :morada "Boling" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Massey_Goodman
+:Massey_Goodman  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Massey Goodman" ;
+    :email "massey.goodman@amigosmontanha.co.uk" ;
+    :genero "M" ;
+    :idade "32" ;
+    :morada "Garfield" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Klein_Cameron
+:Klein_Cameron  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Klein Cameron" ;
+    :email "klein.cameron@scbraga.me" ;
+    :genero "F" ;
+    :idade "30" ;
+    :morada "Twilight" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Lambert_Mueller
+:Lambert_Mueller  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Basquetebol ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Lambert Mueller" ;
+    :email "lambert.mueller@acdrcrespos.info" ;
+    :genero "M" ;
+    :idade "25" ;
+    :morada "Oretta" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Ewing_Drake
+:Ewing_Drake  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Ewing Drake" ;
+    :email "ewing.drake@acdrcrespos.org" ;
+    :genero "M" ;
+    :idade "21" ;
+    :morada "Nanafalia" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Lester_Manning
+:Lester_Manning  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Lester Manning" ;
+    :email "lester.manning@acdrcrespos.name" ;
+    :genero "M" ;
+    :idade "35" ;
+    :morada "Grandview" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Nina_Fowler
+:Nina_Fowler  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Nina Fowler" ;
+    :email "nina.fowler@amigosmontanha.us" ;
+    :genero "F" ;
+    :idade "30" ;
+    :morada "Turah" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Lynn_Shaw
+:Lynn_Shaw  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Lynn Shaw" ;
+    :email "lynn.shaw@clube de orientação do minho.com" ;
+    :genero "F" ;
+    :idade "26" ;
+    :morada "Cutter" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Betty_Blake
+:Betty_Blake  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Betty Blake" ;
+    :email "betty.blake@abcbraga.ca" ;
+    :genero "F" ;
+    :idade "25" ;
+    :morada "Teasdale" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Oneill_Roth
+:Oneill_Roth  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Oneill Roth" ;
+    :email "oneill.roth@edviana.net" ;
+    :genero "M" ;
+    :idade "25" ;
+    :morada "Graball" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Roxanne_Miles
+:Roxanne_Miles  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Roxanne Miles" ;
+    :email "roxanne.miles@vitoria.biz" ;
+    :genero "F" ;
+    :idade "26" ;
+    :morada "Haring" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Cecelia_Adams
+:Cecelia_Adams  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Cecelia Adams" ;
+    :email "cecelia.adams@amigosmontanha.tv" ;
+    :genero "F" ;
+    :idade "28" ;
+    :morada "Fairlee" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Irma_Jacobs
+:Irma_Jacobs  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Irma Jacobs" ;
+    :email "irma.jacobs@edviana.biz" ;
+    :genero "F" ;
+    :idade "27" ;
+    :morada "Driftwood" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Angelia_Noel
+:Angelia_Noel  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Angelia Noel" ;
+    :email "angelia.noel@edviana.co.uk" ;
+    :genero "M" ;
+    :idade "34" ;
+    :morada "Martell" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Sallie_Shaffer
+:Sallie_Shaffer  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Sallie Shaffer" ;
+    :email "sallie.shaffer@clube de orientação do minho.me" ;
+    :genero "M" ;
+    :idade "24" ;
+    :morada "Brownlee" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Jordan_Bonner
+:Jordan_Bonner  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Jordan Bonner" ;
+    :email "jordan.bonner@vitoria.info" ;
+    :genero "F" ;
+    :idade "33" ;
+    :morada "Northchase" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Bartlett_Sexton
+:Bartlett_Sexton  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Bartlett Sexton" ;
+    :email "bartlett.sexton@gdgoma.org" ;
+    :genero "F" ;
+    :idade "33" ;
+    :morada "Rehrersburg" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Opal_Stewart
+:Opal_Stewart  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Basquetebol ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Opal Stewart" ;
+    :email "opal.stewart@avcfamalicão.name" ;
+    :genero "F" ;
+    :idade "30" ;
+    :morada "Dola" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Ola_Glover
+:Ola_Glover  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Equitaçao ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Ola Glover" ;
+    :email "ola.glover@clube de orientação do minho.us" ;
+    :genero "F" ;
+    :idade "34" ;
+    :morada "Barronett" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Shelia_York
+:Shelia_York  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Shelia York" ;
+    :email "shelia.york@scbraga.com" ;
+    :genero "M" ;
+    :idade "21" ;
+    :morada "Escondida" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Raquel_Ratliff
+:Raquel_Ratliff  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Raquel Ratliff" ;
+    :email "raquel.ratliff@abcbraga.ca" ;
+    :genero "F" ;
+    :idade "33" ;
+    :morada "Goldfield" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Burke_Weeks
+:Burke_Weeks  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Burke Weeks" ;
+    :email "burke.weeks@amigosmontanha.net" ;
+    :genero "M" ;
+    :idade "29" ;
+    :morada "Mapletown" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Best_French
+:Best_French  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Best French" ;
+    :email "best.french@gdgoma.biz" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Longbranch" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Fowler_Alvarez
+:Fowler_Alvarez  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Fowler Alvarez" ;
+    :email "fowler.alvarez@amigosmontanha.tv" ;
+    :genero "M" ;
+    :idade "31" ;
+    :morada "Choctaw" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Terri_Avila
+:Terri_Avila  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Terri Avila" ;
+    :email "terri.avila@avcfamalicão.biz" ;
+    :genero "F" ;
+    :idade "22" ;
+    :morada "Crown" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Alford_Small
+:Alford_Small  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Alford Small" ;
+    :email "alford.small@avcfamalicão.co.uk" ;
+    :genero "F" ;
+    :idade "32" ;
+    :morada "Alamo" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Key_Arnold
+:Key_Arnold  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Key Arnold" ;
+    :email "key.arnold@amigosmontanha.me" ;
+    :genero "F" ;
+    :idade "27" ;
+    :morada "Orason" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Nguyen_Diaz
+:Nguyen_Diaz  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Nguyen Diaz" ;
+    :email "nguyen.diaz@amigosmontanha.info" ;
+    :genero "F" ;
+    :idade "35" ;
+    :morada "Watchtower" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Sherry_Morales
+:Sherry_Morales  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Sherry Morales" ;
+    :email "sherry.morales@avcfamalicão.org" ;
+    :genero "F" ;
+    :idade "26" ;
+    :morada "Waukeenah" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Crane_Ballard
+:Crane_Ballard  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Crane Ballard" ;
+    :email "crane.ballard@vitoria.name" ;
+    :genero "F" ;
+    :idade "25" ;
+    :morada "Fedora" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Terry_Chaney
+:Terry_Chaney  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Terry Chaney" ;
+    :email "terry.chaney@scbraga.us" ;
+    :genero "F" ;
+    :idade "23" ;
+    :morada "Blanco" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Sheppard_Bryant
+:Sheppard_Bryant  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Sheppard Bryant" ;
+    :email "sheppard.bryant@avcfamalicão.com" ;
+    :genero "M" ;
+    :idade "23" ;
+    :morada "Brandermill" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Janis_Mckinney
+:Janis_Mckinney  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Janis Mckinney" ;
+    :email "janis.mckinney@abcbraga.ca" ;
+    :genero "M" ;
+    :idade "28" ;
+    :morada "Osage" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Sue_Waters
+:Sue_Waters  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Sue Waters" ;
+    :email "sue.waters@vitoria.net" ;
+    :genero "M" ;
+    :idade "32" ;
+    :morada "Carrizo" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Cynthia_Page
+:Cynthia_Page  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Equitaçao ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Cynthia Page" ;
+    :email "cynthia.page@acrroriz.biz" ;
+    :genero "F" ;
+    :idade "22" ;
+    :morada "Forestburg" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Montgomery_Rhodes
+:Montgomery_Rhodes  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Montgomery Rhodes" ;
+    :email "montgomery.rhodes@vitoria.tv" ;
+    :genero "F" ;
+    :idade "31" ;
+    :morada "Rivers" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Claire_Joyce
+:Claire_Joyce  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Basquetebol ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Claire Joyce" ;
+    :email "claire.joyce@acdrcrespos.biz" ;
+    :genero "M" ;
+    :idade "25" ;
+    :morada "Belgreen" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Evangelina_Key
+:Evangelina_Key  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Evangelina Key" ;
+    :email "evangelina.key@acdrcrespos.co.uk" ;
+    :genero "M" ;
+    :idade "26" ;
+    :morada "Whitewater" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Effie_Gibson
+:Effie_Gibson  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Effie Gibson" ;
+    :email "effie.gibson@acrroriz.me" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Virgie" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Maureen_Cobb
+:Maureen_Cobb  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Maureen Cobb" ;
+    :email "maureen.cobb@amigosmontanha.info" ;
+    :genero "M" ;
+    :idade "24" ;
+    :morada "Venice" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Dee_Holman
+:Dee_Holman  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Dee Holman" ;
+    :email "dee.holman@avcfamalicão.org" ;
+    :genero "F" ;
+    :idade "35" ;
+    :morada "Brenton" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Larson_Morin
+:Larson_Morin  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Larson Morin" ;
+    :email "larson.morin@gdgoma.name" ;
+    :genero "F" ;
+    :idade "26" ;
+    :morada "Summerset" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Ursula_Martinez
+:Ursula_Martinez  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Ursula Martinez" ;
+    :email "ursula.martinez@amigosmontanha.us" ;
+    :genero "F" ;
+    :idade "32" ;
+    :morada "Lorraine" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#English_Clemons
+:English_Clemons  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Basquetebol ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "English Clemons" ;
+    :email "english.clemons@gdgoma.com" ;
+    :genero "M" ;
+    :idade "30" ;
+    :morada "Ticonderoga" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Stella_Jackson
+:Stella_Jackson  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Stella Jackson" ;
+    :email "stella.jackson@acdrcrespos.ca" ;
+    :genero "F" ;
+    :idade "31" ;
+    :morada "Kaka" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Haley_Joseph
+:Haley_Joseph  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Haley Joseph" ;
+    :email "haley.joseph@avcfamalicão.net" ;
+    :genero "F" ;
+    :idade "28" ;
+    :morada "Brantleyville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Kelsey_Roberts
+:Kelsey_Roberts  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Kelsey Roberts" ;
+    :email "kelsey.roberts@vitoria.biz" ;
+    :genero "M" ;
+    :idade "28" ;
+    :morada "Morgandale" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Watson_Lynch
+:Watson_Lynch  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Watson Lynch" ;
+    :email "watson.lynch@gdgoma.tv" ;
+    :genero "F" ;
+    :idade "33" ;
+    :morada "Fillmore" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Chasity_Coffey
+:Chasity_Coffey  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Chasity Coffey" ;
+    :email "chasity.coffey@edviana.biz" ;
+    :genero "F" ;
+    :idade "23" ;
+    :morada "Kersey" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Paula_Delaney
+:Paula_Delaney  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Paula Delaney" ;
+    :email "paula.delaney@edviana.co.uk" ;
+    :genero "M" ;
+    :idade "29" ;
+    :morada "Disautel" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Galloway_Sanders
+:Galloway_Sanders  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Galloway Sanders" ;
+    :email "galloway.sanders@acrroriz.me" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Allendale" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Tina_Blankenship
+:Tina_Blankenship  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Tina Blankenship" ;
+    :email "tina.blankenship@acdrcrespos.info" ;
+    :genero "F" ;
+    :idade "33" ;
+    :morada "Longoria" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Whitehead_Montgomery
+:Whitehead_Montgomery  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Whitehead Montgomery" ;
+    :email "whitehead.montgomery@avcfamalicão.org" ;
+    :genero "M" ;
+    :idade "34" ;
+    :morada "Fairview" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Dominguez_Chambers
+:Dominguez_Chambers  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Equitaçao ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Dominguez Chambers" ;
+    :email "dominguez.chambers@abcbraga.name" ;
+    :genero "M" ;
+    :idade "35" ;
+    :morada "Malott" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Booth_Eaton
+:Booth_Eaton  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Booth Eaton" ;
+    :email "booth.eaton@scbraga.us" ;
+    :genero "F" ;
+    :idade "33" ;
+    :morada "Terlingua" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Joanna_Grant
+:Joanna_Grant  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Joanna Grant" ;
+    :email "joanna.grant@amigosmontanha.com" ;
+    :genero "F" ;
+    :idade "33" ;
+    :morada "Noblestown" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Jeri_Pearson
+:Jeri_Pearson  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Jeri Pearson" ;
+    :email "jeri.pearson@acrroriz.ca" ;
+    :genero "F" ;
+    :idade "29" ;
+    :morada "Falmouth" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Sanchez_Mcgee
+:Sanchez_Mcgee  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Sanchez Mcgee" ;
+    :email "sanchez.mcgee@acdrcrespos.net" ;
+    :genero "F" ;
+    :idade "31" ;
+    :morada "Bascom" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Magdalena_Francis
+:Magdalena_Francis  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Magdalena Francis" ;
+    :email "magdalena.francis@acdrcrespos.biz" ;
+    :genero "M" ;
+    :idade "27" ;
+    :morada "Fostoria" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Morris_Poole
+:Morris_Poole  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Morris Poole" ;
+    :email "morris.poole@avcfamalicão.tv" ;
+    :genero "F" ;
+    :idade "34" ;
+    :morada "Steinhatchee" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Rodriguez_Gonzalez
+:Rodriguez_Gonzalez  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Rodriguez Gonzalez" ;
+    :email "rodriguez.gonzalez@gdgoma.biz" ;
+    :genero "M" ;
+    :idade "25" ;
+    :morada "Coaldale" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Christine_Rice
+:Christine_Rice  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Christine Rice" ;
+    :email "christine.rice@gdgoma.co.uk" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Hayes" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Valdez_Harper
+:Valdez_Harper  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Valdez Harper" ;
+    :email "valdez.harper@amigosmontanha.me" ;
+    :genero "F" ;
+    :idade "33" ;
+    :morada "Jacksonwald" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Berta_Clay
+:Berta_Clay  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Berta Clay" ;
+    :email "berta.clay@clube de orientação do minho.info" ;
+    :genero "M" ;
+    :idade "29" ;
+    :morada "Barclay" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Bonnie_Sandoval
+:Bonnie_Sandoval  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Equitaçao ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Bonnie Sandoval" ;
+    :email "bonnie.sandoval@clube de orientação do minho.org" ;
+    :genero "M" ;
+    :idade "22" ;
+    :morada "Shaft" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Stein_Wiggins
+:Stein_Wiggins  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Stein Wiggins" ;
+    :email "stein.wiggins@edviana.name" ;
+    :genero "F" ;
+    :idade "35" ;
+    :morada "Rosine" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Tanya_Mcclain
+:Tanya_Mcclain  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Tanya Mcclain" ;
+    :email "tanya.mcclain@gdgoma.us" ;
+    :genero "M" ;
+    :idade "26" ;
+    :morada "Fivepointville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Perry_Sanford
+:Perry_Sanford  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Perry Sanford" ;
+    :email "perry.sanford@vitoria.com" ;
+    :genero "M" ;
+    :idade "32" ;
+    :morada "Albany" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Maxine_Rutledge
+:Maxine_Rutledge  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Maxine Rutledge" ;
+    :email "maxine.rutledge@amigosmontanha.ca" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Caberfae" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Tucker_Morse
+:Tucker_Morse  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Tucker Morse" ;
+    :email "tucker.morse@scbraga.net" ;
+    :genero "M" ;
+    :idade "26" ;
+    :morada "Tyhee" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Thelma_Schmidt
+:Thelma_Schmidt  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Thelma Schmidt" ;
+    :email "thelma.schmidt@acrroriz.biz" ;
+    :genero "M" ;
+    :idade "23" ;
+    :morada "Greenfields" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Charles_Kim
+:Charles_Kim  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Charles Kim" ;
+    :email "charles.kim@acdrcrespos.tv" ;
+    :genero "F" ;
+    :idade "24" ;
+    :morada "Bennett" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Duncan_Davidson
+:Duncan_Davidson  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Duncan Davidson" ;
+    :email "duncan.davidson@amigosmontanha.biz" ;
+    :genero "F" ;
+    :idade "35" ;
+    :morada "Cedarville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Gertrude_Dillon
+:Gertrude_Dillon  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Gertrude Dillon" ;
+    :email "gertrude.dillon@acrroriz.co.uk" ;
+    :genero "F" ;
+    :idade "27" ;
+    :morada "Oneida" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Brennan_Santana
+:Brennan_Santana  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Brennan Santana" ;
+    :email "brennan.santana@vitoria.me" ;
+    :genero "F" ;
+    :idade "29" ;
+    :morada "Villarreal" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Ball_Barlow
+:Ball_Barlow  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Ball Barlow" ;
+    :email "ball.barlow@amigosmontanha.info" ;
+    :genero "F" ;
+    :idade "28" ;
+    :morada "Hobucken" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Oneil_Baxter
+:Oneil_Baxter  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Oneil Baxter" ;
+    :email "oneil.baxter@clube de orientação do minho.org" ;
+    :genero "F" ;
+    :idade "24" ;
+    :morada "Sanders" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Helena_Mayo
+:Helena_Mayo  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Helena Mayo" ;
+    :email "helena.mayo@vitoria.name" ;
+    :genero "F" ;
+    :idade "25" ;
+    :morada "Bend" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Martin_Brewer
+:Martin_Brewer  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Martin Brewer" ;
+    :email "martin.brewer@acrroriz.us" ;
+    :genero "F" ;
+    :idade "31" ;
+    :morada "Taycheedah" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Wilder_Greene
+:Wilder_Greene  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Wilder Greene" ;
+    :email "wilder.greene@vitoria.com" ;
+    :genero "M" ;
+    :idade "34" ;
+    :morada "Heil" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Harrison_Finch
+:Harrison_Finch  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Harrison Finch" ;
+    :email "harrison.finch@edviana.us" ;
+    :genero "F" ;
+    :idade "21" ;
+    :morada "Harrison" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Jordan_Alvarez
+:Jordan_Alvarez  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Jordan Alvarez" ;
+    :email "jordan.alvarez@edviana.biz" ;
+    :genero "F" ;
+    :idade "25" ;
+    :morada "Riviera" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Lane_Norton
+:Lane_Norton  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Lane Norton" ;
+    :email "lane.norton@abcbraga.io" ;
+    :genero "M" ;
+    :idade "22" ;
+    :morada "Homestead" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Carrillo_Munoz
+:Carrillo_Munoz  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Carrillo Munoz" ;
+    :email "carrillo.munoz@scbraga.biz" ;
+    :genero "F" ;
+    :idade "32" ;
+    :morada "Bordelonville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Barrett_Frederick
+:Barrett_Frederick  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Barrett Frederick" ;
+    :email "barrett.frederick@avcfamalicão.net" ;
+    :genero "M" ;
+    :idade "29" ;
+    :morada "Stollings" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Harmon_Stone
+:Harmon_Stone  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Harmon Stone" ;
+    :email "harmon.stone@amigosmontanha.com" ;
+    :genero "M" ;
+    :idade "21" ;
+    :morada "Idledale" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Chandra_Potts
+:Chandra_Potts  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Chandra Potts" ;
+    :email "chandra.potts@amigosmontanha.tv" ;
+    :genero "M" ;
+    :idade "32" ;
+    :morada "Albany" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#John_Warner
+:John_Warner  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "John Warner" ;
+    :email "john.warner@clube de orientação do minho.co.uk" ;
+    :genero "M" ;
+    :idade "22" ;
+    :morada "Veyo" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Casey_Bowman
+:Casey_Bowman  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Casey Bowman" ;
+    :email "casey.bowman@abcbraga.ca" ;
+    :genero "F" ;
+    :idade "22" ;
+    :morada "Tryon" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Mccullough_Pena
+:Mccullough_Pena  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Mccullough Pena" ;
+    :email "mccullough.pena@clube de orientação do minho.name" ;
+    :genero "M" ;
+    :idade "27" ;
+    :morada "Sunwest" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Brianna_Bentley
+:Brianna_Bentley  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Brianna Bentley" ;
+    :email "brianna.bentley@acdrcrespos.org" ;
+    :genero "F" ;
+    :idade "28" ;
+    :morada "Ypsilanti" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Nixon_Hendrix
+:Nixon_Hendrix  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Tenis ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Nixon Hendrix" ;
+    :email "nixon.hendrix@avcfamalicão.info" ;
+    :genero "M" ;
+    :idade "31" ;
+    :morada "Bethpage" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Buckner_Luna
+:Buckner_Luna  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Buckner Luna" ;
+    :email "buckner.luna@edviana.us" ;
+    :genero "M" ;
+    :idade "22" ;
+    :morada "Veguita" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Britt_Zamora
+:Britt_Zamora  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Tenis ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Britt Zamora" ;
+    :email "britt.zamora@clube de orientação do minho.biz" ;
+    :genero "F" ;
+    :idade "23" ;
+    :morada "Rutherford" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Hendrix_Bauer
+:Hendrix_Bauer  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Hendrix Bauer" ;
+    :email "hendrix.bauer@scbraga.io" ;
+    :genero "M" ;
+    :idade "30" ;
+    :morada "Ryderwood" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Travis_Sampson
+:Travis_Sampson  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Tenis ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Travis Sampson" ;
+    :email "travis.sampson@edviana.biz" ;
+    :genero "M" ;
+    :idade "29" ;
+    :morada "Dotsero" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Darla_Ware
+:Darla_Ware  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Darla Ware" ;
+    :email "darla.ware@gdgoma.net" ;
+    :genero "M" ;
+    :idade "21" ;
+    :morada "Villarreal" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Peters_Vaughn
+:Peters_Vaughn  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Tenis ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Peters Vaughn" ;
+    :email "peters.vaughn@acrroriz.com" ;
+    :genero "F" ;
+    :idade "21" ;
+    :morada "Brandermill" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Lawrence_Herman
+:Lawrence_Herman  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Lawrence Herman" ;
+    :email "lawrence.herman@gdgoma.tv" ;
+    :genero "M" ;
+    :idade "31" ;
+    :morada "Wakulla" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Chang_Oneill
+:Chang_Oneill  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Chang Oneill" ;
+    :email "chang.oneill@edviana.co.uk" ;
+    :genero "M" ;
+    :idade "24" ;
+    :morada "Falconaire" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Patrick_Mcintyre
+:Patrick_Mcintyre  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Patrick Mcintyre" ;
+    :email "patrick.mcintyre@edviana.ca" ;
+    :genero "F" ;
+    :idade "21" ;
+    :morada "Emory" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Joyce_Evans
+:Joyce_Evans  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Joyce Evans" ;
+    :email "joyce.evans@amigosmontanha.name" ;
+    :genero "F" ;
+    :idade "27" ;
+    :morada "Rivers" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Larsen_Villarreal
+:Larsen_Villarreal  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Larsen Villarreal" ;
+    :email "larsen.villarreal@scbraga.org" ;
+    :genero "M" ;
+    :idade "25" ;
+    :morada "Dawn" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Morrow_Yang
+:Morrow_Yang  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Basquetebol ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Morrow Yang" ;
+    :email "morrow.yang@acdrcrespos.info" ;
+    :genero "M" ;
+    :idade "24" ;
+    :morada "Tibbie" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Dunn_Horn
+:Dunn_Horn  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Dunn Horn" ;
+    :email "dunn.horn@clube de orientação do minho.us" ;
+    :genero "M" ;
+    :idade "31" ;
+    :morada "Ripley" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Viola_Medina
+:Viola_Medina  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Viola Medina" ;
+    :email "viola.medina@edviana.biz" ;
+    :genero "M" ;
+    :idade "24" ;
+    :morada "Nipinnawasee" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Valdez_Barnes
+:Valdez_Barnes  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Valdez Barnes" ;
+    :email "valdez.barnes@acdrcrespos.io" ;
+    :genero "F" ;
+    :idade "22" ;
+    :morada "Islandia" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Sweet_Gibbs
+:Sweet_Gibbs  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Sweet Gibbs" ;
+    :email "sweet.gibbs@avcfamalicão.biz" ;
+    :genero "F" ;
+    :idade "35" ;
+    :morada "Stagecoach" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Addie_Hayes
+:Addie_Hayes  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Tenis ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Addie Hayes" ;
+    :email "addie.hayes@acrroriz.net" ;
+    :genero "M" ;
+    :idade "23" ;
+    :morada "Bennett" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#May_Holt
+:May_Holt  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "May Holt" ;
+    :email "may.holt@amigosmontanha.com" ;
+    :genero "M" ;
+    :idade "34" ;
+    :morada "Springdale" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Christensen_Boyd
+:Christensen_Boyd  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Christensen Boyd" ;
+    :email "christensen.boyd@abcbraga.tv" ;
+    :genero "F" ;
+    :idade "34" ;
+    :morada "Wells" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Workman_Franks
+:Workman_Franks  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Workman Franks" ;
+    :email "workman.franks@amigosmontanha.co.uk" ;
+    :genero "M" ;
+    :idade "31" ;
+    :morada "Greenfields" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Lucile_Underwood
+:Lucile_Underwood  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Lucile Underwood" ;
+    :email "lucile.underwood@avcfamalicão.ca" ;
+    :genero "M" ;
+    :idade "34" ;
+    :morada "Innsbrook" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Heath_Bishop
+:Heath_Bishop  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Heath Bishop" ;
+    :email "heath.bishop@amigosmontanha.name" ;
+    :genero "F" ;
+    :idade "32" ;
+    :morada "Grantville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Rosales_Mejia
+:Rosales_Mejia  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Rosales Mejia" ;
+    :email "rosales.mejia@clube de orientação do minho.org" ;
+    :genero "F" ;
+    :idade "23" ;
+    :morada "Dale" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Ray_Howe
+:Ray_Howe  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Ray Howe" ;
+    :email "ray.howe@vitoria.info" ;
+    :genero "M" ;
+    :idade "25" ;
+    :morada "Nicut" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Suarez_Campbell
+:Suarez_Campbell  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Suarez Campbell" ;
+    :email "suarez.campbell@acdrcrespos.us" ;
+    :genero "M" ;
+    :idade "34" ;
+    :morada "Hamilton" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Shaffer_Le
+:Shaffer_Le  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Shaffer Le" ;
+    :email "shaffer.le@avcfamalicão.biz" ;
+    :genero "M" ;
+    :idade "32" ;
+    :morada "Shepardsville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Justine_Wise
+:Justine_Wise  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Justine Wise" ;
+    :email "justine.wise@avcfamalicão.io" ;
+    :genero "M" ;
+    :idade "31" ;
+    :morada "Hondah" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Villarreal_Tucker
+:Villarreal_Tucker  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Villarreal Tucker" ;
+    :email "villarreal.tucker@avcfamalicão.biz" ;
+    :genero "M" ;
+    :idade "23" ;
+    :morada "Tecolotito" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Monica_Neal
+:Monica_Neal  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Monica Neal" ;
+    :email "monica.neal@acrroriz.net" ;
+    :genero "M" ;
+    :idade "30" ;
+    :morada "Roberts" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Lloyd_Dotson
+:Lloyd_Dotson  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Lloyd Dotson" ;
+    :email "lloyd.dotson@abcbraga.com" ;
+    :genero "M" ;
+    :idade "21" ;
+    :morada "Winesburg" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Mccray_Barker
+:Mccray_Barker  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Mccray Barker" ;
+    :email "mccray.barker@vitoria.tv" ;
+    :genero "F" ;
+    :idade "35" ;
+    :morada "Blairstown" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Sellers_Hunter
+:Sellers_Hunter  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Sellers Hunter" ;
+    :email "sellers.hunter@scbraga.co.uk" ;
+    :genero "F" ;
+    :idade "23" ;
+    :morada "Omar" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Cathryn_Fletcher
+:Cathryn_Fletcher  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Cathryn Fletcher" ;
+    :email "cathryn.fletcher@clube de orientação do minho.ca" ;
+    :genero "F" ;
+    :idade "29" ;
+    :morada "Oasis" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Dee_Lowery
+:Dee_Lowery  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Basquetebol ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Dee Lowery" ;
+    :email "dee.lowery@vitoria.name" ;
+    :genero "F" ;
+    :idade "21" ;
+    :morada "Rodman" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Freeman_Wyatt
+:Freeman_Wyatt  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Freeman Wyatt" ;
+    :email "freeman.wyatt@acrroriz.org" ;
+    :genero "F" ;
+    :idade "26" ;
+    :morada "Bentonville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Guy_Drake
+:Guy_Drake  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Guy Drake" ;
+    :email "guy.drake@abcbraga.info" ;
+    :genero "F" ;
+    :idade "25" ;
+    :morada "Helen" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Mendez_Good
+:Mendez_Good  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Mendez Good" ;
+    :email "mendez.good@clube de orientação do minho.us" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Westmoreland" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Burnett_Hogan
+:Burnett_Hogan  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Burnett Hogan" ;
+    :email "burnett.hogan@acrroriz.biz" ;
+    :genero "M" ;
+    :idade "24" ;
+    :morada "Valmy" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Jamie_Cherry
+:Jamie_Cherry  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Jamie Cherry" ;
+    :email "jamie.cherry@abcbraga.io" ;
+    :genero "F" ;
+    :idade "23" ;
+    :morada "Forbestown" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Bird_Noble
+:Bird_Noble  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Bird Noble" ;
+    :email "bird.noble@acrroriz.biz" ;
+    :genero "F" ;
+    :idade "21" ;
+    :morada "Lafferty" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Burgess_Bradshaw
+:Burgess_Bradshaw  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Burgess Bradshaw" ;
+    :email "burgess.bradshaw@abcbraga.net" ;
+    :genero "F" ;
+    :idade "25" ;
+    :morada "Bluffview" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Laura_Jacobson
+:Laura_Jacobson  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Laura Jacobson" ;
+    :email "laura.jacobson@acrroriz.com" ;
+    :genero "F" ;
+    :idade "27" ;
+    :morada "Kirk" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Blair_Sherman
+:Blair_Sherman  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Blair Sherman" ;
+    :email "blair.sherman@scbraga.tv" ;
+    :genero "M" ;
+    :idade "31" ;
+    :morada "Waukeenah" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Bobbi_Hawkins
+:Bobbi_Hawkins  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Bobbi Hawkins" ;
+    :email "bobbi.hawkins@scbraga.co.uk" ;
+    :genero "M" ;
+    :idade "26" ;
+    :morada "Takilma" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Montoya_Anthony
+:Montoya_Anthony  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Basquetebol ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Montoya Anthony" ;
+    :email "montoya.anthony@acrroriz.ca" ;
+    :genero "F" ;
+    :idade "31" ;
+    :morada "Clara" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Hooper_Kirby
+:Hooper_Kirby  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Hooper Kirby" ;
+    :email "hooper.kirby@acrroriz.name" ;
+    :genero "F" ;
+    :idade "26" ;
+    :morada "Roosevelt" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Wolfe_Baird
+:Wolfe_Baird  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Wolfe Baird" ;
+    :email "wolfe.baird@avcfamalicão.org" ;
+    :genero "F" ;
+    :idade "24" ;
+    :morada "Faxon" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Lamb_Graham
+:Lamb_Graham  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Lamb Graham" ;
+    :email "lamb.graham@avcfamalicão.info" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Bluetown" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Valentine_Fitzgerald
+:Valentine_Fitzgerald  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Valentine Fitzgerald" ;
+    :email "valentine.fitzgerald@abcbraga.us" ;
+    :genero "M" ;
+    :idade "32" ;
+    :morada "Kersey" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Herminia_Mooney
+:Herminia_Mooney  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Herminia Mooney" ;
+    :email "herminia.mooney@amigosmontanha.biz" ;
+    :genero "M" ;
+    :idade "21" ;
+    :morada "Matheny" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Golden_Hopkins
+:Golden_Hopkins  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Golden Hopkins" ;
+    :email "golden.hopkins@avcfamalicão.io" ;
+    :genero "F" ;
+    :idade "31" ;
+    :morada "Courtland" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Lancaster_Andrews
+:Lancaster_Andrews  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Lancaster Andrews" ;
+    :email "lancaster.andrews@vitoria.biz" ;
+    :genero "M" ;
+    :idade "24" ;
+    :morada "Longoria" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Elena_Sullivan
+:Elena_Sullivan  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Elena Sullivan" ;
+    :email "elena.sullivan@clube de orientação do minho.net" ;
+    :genero "F" ;
+    :idade "28" ;
+    :morada "Leola" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Deana_Ramsey
+:Deana_Ramsey  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Deana Ramsey" ;
+    :email "deana.ramsey@acrroriz.com" ;
+    :genero "M" ;
+    :idade "23" ;
+    :morada "Gila" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Mayra_Rose
+:Mayra_Rose  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Mayra Rose" ;
+    :email "mayra.rose@acdrcrespos.tv" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Calpine" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Tina_Salinas
+:Tina_Salinas  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Tina Salinas" ;
+    :email "tina.salinas@vitoria.co.uk" ;
+    :genero "F" ;
+    :idade "29" ;
+    :morada "Welda" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Sheila_Caldwell
+:Sheila_Caldwell  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Sheila Caldwell" ;
+    :email "sheila.caldwell@avcfamalicão.ca" ;
+    :genero "M" ;
+    :idade "22" ;
+    :morada "Leroy" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Hudson_Duffy
+:Hudson_Duffy  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Hudson Duffy" ;
+    :email "hudson.duffy@edviana.name" ;
+    :genero "M" ;
+    :idade "22" ;
+    :morada "Whitestone" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Guzman_Douglas
+:Guzman_Douglas  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Guzman Douglas" ;
+    :email "guzman.douglas@abcbraga.org" ;
+    :genero "F" ;
+    :idade "21" ;
+    :morada "Alderpoint" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Ethel_Bartlett
+:Ethel_Bartlett  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Ethel Bartlett" ;
+    :email "ethel.bartlett@acrroriz.info" ;
+    :genero "F" ;
+    :idade "26" ;
+    :morada "Muir" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Doyle_Odom
+:Doyle_Odom  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Doyle Odom" ;
+    :email "doyle.odom@amigosmontanha.us" ;
+    :genero "F" ;
+    :idade "23" ;
+    :morada "Newry" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Araceli_Castaneda
+:Araceli_Castaneda  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Araceli Castaneda" ;
+    :email "araceli.castaneda@avcfamalicão.biz" ;
+    :genero "F" ;
+    :idade "28" ;
+    :morada "Magnolia" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Fuentes_Walker
+:Fuentes_Walker  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Fuentes Walker" ;
+    :email "fuentes.walker@scbraga.io" ;
+    :genero "F" ;
+    :idade "25" ;
+    :morada "Leming" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Sarah_Moore
+:Sarah_Moore  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Basquetebol ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Sarah Moore" ;
+    :email "sarah.moore@acdrcrespos.biz" ;
+    :genero "M" ;
+    :idade "35" ;
+    :morada "Morgandale" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Cheryl_Watson
+:Cheryl_Watson  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Cheryl Watson" ;
+    :email "cheryl.watson@gdgoma.net" ;
+    :genero "M" ;
+    :idade "31" ;
+    :morada "Fairview" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Langley_Velez
+:Langley_Velez  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Langley Velez" ;
+    :email "langley.velez@acrroriz.com" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Neahkahnie" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Alisa_Morrison
+:Alisa_Morrison  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Alisa Morrison" ;
+    :email "alisa.morrison@gdgoma.tv" ;
+    :genero "M" ;
+    :idade "26" ;
+    :morada "Kiskimere" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Malinda_Merritt
+:Malinda_Merritt  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Malinda Merritt" ;
+    :email "malinda.merritt@abcbraga.co.uk" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Cecilia" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Lenora_Kane
+:Lenora_Kane  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Lenora Kane" ;
+    :email "lenora.kane@abcbraga.ca" ;
+    :genero "F" ;
+    :idade "30" ;
+    :morada "Axis" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Cabrera_Curtis
+:Cabrera_Curtis  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Cabrera Curtis" ;
+    :email "cabrera.curtis@avcfamalicão.name" ;
+    :genero "M" ;
+    :idade "22" ;
+    :morada "Beechmont" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Roseann_Benjamin
+:Roseann_Benjamin  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Roseann Benjamin" ;
+    :email "roseann.benjamin@abcbraga.org" ;
+    :genero "F" ;
+    :idade "21" ;
+    :morada "Stewart" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Stafford_Ray
+:Stafford_Ray  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Stafford Ray" ;
+    :email "stafford.ray@acdrcrespos.info" ;
+    :genero "M" ;
+    :idade "21" ;
+    :morada "Zeba" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Jewel_Trevino
+:Jewel_Trevino  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Jewel Trevino" ;
+    :email "jewel.trevino@acrroriz.us" ;
+    :genero "F" ;
+    :idade "29" ;
+    :morada "Garnet" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Mckenzie_Woods
+:Mckenzie_Woods  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Tenis ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Mckenzie Woods" ;
+    :email "mckenzie.woods@acrroriz.biz" ;
+    :genero "M" ;
+    :idade "24" ;
+    :morada "Craig" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Jean_Conley
+:Jean_Conley  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Jean Conley" ;
+    :email "jean.conley@gdgoma.io" ;
+    :genero "M" ;
+    :idade "21" ;
+    :morada "Tilleda" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Conway_Alexander
+:Conway_Alexander  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Conway Alexander" ;
+    :email "conway.alexander@scbraga.biz" ;
+    :genero "M" ;
+    :idade "24" ;
+    :morada "Darrtown" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Maryann_Joyce
+:Maryann_Joyce  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Maryann Joyce" ;
+    :email "maryann.joyce@acdrcrespos.net" ;
+    :genero "F" ;
+    :idade "21" ;
+    :morada "Harmon" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Ayers_Carroll
+:Ayers_Carroll  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Ayers Carroll" ;
+    :email "ayers.carroll@gdgoma.com" ;
+    :genero "F" ;
+    :idade "35" ;
+    :morada "Sylvanite" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Bonita_Mccormick
+:Bonita_Mccormick  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Bonita Mccormick" ;
+    :email "bonita.mccormick@gdgoma.tv" ;
+    :genero "M" ;
+    :idade "35" ;
+    :morada "Marshall" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Kathy_Kramer
+:Kathy_Kramer  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Kathy Kramer" ;
+    :email "kathy.kramer@edviana.co.uk" ;
+    :genero "F" ;
+    :idade "24" ;
+    :morada "Williams" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Tonia_Bryan
+:Tonia_Bryan  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Basquetebol ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Tonia Bryan" ;
+    :email "tonia.bryan@edviana.ca" ;
+    :genero "F" ;
+    :idade "35" ;
+    :morada "Corinne" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Barker_Mercer
+:Barker_Mercer  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Barker Mercer" ;
+    :email "barker.mercer@avcfamalicão.name" ;
+    :genero "F" ;
+    :idade "34" ;
+    :morada "Grayhawk" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Mcfarland_Tyson
+:Mcfarland_Tyson  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Equitaçao ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Mcfarland Tyson" ;
+    :email "mcfarland.tyson@amigosmontanha.org" ;
+    :genero "F" ;
+    :idade "25" ;
+    :morada "Kula" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Meagan_Carter
+:Meagan_Carter  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Meagan Carter" ;
+    :email "meagan.carter@scbraga.info" ;
+    :genero "M" ;
+    :idade "35" ;
+    :morada "Martinsville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Catalina_Webb
+:Catalina_Webb  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Catalina Webb" ;
+    :email "catalina.webb@abcbraga.us" ;
+    :genero "M" ;
+    :idade "35" ;
+    :morada "Aurora" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Moses_Sargent
+:Moses_Sargent  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Moses Sargent" ;
+    :email "moses.sargent@abcbraga.biz" ;
+    :genero "M" ;
+    :idade "25" ;
+    :morada "Wildwood" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Preston_Mccall
+:Preston_Mccall  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Preston Mccall" ;
+    :email "preston.mccall@avcfamalicão.io" ;
+    :genero "F" ;
+    :idade "33" ;
+    :morada "Mathews" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Christian_Clements
+:Christian_Clements  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Christian Clements" ;
+    :email "christian.clements@acdrcrespos.biz" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Cochranville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Jeanine_Hester
+:Jeanine_Hester  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Jeanine Hester" ;
+    :email "jeanine.hester@avcfamalicão.name" ;
+    :genero "M" ;
+    :idade "30" ;
+    :morada "Baden" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Tonia_Espinoza
+:Tonia_Espinoza  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Tonia Espinoza" ;
+    :email "tonia.espinoza@avcfamalicão.ca" ;
+    :genero "F" ;
+    :idade "24" ;
+    :morada "Fillmore" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Alyssa_Howard
+:Alyssa_Howard  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Alyssa Howard" ;
+    :email "alyssa.howard@scbraga.info" ;
+    :genero "F" ;
+    :idade "26" ;
+    :morada "Conestoga" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Merrill_Fulton
+:Merrill_Fulton  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Merrill Fulton" ;
+    :email "merrill.fulton@amigosmontanha.org" ;
+    :genero "M" ;
+    :idade "29" ;
+    :morada "Berlin" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Jaime_Erickson
+:Jaime_Erickson  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Jaime Erickson" ;
+    :email "jaime.erickson@abcbraga.co.uk" ;
+    :genero "F" ;
+    :idade "25" ;
+    :morada "Yardville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Felicia_Skinner
+:Felicia_Skinner  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Felicia Skinner" ;
+    :email "felicia.skinner@acdrcrespos.biz" ;
+    :genero "F" ;
+    :idade "31" ;
+    :morada "Rosburg" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Margaret_Bray
+:Margaret_Bray  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Margaret Bray" ;
+    :email "margaret.bray@clube de orientação do minho.biz" ;
+    :genero "M" ;
+    :idade "22" ;
+    :morada "Sardis" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Etta_Cotton
+:Etta_Cotton  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Etta Cotton" ;
+    :email "etta.cotton@avcfamalicão.us" ;
+    :genero "M" ;
+    :idade "32" ;
+    :morada "Graniteville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Kelley_Davidson
+:Kelley_Davidson  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Equitaçao ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Kelley Davidson" ;
+    :email "kelley.davidson@avcfamalicão.com" ;
+    :genero "F" ;
+    :idade "25" ;
+    :morada "Ruckersville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Crawford_Merritt
+:Crawford_Merritt  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Crawford Merritt" ;
+    :email "crawford.merritt@scbraga.net" ;
+    :genero "M" ;
+    :idade "27" ;
+    :morada "Roy" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Kim_Buck
+:Kim_Buck  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Kim Buck" ;
+    :email "kim.buck@avcfamalicão.tv" ;
+    :genero "F" ;
+    :idade "25" ;
+    :morada "Rosine" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Gilda_Schmidt
+:Gilda_Schmidt  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Gilda Schmidt" ;
+    :email "gilda.schmidt@scbraga.me" ;
+    :genero "F" ;
+    :idade "29" ;
+    :morada "Enoree" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Mcintosh_Aguirre
+:Mcintosh_Aguirre  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Basquetebol ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Mcintosh Aguirre" ;
+    :email "mcintosh.aguirre@vitoria.name" ;
+    :genero "M" ;
+    :idade "35" ;
+    :morada "Emory" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Ida_Bradshaw
+:Ida_Bradshaw  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Ida Bradshaw" ;
+    :email "ida.bradshaw@clube de orientação do minho.ca" ;
+    :genero "F" ;
+    :idade "21" ;
+    :morada "Lowgap" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Jefferson_Pacheco
+:Jefferson_Pacheco  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Jefferson Pacheco" ;
+    :email "jefferson.pacheco@edviana.info" ;
+    :genero "M" ;
+    :idade "34" ;
+    :morada "Strykersville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Olson_Hickman
+:Olson_Hickman  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Equitaçao ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Olson Hickman" ;
+    :email "olson.hickman@acrroriz.org" ;
+    :genero "F" ;
+    :idade "35" ;
+    :morada "Madrid" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Malinda_Mccall
+:Malinda_Mccall  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Malinda Mccall" ;
+    :email "malinda.mccall@scbraga.co.uk" ;
+    :genero "F" ;
+    :idade "23" ;
+    :morada "Winchester" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Raquel_Dejesus
+:Raquel_Dejesus  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Raquel Dejesus" ;
+    :email "raquel.dejesus@acrroriz.biz" ;
+    :genero "M" ;
+    :idade "31" ;
+    :morada "Greenfields" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Daniel_Chambers
+:Daniel_Chambers  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Daniel Chambers" ;
+    :email "daniel.chambers@gdgoma.biz" ;
+    :genero "F" ;
+    :idade "22" ;
+    :morada "Nicholson" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Samantha_Sharp
+:Samantha_Sharp  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Samantha Sharp" ;
+    :email "samantha.sharp@acrroriz.us" ;
+    :genero "F" ;
+    :idade "23" ;
+    :morada "Elliott" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Robert_Herman
+:Robert_Herman  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Basquetebol ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Robert Herman" ;
+    :email "robert.herman@clube de orientação do minho.com" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Weogufka" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Olive_Chapman
+:Olive_Chapman  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Olive Chapman" ;
+    :email "olive.chapman@avcfamalicão.net" ;
+    :genero "F" ;
+    :idade "30" ;
+    :morada "Wikieup" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Mccoy_Blackburn
+:Mccoy_Blackburn  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Mccoy Blackburn" ;
+    :email "mccoy.blackburn@amigosmontanha.tv" ;
+    :genero "M" ;
+    :idade "29" ;
+    :morada "Osmond" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Lambert_Ferrell
+:Lambert_Ferrell  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Lambert Ferrell" ;
+    :email "lambert.ferrell@vitoria.me" ;
+    :genero "M" ;
+    :idade "30" ;
+    :morada "Rowe" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Small_Coffey
+:Small_Coffey  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Small Coffey" ;
+    :email "small.coffey@vitoria.name" ;
+    :genero "M" ;
+    :idade "29" ;
+    :morada "Waumandee" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Hicks_Daniels
+:Hicks_Daniels  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Hicks Daniels" ;
+    :email "hicks.daniels@abcbraga.ca" ;
+    :genero "F" ;
+    :idade "32" ;
+    :morada "Frizzleburg" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Meghan_Cabrera
+:Meghan_Cabrera  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Meghan Cabrera" ;
+    :email "meghan.cabrera@edviana.info" ;
+    :genero "M" ;
+    :idade "28" ;
+    :morada "Shawmut" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Hubbard_Hart
+:Hubbard_Hart  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Hubbard Hart" ;
+    :email "hubbard.hart@gdgoma.org" ;
+    :genero "F" ;
+    :idade "22" ;
+    :morada "Trucksville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Chelsea_Gallegos
+:Chelsea_Gallegos  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Chelsea Gallegos" ;
+    :email "chelsea.gallegos@avcfamalicão.co.uk" ;
+    :genero "M" ;
+    :idade "21" ;
+    :morada "Warren" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Natalie_Figueroa
+:Natalie_Figueroa  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Natalie Figueroa" ;
+    :email "natalie.figueroa@clube de orientação do minho.biz" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Jugtown" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Hayes_Ward
+:Hayes_Ward  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Hayes Ward" ;
+    :email "hayes.ward@edviana.biz" ;
+    :genero "M" ;
+    :idade "30" ;
+    :morada "Accoville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Graves_Mccray
+:Graves_Mccray  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Graves Mccray" ;
+    :email "graves.mccray@abcbraga.us" ;
+    :genero "F" ;
+    :idade "22" ;
+    :morada "Kipp" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Mavis_Riley
+:Mavis_Riley  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Mavis Riley" ;
+    :email "mavis.riley@amigosmontanha.com" ;
+    :genero "F" ;
+    :idade "31" ;
+    :morada "Nescatunga" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Salas_Joseph
+:Salas_Joseph  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Salas Joseph" ;
+    :email "salas.joseph@amigosmontanha.net" ;
+    :genero "F" ;
+    :idade "30" ;
+    :morada "Greenwich" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Carly_Peck
+:Carly_Peck  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Carly Peck" ;
+    :email "carly.peck@edviana.tv" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Byrnedale" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Ramirez_Blevins
+:Ramirez_Blevins  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Ramirez Blevins" ;
+    :email "ramirez.blevins@vitoria.me" ;
+    :genero "M" ;
+    :idade "35" ;
+    :morada "Bluetown" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Parks_Saunders
+:Parks_Saunders  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Parks Saunders" ;
+    :email "parks.saunders@clube de orientação do minho.name" ;
+    :genero "F" ;
+    :idade "32" ;
+    :morada "Sheatown" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Leanne_Armstrong
+:Leanne_Armstrong  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Leanne Armstrong" ;
+    :email "leanne.armstrong@amigosmontanha.ca" ;
+    :genero "M" ;
+    :idade "28" ;
+    :morada "Cochranville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Kline_Stark
+:Kline_Stark  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Equitaçao ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Kline Stark" ;
+    :email "kline.stark@avcfamalicão.info" ;
+    :genero "F" ;
+    :idade "31" ;
+    :morada "Tedrow" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Elliott_Guzman
+:Elliott_Guzman  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Elliott Guzman" ;
+    :email "elliott.guzman@clube de orientação do minho.org" ;
+    :genero "F" ;
+    :idade "29" ;
+    :morada "Rutherford" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Liz_Baldwin
+:Liz_Baldwin  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Liz Baldwin" ;
+    :email "liz.baldwin@abcbraga.co.uk" ;
+    :genero "M" ;
+    :idade "23" ;
+    :morada "Basye" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Warner_Bullock
+:Warner_Bullock  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Warner Bullock" ;
+    :email "warner.bullock@gdgoma.biz" ;
+    :genero "M" ;
+    :idade "35" ;
+    :morada "Valle" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Santana_Harper
+:Santana_Harper  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Santana Harper" ;
+    :email "santana.harper@scbraga.biz" ;
+    :genero "F" ;
+    :idade "32" ;
+    :morada "Malo" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Imelda_Odonnell
+:Imelda_Odonnell  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Imelda Odonnell" ;
+    :email "imelda.odonnell@avcfamalicão.us" ;
+    :genero "F" ;
+    :idade "31" ;
+    :morada "Riviera" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Lila_Curry
+:Lila_Curry  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Lila Curry" ;
+    :email "lila.curry@amigosmontanha.com" ;
+    :genero "M" ;
+    :idade "23" ;
+    :morada "Alden" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Milagros_Ellis
+:Milagros_Ellis  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Milagros Ellis" ;
+    :email "milagros.ellis@acdrcrespos.net" ;
+    :genero "M" ;
+    :idade "21" ;
+    :morada "Why" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Stafford_Hale
+:Stafford_Hale  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Stafford Hale" ;
+    :email "stafford.hale@acdrcrespos.tv" ;
+    :genero "F" ;
+    :idade "29" ;
+    :morada "Bowden" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Blevins_Cline
+:Blevins_Cline  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Triatlo ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Blevins Cline" ;
+    :email "blevins.cline@clube de orientação do minho.me" ;
+    :genero "F" ;
+    :idade "22" ;
+    :morada "Delshire" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Marisol_Owen
+:Marisol_Owen  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Marisol Owen" ;
+    :email "marisol.owen@acdrcrespos.name" ;
+    :genero "M" ;
+    :idade "23" ;
+    :morada "Soham" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Mcintyre_Walsh
+:Mcintyre_Walsh  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Mcintyre Walsh" ;
+    :email "mcintyre.walsh@abcbraga.ca" ;
+    :genero "M" ;
+    :idade "31" ;
+    :morada "Beechmont" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Valarie_Silva
+:Valarie_Silva  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Valarie Silva" ;
+    :email "valarie.silva@acdrcrespos.info" ;
+    :genero "M" ;
+    :idade "25" ;
+    :morada "Lynn" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Jimmie_Beck
+:Jimmie_Beck  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Jimmie Beck" ;
+    :email "jimmie.beck@avcfamalicão.org" ;
+    :genero "M" ;
+    :idade "34" ;
+    :morada "Walker" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Amparo_Price
+:Amparo_Price  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Amparo Price" ;
+    :email "amparo.price@acdrcrespos.co.uk" ;
+    :genero "M" ;
+    :idade "30" ;
+    :morada "Townsend" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Susanna_Lowery
+:Susanna_Lowery  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Susanna Lowery" ;
+    :email "susanna.lowery@edviana.biz" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Cawood" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Flynn_Huber
+:Flynn_Huber  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Flynn Huber" ;
+    :email "flynn.huber@clube de orientação do minho.biz" ;
+    :genero "M" ;
+    :idade "26" ;
+    :morada "Teasdale" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Elaine_Allen
+:Elaine_Allen  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Equitaçao ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Elaine Allen" ;
+    :email "elaine.allen@acdrcrespos.us" ;
+    :genero "M" ;
+    :idade "32" ;
+    :morada "Kaka" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Gwen_Pate
+:Gwen_Pate  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Gwen Pate" ;
+    :email "gwen.pate@amigosmontanha.com" ;
+    :genero "M" ;
+    :idade "26" ;
+    :morada "Snelling" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Leila_Solis
+:Leila_Solis  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Leila Solis" ;
+    :email "leila.solis@acrroriz.net" ;
+    :genero "F" ;
+    :idade "34" ;
+    :morada "Glenville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Mercedes_Heath
+:Mercedes_Heath  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Mercedes Heath" ;
+    :email "mercedes.heath@gdgoma.tv" ;
+    :genero "M" ;
+    :idade "31" ;
+    :morada "Chaparrito" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Althea_Fitzpatrick
+:Althea_Fitzpatrick  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Basquetebol ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Althea Fitzpatrick" ;
+    :email "althea.fitzpatrick@edviana.me" ;
+    :genero "M" ;
+    :idade "24" ;
+    :morada "Marne" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Arlene_Morton
+:Arlene_Morton  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Arlene Morton" ;
+    :email "arlene.morton@vitoria.name" ;
+    :genero "F" ;
+    :idade "34" ;
+    :morada "Wiscon" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Mosley_Gonzales
+:Mosley_Gonzales  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Mosley Gonzales" ;
+    :email "mosley.gonzales@scbraga.ca" ;
+    :genero "M" ;
+    :idade "26" ;
+    :morada "Driftwood" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Torres_Hardy
+:Torres_Hardy  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Torres Hardy" ;
+    :email "torres.hardy@clube de orientação do minho.info" ;
+    :genero "F" ;
+    :idade "33" ;
+    :morada "Fairfield" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Annmarie_Petersen
+:Annmarie_Petersen  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Annmarie Petersen" ;
+    :email "annmarie.petersen@clube de orientação do minho.org" ;
+    :genero "M" ;
+    :idade "22" ;
+    :morada "Twilight" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Osborn_Green
+:Osborn_Green  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Karate ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Osborn Green" ;
+    :email "osborn.green@acrroriz.co.uk" ;
+    :genero "M" ;
+    :idade "32" ;
+    :morada "Jacksonwald" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Davenport_Dominguez
+:Davenport_Dominguez  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Davenport Dominguez" ;
+    :email "davenport.dominguez@acrroriz.biz" ;
+    :genero "F" ;
+    :idade "23" ;
+    :morada "Vallonia" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Barton_Massey
+:Barton_Massey  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Barton Massey" ;
+    :email "barton.massey@amigosmontanha.biz" ;
+    :genero "M" ;
+    :idade "26" ;
+    :morada "Ribera" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Holly_Bowen
+:Holly_Bowen  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Holly Bowen" ;
+    :email "holly.bowen@acdrcrespos.us" ;
+    :genero "M" ;
+    :idade "29" ;
+    :morada "Adamstown" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Dennis_Crawford
+:Dennis_Crawford  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Atletismo ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Dennis Crawford" ;
+    :email "dennis.crawford@amigosmontanha.com" ;
+    :genero "M" ;
+    :idade "30" ;
+    :morada "Wanship" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Oliver_Mcleod
+:Oliver_Mcleod  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Tenis ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Oliver Mcleod" ;
+    :email "oliver.mcleod@scbraga.net" ;
+    :genero "F" ;
+    :idade "25" ;
+    :morada "Garnet" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Tameka_Orr
+:Tameka_Orr  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :Vitoria ;
+    :isFederado 0 ;
+    :nome "Tameka Orr" ;
+    :email "tameka.orr@vitoria.tv" ;
+    :genero "F" ;
+    :idade "24" ;
+    :morada "Klagetoh" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Foster_Strickland
+:Foster_Strickland  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Patinagem ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Foster Strickland" ;
+    :email "foster.strickland@clube de orientação do minho.me" ;
+    :genero "M" ;
+    :idade "29" ;
+    :morada "Holtville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Marlene_Rodgers
+:Marlene_Rodgers  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Tenis ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Marlene Rodgers" ;
+    :email "marlene.rodgers@scbraga.name" ;
+    :genero "F" ;
+    :idade "27" ;
+    :morada "Levant" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Shari_Mathews
+:Shari_Mathews  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Shari Mathews" ;
+    :email "shari.mathews@acdrcrespos.ca" ;
+    :genero "M" ;
+    :idade "22" ;
+    :morada "Joes" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Josie_Rasmussen
+:Josie_Rasmussen  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Badminton ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Josie Rasmussen" ;
+    :email "josie.rasmussen@acdrcrespos.info" ;
+    :genero "M" ;
+    :idade "34" ;
+    :morada "Riverton" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Shelton_Walton
+:Shelton_Walton  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Shelton Walton" ;
+    :email "shelton.walton@edviana.org" ;
+    :genero "M" ;
+    :idade "35" ;
+    :morada "Williston" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Odonnell_Russell
+:Odonnell_Russell  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Odonnell Russell" ;
+    :email "odonnell.russell@gdgoma.co.uk" ;
+    :genero "M" ;
+    :idade "31" ;
+    :morada "Alderpoint" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Elba_Le
+:Elba_Le  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Elba Le" ;
+    :email "elba.le@acrroriz.biz" ;
+    :genero "F" ;
+    :idade "30" ;
+    :morada "Ebro" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Sweet_Woodward
+:Sweet_Woodward  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Equitaçao ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Sweet Woodward" ;
+    :email "sweet.woodward@gdgoma.biz" ;
+    :genero "F" ;
+    :idade "22" ;
+    :morada "Urie" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Wilkins_Cummings
+:Wilkins_Cummings  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Dança ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Wilkins Cummings" ;
+    :email "wilkins.cummings@acrroriz.us" ;
+    :genero "M" ;
+    :idade "33" ;
+    :morada "Gila" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Rogers_Noel
+:Rogers_Noel  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Rogers Noel" ;
+    :email "rogers.noel@acdrcrespos.com" ;
+    :genero "F" ;
+    :idade "35" ;
+    :morada "Cresaptown" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Hodges_Ashley
+:Hodges_Ashley  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Andebol ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Hodges Ashley" ;
+    :email "hodges.ashley@abcbraga.net" ;
+    :genero "F" ;
+    :idade "31" ;
+    :morada "Crawfordsville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Curtis_Dillon
+:Curtis_Dillon  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Curtis Dillon" ;
+    :email "curtis.dillon@amigosmontanha.tv" ;
+    :genero "M" ;
+    :idade "29" ;
+    :morada "Beason" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Lelia_Oliver
+:Lelia_Oliver  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Tenis ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Lelia Oliver" ;
+    :email "lelia.oliver@gdgoma.me" ;
+    :genero "M" ;
+    :idade "30" ;
+    :morada "Cedarville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Fuentes_Rogers
+:Fuentes_Rogers  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Fuentes Rogers" ;
+    :email "fuentes.rogers@scbraga.name" ;
+    :genero "M" ;
+    :idade "28" ;
+    :morada "Grazierville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Carole_Lindsey
+:Carole_Lindsey  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :AmigosMontanha ;
+    :isFederado 0 ;
+    :nome "Carole Lindsey" ;
+    :email "carole.lindsey@amigosmontanha.ca" ;
+    :genero "F" ;
+    :idade "34" ;
+    :morada "Weedville" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Martinez_Johns
+:Martinez_Johns  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :SUP ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Martinez Johns" ;
+    :email "martinez.johns@abcbraga.info" ;
+    :genero "M" ;
+    :idade "32" ;
+    :morada "Hebron" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Kellie_Holland
+:Kellie_Holland  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Equitaçao ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Kellie Holland" ;
+    :email "kellie.holland@scbraga.org" ;
+    :genero "F" ;
+    :idade "30" ;
+    :morada "Bloomington" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Mathis_Kirk
+:Mathis_Kirk  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Mathis Kirk" ;
+    :email "mathis.kirk@edviana.co.uk" ;
+    :genero "F" ;
+    :idade "23" ;
+    :morada "Klondike" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Bertha_Shelton
+:Bertha_Shelton  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Orientaçao ;
+    :temClube :GDGoma ;
+    :isFederado 0 ;
+    :nome "Bertha Shelton" ;
+    :email "bertha.shelton@gdgoma.biz" ;
+    :genero "M" ;
+    :idade "28" ;
+    :morada "Sedley" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Bonnie_Diaz
+:Bonnie_Diaz  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Tenis ;
+    :temClube :SCBraga ;
+    :isFederado 0 ;
+    :nome "Bonnie Diaz" ;
+    :email "bonnie.diaz@scbraga.biz" ;
+    :genero "F" ;
+    :idade "31" ;
+    :morada "Gerton" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Becker_Talley
+:Becker_Talley  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Becker Talley" ;
+    :email "becker.talley@clube de orientação do minho.us" ;
+    :genero "M" ;
+    :idade "31" ;
+    :morada "Valmy" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Zelma_Bell
+:Zelma_Bell  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Equitaçao ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Zelma Bell" ;
+    :email "zelma.bell@clube de orientação do minho.com" ;
+    :genero "F" ;
+    :idade "30" ;
+    :morada "Shasta" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Stanton_Cox
+:Stanton_Cox  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :BTT ;
+    :temClube :EDViana ;
+    :isFederado 0 ;
+    :nome "Stanton Cox" ;
+    :email "stanton.cox@edviana.net" ;
+    :genero "F" ;
+    :idade "22" ;
+    :morada "Foxworth" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Cindy_Shepherd
+:Cindy_Shepherd  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Ciclismo ;
+    :temClube :AVCfamalicao ;
+    :isFederado 0 ;
+    :nome "Cindy Shepherd" ;
+    :email "cindy.shepherd@avcfamalicão.tv" ;
+    :genero "F" ;
+    :idade "23" ;
+    :morada "Brule" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Knapp_Buckner
+:Knapp_Buckner  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Knapp Buckner" ;
+    :email "knapp.buckner@abcbraga.me" ;
+    :genero "F" ;
+    :idade "31" ;
+    :morada "Rose" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Callahan_Mitchell
+:Callahan_Mitchell  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Parapente ;
+    :temClube :ABCbraga ;
+    :isFederado 0 ;
+    :nome "Callahan Mitchell" ;
+    :email "callahan.mitchell@abcbraga.name" ;
+    :genero "M" ;
+    :idade "24" ;
+    :morada "Wollochet" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Allie_Lyons
+:Allie_Lyons  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Equitaçao ;
+    :temClube :ACRroriz ;
+    :isFederado 0 ;
+    :nome "Allie Lyons" ;
+    :email "allie.lyons@acrroriz.ca" ;
+    :genero "M" ;
+    :idade "31" ;
+    :morada "Welch" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Tammy_Bryant
+:Tammy_Bryant  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Futebol ;
+    :temClube :ACDRcrespos ;
+    :isFederado 0 ;
+    :nome "Tammy Bryant" ;
+    :email "tammy.bryant@acdrcrespos.info" ;
+    :genero "M" ;
+    :idade "32" ;
+    :morada "Fidelis" .
+
+        
+### https://www.nuno-aac.github.io/ontologias/emd#Carissa_Rosario
+:Carissa_Rosario  rdf:type owl:NamedIndividual ,
+        :Atleta ;
+    :participaModalidade :Esgrima ;
+    :temClube :Clube_de_Orientaçao_do_Minho ;
+    :isFederado 0 ;
+    :nome "Carissa Rosario" ;
+    :email "carissa.rosario@clube de orientação do minho.org" ;
+    :genero "F" ;
+    :idade "30" ;
+    :morada "Brookfield" .
+
+        
+
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

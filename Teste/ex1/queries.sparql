@@ -1,0 +1,47 @@
+# PREFIXOS
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX : <https://www.nuno-aac.github.io/ontologias/emd#>
+
+
+# 1
+SELECT (count(?e) as ?n) WHERE { 
+   ?e rdf:type :EMD
+} 
+
+# 2
+SELECT (count(?e) as ?n) WHERE { 
+   ?e rdf:type :EMD ;
+      :resultado 1
+} 
+
+# 3
+SELECT ?g (count(?e) as ?n) WHERE { 
+   ?e rdf:type :EMD ;
+      :refereAtleta ?a .
+   ?a :genero ?g
+} GROUP BY ?g
+
+# 4
+SELECT ?m (count(?e) as ?n) WHERE { 
+   ?e rdf:type :EMD ;
+      :refereAtleta ?a .
+   ?a :participaModalidade ?m
+} GROUP BY ?m
+
+# 5
+SELECT (count(?e) as ?n) WHERE { 
+   ?e rdf:type :EMD ;
+      :refereAtleta ?a .
+   ?a :temClube :GDGoma
+}
+
+# 6
+SELECT (count(?e) as ?n) WHERE { 
+   ?e rdf:type :EMD ;
+      :refereAtleta ?a .
+   ?a :participaModalidade :Triatlo ;
+      :genero "F"
+} 
+
